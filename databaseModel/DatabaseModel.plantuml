@@ -1,0 +1,110 @@
+@startuml 'gamitude database model'
+
+class User {
+    String id
+    String email
+    String currentRankId
+    String[] purchasedRankIds
+    String[] purchasedThemeIds
+    "etc."
+}
+
+class Stats{
+    String id
+    String userId
+    long strength
+    long intelligence
+    long fluency
+    long creativity
+}
+
+class Folder{
+    String id
+    String userId
+    String name
+    String description
+    String icon??fromGivenSet
+}
+
+class Project{
+    String id
+    String userId
+    String folderId
+    String defaultTimerId
+    Stats dominantStat
+    Stats[] stats
+    Date dateAdded
+    int dayPerWeek
+    int hourPerDay
+    int timeSpend
+}
+
+class Task{
+    String id
+    String projectId
+    String description
+    int time
+    Date date
+}
+
+class ProjectLog{
+    String id
+    String userId
+    String projectId
+    String taskId
+    String note
+    Stats dominantStat
+    Stats[] stats
+    Date date
+    int timeSpend
+}
+class Timer{
+    String id
+    String userId
+    int workTime
+    int breakTime
+}
+
+class Rank{
+    String id
+    String imgUrl
+    int priceStrength
+    int priceIntelligence
+    int priceFluency
+    int priceCreativity
+}
+
+class Theme{
+    String id
+    ColorPallet colorPallet
+    double price
+}
+
+
+class DailyEnergy{
+    String id
+    String userId
+    Date date
+    int mind
+    int soul
+    int body
+    int emotions
+}
+
+
+User "1" *-- "many" Timer
+
+User "1" <--> "1" Stats
+User "1" *-- "many" Folder
+User "many" *--* "many" Rank
+User "many" *--* "many" Theme
+Folder "1" *-- "many" Project
+User "1" *-- "many" DailyEnergy
+Project "1" *-- "many" ProjectLog
+Project "1" *-- "many" Task
+Task "1" *-- "many" ProjectLog
+
+
+@enduml
+
+
