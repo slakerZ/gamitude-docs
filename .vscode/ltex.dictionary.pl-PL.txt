@@ -31,3 +31,5 @@ Pomodone
 Github
 Education
 Pomodoro
+statistic
+Prokrastynator
