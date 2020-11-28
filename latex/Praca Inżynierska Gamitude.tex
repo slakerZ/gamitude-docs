@@ -1015,8 +1015,8 @@ Podczas sprintu, zespół miał za zadanie wytworzyć wstępne dokumenty DZW i S
 \subsection {Wykonane zadania}
 Paweł: Wytworzenie wstępnej wersji dokumentu DZW. Przerabianie kursu React.\\
 Robert: Wytworzenie wstępnej wersji dokumentu SWS.\\
-Stanisław: Rozpoznanie dotyczące kontroli wersji w EA.\\
-\subsection {Napotkane problemy}
+Stanisław: Rozpoznanie dotyczące kontroli wersji w EA. Rozpoznanie architektury mikroserwisow oraz projektowania jej.\\
+\subsection {Napotkane problemy} 
 Kontrola wersji w EA dostępne tylko po wykupieniu licencji.
 
 \section {Use Case + WPP}
@@ -1106,7 +1106,7 @@ Dodanie rang do bazy danych, serwisu firebase do projektu, funkcji tworzenia uż
 Robert i Stanisław: Poprawa modeli rang i workflow.\\
 Paweł: Utworzenie strony logowania i rejestracji na frontendzie oraz poprawienie wyglądu projektów, dodanie serwisu firebase do projektu oraz funkcji tworzenia użytkownika przez firebase.\\
 Robert: Dodanie rang do bazy danych.\\
-Stanisław: Refaktoryzajca serwisów workflow i projektów.\\
+Stanisław: Refaktoryzajca serwisów workflow i projektów. Dodanie api do przyjmowania poświęconego czasu.\\
 \subsection {Napotkane problemy}
 Algorytmy niedostosowane do działania w czasie. Poprawa na następny tydzień.
 
@@ -1116,6 +1116,7 @@ Ukończono prace nad algorytmami związanymi z przyznawaniem rang oraz zmianą e
 \subsection {Wykonane zadania}
 Robert i Stanisław: Dostosowanie algorytmów do wymagań. \\
 Paweł: Integracja z API.\\
+Stanisław: Dodanie obsługi błędów związanych z baza danych. \\
 \subsection {Napotkane problemy}
 Problem z integracją frontend'u z API.
 
@@ -1144,7 +1145,7 @@ Szukanie nowych pomysłów na funkcjonalności. Stworzenie mockup'ów dla strony
 \subsection {Wykonane zadania}
 Paweł: Elastic habits, Just 5, flow state, Energy asistant, system osiągnięć czy system rankingu między graczami.\\
 Robert: Stworzenie mockup'u strony głównej oraz Bullet Journal'a.\\
-Stanisław: Pomysł na zbieranie informacji o użytkownikach dla późniejszej sprzedaży.\\
+Stanisław: Przeniesienie bazy danych z heroku do chmury mongo atlas. Pomysł na zbieranie informacji o użytkownikach dla późniejszej sprzedaży.\\
 \subsection {Napotkane problemy}
 Brak napotkanych problemów.
 
@@ -1163,6 +1164,7 @@ Połączenie frontend'u z serwisem logowania i rejestracji. Zbudowanie podstawow
 \subsection {Wykonane zadania}
 Paweł i Stanisław: Połączenie frontend'u z przepisanym serwisem.\\
 Robert: Zebranie danych dotyczących źródeł informacji do bibliografii.\\
+Stanisław: Początek przenoszenia projektów z heroku do chmury google.\\
 \subsection {Napotkane problemy}
 Brak napotkanych problemów.
 
@@ -1171,7 +1173,7 @@ Brak napotkanych problemów.
 Szukanie informacji na temat wykorzystania smartwatch'y w aplikacji. Rozpoznanie w zakresie różnych typów użytkowników systemu. 
 \subsection {Wykonane zadania}
 Paweł i Robert: Wykonanie badania MBTI.\\
-Stanisław: Pomysł na integracje aplikacji z Google Calendar.\\
+Stanisław: Przenoszenie kolejnych mikroserwisów do chmury googla. Stworzenie mikroserwisu od autoryzacji. Pomysł na integracje aplikacji z Google Calendar.\\
 \subsection {Napotkane problemy}
 Brak napotkanych problemów.
 
@@ -1181,9 +1183,10 @@ Zebranie całej starej dokumentacji w jedno miejsce. Zapewnienie bezpieczeństwa
 \subsection {Wykonane zadania}
 Zespół: Modyfikacja dokumentu DZW.\\
 Robert: Zebranie całej dokumentacji i wstawienie jej na platformę Github, napisanie streszczenia projektu.\\
-Stanisław: Szukanie informacji na temat certyfikatu SSL.\\
+Stanisław: Szukanie informacji na temat certyfikatu SSL oraz równoważenia obciążenia\\
 \subsection {Napotkane problemy}
-Brak napotkanych problemów.
+Koszt load balancera w chmurze googla przywyższa koszt jednej maszyny wirtualnej.
+
 
 \section {Autoryzacja, dokumentacja}
 \subsection {Założenia sprintu}
@@ -1226,8 +1229,6 @@ Stanisław: przerabianie kursu o identity serwer 4.\\
 Brak napotkanych problemów.
 
 
-
-
 \section {Podpowiedzi i naprawa błędów}
 \subsection {Założenia sprintu}
 Dodanie podpowiedzi dla użytkownika, by ułatwić zapoznawanie się z systemem. Naprawa błędów w przeliczaniu statystyk
@@ -1244,7 +1245,7 @@ Zintegrowanie przepisanego systemu rang, przepisanie dokumentu DZW na LaTeX.
 \subsection {Wykonane zadania}
 Robert: Dodanie DZW do latex dokumentu, przerobienie bibliografii.\\ 
 Paweł: Dodanie więcej podpowiedzi do strony, dodawanie projektu przeniesione do modal'a, połączenie API rang z frontend'em.\\
-Stanisław: Naprawiony system rang, dodanie load balancer'a do projektu, by zoptymalizować go w Kubernetes'ie. \\
+Stanisław: Naprawiony system rang, dodanie load balancer'a do projektu jako swoj własny serwis w Kubernetes'ie. Brak idealnego rozwiązania. \\
 \subsection {Napotkane problemy}
 Brak napotkanych problemów.
 
@@ -1268,13 +1269,13 @@ Stanisław: Dodanie opcji spadku dziennych statystyk.\\
 \subsection {Napotkane problemy}
 Brak napotkanych problemów.
 
-\section {Eksperymenty z Azure, ulepszanie parallax'a}
+\section {Retrospekcja, ulepszanie parallax'a}
 \subsection {Założenia sprintu}
-Stworzenie repopozytorium dla serwisu użytkownika, sprawdzenie działania bazy MS SQL na Azure.
+Stworzenie repopozytorium dla serwisu użytkownika.
 \subsection {Wykonane zadania}
 Robert: Ulepszanie strony głównej z parallax'em.\\
 Paweł: Przygotowanie teoretyczne do dodania TypeScript'u do projektu.\\
-Stanisław: Wstawienie bazy MS SQL na Azure, stworzenie repopozytorium dla serwisu użytkownika.\\
+Stanisław: Rozważania ba temat zmiany bazy danych, stworzenie repopozytorium dla serwisu użytkownika.\\
 \subsection {Napotkane problemy}
 Brak napotkanych problemów.
 
@@ -1288,12 +1289,13 @@ Stanisław: Czytanie artykułów na temat mikro serwisów.\\
 \subsection {Napotkane problemy}
 Brak napotkanych problemów.
 
-\section {Podpowiedzi i końcowe prace nad Gamitude 1.0}
+\section {Eksperymenty z Azure, podpowiedzi i końcowe prace nad Gamitude 1.0}
 \subsection {Założenia sprintu}
-Zakończenie pracy nad Gamitude 1.0, możliwość wyłączenia podpowiedzi.
+Zakończenie pracy nad Gamitude 1.0, możliwość wyłączenia podpowiedzi, sprawdzenie działania bazy MS SQL na Azure.
 \subsection {Wykonane zadania}
 Paweł: Dodanie możliwości wyłączania podpowiedzi dla użytkownika.\\ 
 Robert: Wstawienie strony głównej i przerobienie minutników na wersję 1.0. \\
+Stanisław: Stworzenie bazy MS SQL na Azure. Zmiana architektury na Monolit \\
 \subsection {Napotkane problemy}
 Błąd z opóźniającym się minutnikiem, dźwiękami niegrającymi w przypadku gdy użytkownik jest na innej karcie przeglądarki. Naprawienie na przyszły sprint.
 
@@ -1345,7 +1347,7 @@ Stworzenie widoku Bullet Journal'a na nowym repozytorium, skończenie integracji
 Paweł + Robert: Dostosowanie spisu treści w kontekście projektu do zaleceń konsultanta.\\
 Paweł: Dostosowanie wyglądu ikon oraz kolorystyk na stronie, dodanie nowej strony na Gamitude Themes, zaprezentowanie drużynie pomysłu na Gamitude Themes, ujednolicenie fontów by były widoczne.\\
 Robert: Mockup na froncie Bullet Journal'a\\
-Stanisław: szkic kontrolerów i modeli dla Bullet Journal'a, skończona integracja API na produkcji.\\
+Stanisław: Szkic kontrolerów i modeli dla Bullet Journal'a, skończona integracja API na produkcji.\\
 \subsection {Napotkane problemy}
 Przesunięto implementację wstępnej wersji Gamitude Themes na następny sprint.
 
