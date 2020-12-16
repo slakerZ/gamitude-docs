@@ -125,3 +125,7 @@ task
 zainicjalizowana
 boostowanych
 boostowane
+Send
+dostępnościowe
+Grid
+template
