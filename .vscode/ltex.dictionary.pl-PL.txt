@@ -130,3 +130,7 @@ dostępnościowe
 Grid
 template
 tutorial
+Whereby
+Cloud
+hostującej
+deployment
