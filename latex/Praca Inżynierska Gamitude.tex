@@ -132,7 +132,7 @@ Omówienie problemu, analiza projektu, projektowanie i implementacja systemu, hi
 \chapter {Omówienie problemu}
 \section {Przedstawienie problemu}
 \subsubsection{Problem a ludzie}
-Problemem jest bycie produktywnym.
+Problemem jest utrzymanie produktywności bez ubytku w innych sferach życia np. życia rodzinnego.
 \\Są ludzie, którzy nie robią absolutnie nic, dopóki nie są do tego przymuszeni.
 \\Są tacy, którzy z każdym zadaniem czekają do ostatniej chwili, potem przepracowują się i powtarzają ten cykl.
 \\Są też tacy, którzy starają się za bardzo i gdy w końcu ich organizm się buntuje, popadają w długie okresy nieróbstwa.
@@ -976,12 +976,28 @@ Po dłuższym namyśle zdecydowaliśmy, że dobrym dla nas podejściem byłoby p
  Wybraliśmy tę metodykę ze względu na fakt, że nasz system jest dość nowatorski w swojej kategorii,
  przez co wymaga stałej weryfikacji przez użytkowników.
 \section{Narzędzia}
-Opisanie narzędzi wykorzystanych do tworzenia projektu (Slack, Azure DevOps, Gcloud itd.)
+\subsection {Komunikacja}
+Do komunikacji w zespole użyliśmy darmowej wersji Slack`a. Jedyną wadą był brak rozmów wideo.\\
+Aby zapełnić tę lukę, stworzyliśmy sobie darmowy pokój na stronie Whereby, gdzie w zespole nieprzekraczającym 4
+osób mogliśmy się swobodnie porozumiewać.\\
+Wybór padł na Slack`a ze względu na możliwość zintegrowania go z narzędziami do CI/CD or repozytoriów.\\
+Pozwala to na posiadanie informacji o wszystkich aktualnych działaniach całego zespołu w jednym miejscu.\\
+Tablice z zadaniami posiadamy na platformie Azure DevOps, która również pozwala na tworzenie sprintów.\\
+\subsection{Repozytorium oraz CI \textbackslash CD}
+Repozytorium naszego projektu powstało na Github'ie. Zintegrowaliśmy go z platformą Azure DevOps, 
+która pozwala nam na zbudowanie każdego komponentu projektu od razu po aktualizacji naszego kodu w repozytorium.\\
+Jeżeli projekt udało się zbudować na głównej gałęzi, nasze świeżo zbudowane kontenery wysyłane są do chmury.\\
+\subsection{Cloud}
+W chmurze postawiliśmy na konteneryzacje naszych projektów, która pozwala na łatwe
+skalowanie oraz pozostanie niezależnym od maszyny hostującej. Google Cloud został wybrany na dostawce rozwiązań chmurowych.\\
+Postanowiliśmy wykorzystać technologie Kubernetes do skalowania oraz zarządzania naszymi kontenerami. Pozwala ona pozostać w miarę możliwości
+niezależnym od dostawcy chmurowego (decyzja ta też została podjęta ze względu na wcześniejszą architekturę mikro serwisową).
 \section{Technologie}
 		\begin{itemize}
-			\item React/Redux/MUI — frontend
-			\item .NET — Backend
-			\item MongoDB/Postgres — baza danych
+			\item React/Redux/MUI/TypeScript — frontend
+			\item C\#/.NET Core — backend
+			\item MongoDB — baza danych
+			\item Docker/Kubernetes — deployment
 		\end{itemize}
 
 \chapter {Projektowanie}
