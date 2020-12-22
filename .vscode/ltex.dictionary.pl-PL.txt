@@ -134,3 +134,4 @@ Whereby
 Cloud
 hostującej
 deployment
+responsywny
