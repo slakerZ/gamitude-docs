@@ -2,3 +2,10 @@
 {"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QOkresy te bazowano na technikach tj. Pomodoro\\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q 25/5, Ultradian Rhytmn\\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q/30, flow state\\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q oraz Just 5\\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
 {"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QChcemy stworzyć nowe narzędzie do organizacji pracy z oryginalnym podejściem zaczerpniętym z systemów RPG, opartym na odkryciach w dziedzinie zarządzania energią\\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
 {"rule":"IMIONA_Z_APOSTROFAMI","sentence":"^\\QStanisław: Stworzenie routing'u dla mikro serwisu projektów.\\E$"}
+{"rule":"BRAK_PRZECINKA_GDY","sentence":"^\\QSytuacje wyjątkowe Gdy użytkownik nie wykonał żadnej sesji na koncie, statystyki domyślnie są 0.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QIdentyfikator: F11 Priorytet: C – could Nazwa System osiągnięć użytkownika.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QIdentyfikator: F11 Priorytet: W – won't Nazwa System osiągnięć użytkownika.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QIdentyfikator: F12 Priorytet: W – won't Nazwa System rankingowy użytkowników.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QIdentyfikator: F13 Priorytet: W – won't Nazwa System znajomych użytkowników.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QIdentyfikator: F14 Priorytet: W – won't Nazwa Energy Assistant.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QIdentyfikator: F15 Priorytet: W – won't Nazwa Elastic Habits.\\E$"}

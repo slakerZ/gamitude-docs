@@ -513,7 +513,7 @@ Grupa docelowa to osoby, które chcą poprawić swoją higienę pracy, chcą sta
 		\hline
 		\multicolumn{4}{|p{12 cm}|}{Karta Wymagania}\\
 		\hline
-		Identyfikator: & W01 & Priorytet: & M — must (musi być)\\
+		Identyfikator: & W01 & Priorytet: & M — must\\
 		\hline
 		Nazwa & \multicolumn{3}{|p{10 cm}|}{Zwiększenie efektywności pracy użytkowników systemu}\\
 		\hline
@@ -524,29 +524,12 @@ Grupa docelowa to osoby, które chcą poprawić swoją higienę pracy, chcą sta
 		Wymagania powiązane & \multicolumn{3}{|p{10 cm}|}{Brak}\\
 		\hline
 		\end{tabular}\\
-		\begin{tabular}{|p{3cm}|p{2cm}|p{2cm}|p{6cm}|}
-		\hline
-		\multicolumn{4}{|p{12 cm}|}{Karta Wymagania}\\
-		\hline
-		Identyfikator: & W01 & Priorytet: &  M — must (musi być)\\
-		\hline
-		Nazwa & \multicolumn{3}{|p{10 cm}|}{System skórek}\\
-		\hline
-		Opis & \multicolumn{3}{|p{10 cm}|}{Produkt będzie zarabiał na sprzedaży skórek (alternatywna oprawa graficzna i personalizacja systemu pracy)}\\
-		\hline
-		Udziałowiec & \multicolumn{3}{|p{10 cm}|}{Wydawca, Sponsorzy}\\
-		\hline
-		Wymagania powiązane & \multicolumn{3}{|p{10 cm}|}{Brak}\\
-		\hline
-		\end{tabular}\\
 	\subsection {Wymagania funkcjonalne}
-	\begin{itemize}
-		\item Nazwa funkcji/usługi\\
 		\begin{tabular}{|p{3cm}|p{2cm}|p{2cm}|p{6cm}|}
 		\hline
 		\multicolumn{4}{|p{12 cm}|}{Karta Wymagania}\\
 		\hline
-		Identyfikator: & F01 & Priorytet: & M — must (musi być)\\
+		Identyfikator: & F01 & Priorytet: & M — must\\
 		\hline
 		Nazwa & \multicolumn{3}{|p{10 cm}|}{System Autoryzacji użytkownika}\\
 		\hline
@@ -554,134 +537,299 @@ Grupa docelowa to osoby, które chcą poprawić swoją higienę pracy, chcą sta
 		\hline
 		Kryteria akceptacji & \multicolumn{3}{|p{10 cm}|}{Bezpieczny system autoryzacji zabezpieczony przed atakami na bazę danych, potwierdzenie maila po rejestracji,  jedno konta na 1 mail}\\
 		\hline
-		Dane wejściowe & \multicolumn{3}{|p{10 cm}|}{Brak}\\
+		Dane wejściowe & \multicolumn{3}{|p{10 cm}|}{e-mail użytkownika, hasło użytkownika, nick}\\
 		\hline
-		Warunki początkowe & \multicolumn{3}{|p{10 cm}|}{Brak}\\
+		Warunki początkowe & \multicolumn{3}{|p{10 cm}|}{Użytkownik nie posiada konta}\\
 		\hline
-		Warunki końcowe & \multicolumn{3}{|p{10 cm}|}{Brak}\\
+		Warunki końcowe & \multicolumn{3}{|p{10 cm}|}{Użytkownik zarejestrował się i może się zalogować}\\
 		\hline
-		Sytuacje wyjątkowe & \multicolumn{3}{|p{10 cm}|}{Brak}\\
+		Sytuacje wyjątkowe & \multicolumn{3}{|p{10 cm}|}{Błędny e-mail, błędne hasło, użytkownik już posiada konto}\\
 		\hline
-		Szczegóły implementacji & \multicolumn{3}{|p{10 cm}|}{Brak}\\
+		Szczegóły implementacji & \multicolumn{3}{|p{10 cm}|}{Sprint 23.12.2020}\\
 		\hline
 		Udziałowiec & \multicolumn{3}{|p{10 cm}|}{Użytkownik końcowy, Zespół projektowy}\\
 		\hline
 		Wymagania powiązane & \multicolumn{3}{|p{10 cm}|}{Brak}\\
 		\hline
 		\end{tabular}\\
+		\newline
+		\vspace*{0,2 cm}
+		\newline
 		\begin{tabular}{|p{3cm}|p{2cm}|p{2cm}|p{6cm}|}
 		\hline
 		\multicolumn{4}{|p{12 cm}|}{Karta Wymagania}\\
 		\hline
 		Identyfikator: & F02 & Priorytet: & M — must (musi być)\\
 		\hline
-		Nazwa & \multicolumn{3}{|p{10 cm}|}{System rang użytkowników}\\
+		Nazwa & \multicolumn{3}{|p{10 cm}|}{System statystyk}\\
 		\hline
-		Opis & \multicolumn{3}{|p{10 cm}|}{Jako użytkownik podczas postępowania w używaniu aplikacji chciałbym być przypisywany do różnych rang}\\
+		Opis & \multicolumn{3}{|p{10 cm}|}{Jako użytkownik podczas postępowania w używaniu aplikacji chciałbym widzieć swój postęp w pracy nad projektami w postaci statystyk}\\
 		\hline
-		Kryteria akceptacji & \multicolumn{3}{|p{10 cm}|}{Przypisywanie rangi do danego użytkownika oraz obliczanie jego statystyk na podstawie wykonywanych projektów}\\
+		Kryteria akceptacji & \multicolumn{3}{|p{10 cm}|}{Obliczanie statystyk użytkownika na podstawie wykonywanych projektów.}\\
 		\hline
-		Dane wejściowe & \multicolumn{3}{|p{10 cm}|}{Brak}\\
+		Dane wejściowe & \multicolumn{3}{|p{10 cm}|}{czas poświęcony na zadanie, statystyki ulepszane przez zadanie, główna statystyka ulepszana przez zadanie}\\
 		\hline
-		Warunki początkowe & \multicolumn{3}{|p{10 cm}|}{Brak}\\
+		Warunki początkowe & \multicolumn{3}{|p{10 cm}|}{Użytkownik jest zalogowany, zakończył sesję pracy}\\
 		\hline
-		Warunki końcowe & \multicolumn{3}{|p{10 cm}|}{Brak}\\
+		Warunki końcowe & \multicolumn{3}{|p{10 cm}|}{Aktualizacja statystyk}\\
 		\hline
-		Sytuacje wyjątkowe & \multicolumn{3}{|p{10 cm}|}{Brak}\\
+		Sytuacje wyjątkowe & \multicolumn{3}{|p{10 cm}|}{Użytkownik nie wykonał żadnej sesji}\\
 		\hline
-		Szczegóły implementacji & \multicolumn{3}{|p{10 cm}|}{Brak}\\
+		Szczegóły implementacji & \multicolumn{3}{|p{10 cm}|}{Sprint ....}\\
 		\hline
 		Udziałowiec & \multicolumn{3}{|p{10 cm}|}{Użytkownik końcowy, Zespół projektowy}\\
 		\hline
-		Wymagania powiązane & \multicolumn{3}{|p{10 cm}|}{Brak}\\
+		Wymagania powiązane & \multicolumn{3}{|p{10 cm}|}{F03, F05}\\
 		\hline
 		\end{tabular}\\
+		\newline
+		\vspace*{0,2 cm}
+		\newline
 		\begin{tabular}{|p{3cm}|p{2cm}|p{2cm}|p{6cm}|}
 		\hline
 		\multicolumn{4}{|p{12 cm}|}{Karta Wymagania}\\
 		\hline
 		Identyfikator: & F03 & Priorytet: & M — must (musi być)\\
 		\hline
-		Nazwa & \multicolumn{3}{|p{10 cm}|}{System zarządzania energią  użytkownika}\\
+		Nazwa & \multicolumn{3}{|p{10 cm}|}{System zarządzania energią użytkownika}\\
 		\hline
-		Opis & \multicolumn{3}{|p{10 cm}|}{Jako użytkownik chcę, żeby aplikacja śledziła moje zasoby energetyczne i podpowiadała, jak mogę nimi lepiej zarządzać}\\
+		Opis & \multicolumn{3}{|p{10 cm}|}{Jako użytkownik chcę, żeby aplikacja śledziła moje zasoby energetyczne, by widzieć swój stan energii.}\\
 		\hline
-		Kryteria akceptacji & \multicolumn{3}{|p{10 cm}|}{Zmiana zasobów energii użytkownika przy wykonywaniu konkretnych projektów lub przerw}\\
+		Kryteria akceptacji & \multicolumn{3}{|p{10 cm}|}{Zmiana zasobów energii użytkownika przy wykonywaniu konkretnych projektów lub przerw.}\\
 		\hline
-		Dane wejściowe & \multicolumn{3}{|p{10 cm}|}{Brak}\\
+		Dane wejściowe & \multicolumn{3}{|p{10 cm}|}{Czas poświęcony na zadanie, statystyki ulepszane przez zadanie, główna statystyka ulepszana przez zadanie}\\
 		\hline
-		Warunki początkowe & \multicolumn{3}{|p{10 cm}|}{Brak}\\
+		Warunki początkowe & \multicolumn{3}{|p{10 cm}|}{Użytkownik jest zalogowany, została wykonana sesja pracy.}\\
 		\hline
-		Warunki końcowe & \multicolumn{3}{|p{10 cm}|}{Brak}\\
+		Warunki końcowe & \multicolumn{3}{|p{10 cm}|}{Zmniejszenie/zwiększenie statusu energii}\\
 		\hline
-		Sytuacje wyjątkowe & \multicolumn{3}{|p{10 cm}|}{Brak}\\
+		Sytuacje wyjątkowe & \multicolumn{3}{|p{10 cm}|}{Brak energii, nie wykonano żadnej sesji}\\
 		\hline
-		Szczegóły implementacji & \multicolumn{3}{|p{10 cm}|}{Brak}\\
+		Szczegóły implementacji & \multicolumn{3}{|p{10 cm}|}{Sprint ....}\\
 		\hline
 		Udziałowiec & \multicolumn{3}{|p{10 cm}|}{Użytkownik końcowy, Zespół projektowy}\\
 		\hline
-		Wymagania powiązane & \multicolumn{3}{|p{10 cm}|}{Brak}\\
+		Wymagania powiązane & \multicolumn{3}{|p{10 cm}|}{F02, F05}\\
 		\hline
 		\end{tabular}\\
+		\newline
+		\vspace*{0,2 cm}
+		\newline
 		\begin{tabular}{|p{3cm}|p{2cm}|p{2cm}|p{6cm}|}
 		\hline
 		\multicolumn{4}{|p{12 cm}|}{Karta Wymagania}\\
 		\hline
 		Identyfikator: & F04 & Priorytet: & M — must (musi być)\\
 		\hline
-		Nazwa & \multicolumn{3}{|p{10 cm}|}{System zarządzania projektami użytkowników}\\
+		Nazwa & \multicolumn{3}{|p{10 cm}|}{System zarządzania folderami użytkowników}\\
 		\hline
-		Opis & \multicolumn{3}{|p{10 cm}|}{Jako użytkownik chciałbym mieć możliwość dodawania, usuwania i śledzenia projektów lub zadań}\\
+		Opis & \multicolumn{3}{|p{10 cm}|}{Jako użytkownik chciałbym mieć możliwość dodawania, usuwania i edycji folderów dla projektów.}\\
 		\hline
-		Kryteria akceptacji & \multicolumn{3}{|p{10 cm}|}{Użytkownik ma możliwość dodawania, usuwania i śledzenia projektów przez siebie stworzonych}\\
+		Kryteria akceptacji & \multicolumn{3}{|p{10 cm}|}{Użytkownik ma możliwość dodawania, usuwania i edycji folderów.}\\
 		\hline
-		Dane wejściowe & \multicolumn{3}{|p{10 cm}|}{Brak}\\
+		Dane wejściowe & \multicolumn{3}{|p{10 cm}|}{Ikona, nazwa folderu}\\
 		\hline
-		Warunki początkowe & \multicolumn{3}{|p{10 cm}|}{Brak}\\
+		Warunki początkowe & \multicolumn{3}{|p{10 cm}|}{Użytkownik jest zalogowany.}\\
 		\hline
-		Warunki końcowe & \multicolumn{3}{|p{10 cm}|}{Brak}\\
+		Warunki końcowe & \multicolumn{3}{|p{10 cm}|}{Stworzenie folderu, usunięcie folderu, edycja folderu}\\
 		\hline
-		Sytuacje wyjątkowe & \multicolumn{3}{|p{10 cm}|}{Brak}\\
+		Sytuacje wyjątkowe & \multicolumn{3}{|p{10 cm}|}{Nie podano danych}\\
 		\hline
-		Szczegóły implementacji & \multicolumn{3}{|p{10 cm}|}{Brak}\\
+		Szczegóły implementacji & \multicolumn{3}{|p{10 cm}|}{Sprint ....}\\
 		\hline
 		Udziałowiec & \multicolumn{3}{|p{10 cm}|}{Użytkownik końcowy, Zespół projektowy}\\
 		\hline
-		Wymagania powiązane & \multicolumn{3}{|p{10 cm}|}{Brak}\\
+		Wymagania powiązane & \multicolumn{3}{|p{10 cm}|}{F05}\\
 		\hline
 		\end{tabular}\\
+		\newline
+		\vspace*{0,2 cm}
+		\newline
 		\begin{tabular}{|p{3cm}|p{2cm}|p{2cm}|p{6cm}|}
 		\hline
 		\multicolumn{4}{|p{12 cm}|}{Karta Wymagania}\\
 		\hline
 		Identyfikator: & F05 & Priorytet: & M — must (musi być)\\
 		\hline
-		Nazwa & \multicolumn{3}{|p{10 cm}|}{Bullet Journal}\\
+		Nazwa & \multicolumn{3}{|p{10 cm}|}{System zarządzania projektami użytkowników}\\
 		\hline
-		Opis & \multicolumn{3}{|p{10 cm}|}{Jako użytkownik chcę mieć możliwość rozplanowania zadań na dni oraz zobaczenia ich rozłożonych w czasie na tablicy lub w postaci kalendarza}\\
+		Opis & \multicolumn{3}{|p{10 cm}|}{Jako użytkownik chciałbym mieć możliwość dodawania, usuwania i śledzenia moich projektów}\\
 		\hline
-		Kryteria akceptacji & \multicolumn{3}{|p{10 cm}|}{Użytkownik może dodawać swoje zadania wraz z datami ich wykonania, które zostają wizualizowane w postaci tablicy lub kalendarza}\\
+		Kryteria akceptacji & \multicolumn{3}{|p{10 cm}|}{Użytkownik ma możliwość dodawania, usuwania i śledzenia projektów.}\\
 		\hline
-		Dane wejściowe & \multicolumn{3}{|p{10 cm}|}{Brak}\\
+		Dane wejściowe & \multicolumn{3}{|p{10 cm}|}{Nazwa projektu, statystyki ulepszane, dominująca statystyka, folder, metoda pracy}\\
 		\hline
-		Warunki początkowe & \multicolumn{3}{|p{10 cm}|}{Brak}\\
+		Warunki początkowe & \multicolumn{3}{|p{10 cm}|}{Użytkownik jest zalogowany.}\\
 		\hline
-		Warunki końcowe & \multicolumn{3}{|p{10 cm}|}{Brak}\\
+		Warunki końcowe & \multicolumn{3}{|p{10 cm}|}{Stworzenie projektu, usunięcie projektu, edycja projektu}\\
 		\hline
-		Sytuacje wyjątkowe & \multicolumn{3}{|p{10 cm}|}{Brak}\\
+		Sytuacje wyjątkowe & \multicolumn{3}{|p{10 cm}|}{Nie podano danych}\\
 		\hline
-		Szczegóły implementacji & \multicolumn{3}{|p{10 cm}|}{Brak}\\
+		Szczegóły implementacji & \multicolumn{3}{|p{10 cm}|}{Sprint .....}\\
+		\hline
+		Udziałowiec & \multicolumn{3}{|p{10 cm}|}{Użytkownik końcowy, Zespół projektowy}\\
+		\hline
+		Wymagania powiązane & \multicolumn{3}{|p{10 cm}|}{F02,F04}\\
+		\hline
+		\end{tabular}\\
+		\newline
+		\vspace*{0,2 cm}
+		\newline
+		\begin{tabular}{|p{3cm}|p{2cm}|p{2cm}|p{6cm}|}
+		\hline
+		\multicolumn{4}{|p{12 cm}|}{Karta Wymagania}\\
+		\hline
+		Identyfikator: & F06 & Priorytet: & M — must (musi być)\\
+		\hline
+		Nazwa & \multicolumn{3}{|p{10 cm}|}{System zarządzania dziennikami}\\
+		\hline
+		Opis & \multicolumn{3}{|p{10 cm}|}{Jako użytkownik chcę mieć możliwość zarządzania dziennikami do planowania zadań.}\\
+		\hline
+		Kryteria akceptacji & \multicolumn{3}{|p{10 cm}|}{Użytkownik może dodawać, usuwać, edytować swoje dzienniki.}\\
+		\hline
+		Dane wejściowe & \multicolumn{3}{|p{10 cm}|}{Nazwa, ikona, połączony projekt}\\
+		\hline
+		Warunki początkowe & \multicolumn{3}{|p{10 cm}|}{Użytkownik jest zalogowany}\\
+		\hline
+		Warunki końcowe & \multicolumn{3}{|p{10 cm}|}{Dodano, usunięto, edytowano dziennik}\\
+		\hline
+		Sytuacje wyjątkowe & \multicolumn{3}{|p{10 cm}|}{Nie podano danych}\\
+		\hline
+		Szczegóły implementacji & \multicolumn{3}{|p{10 cm}|}{Sprint ....}\\
 		\hline
 		Udziałowiec & \multicolumn{3}{|p{10 cm}|}{Użytkownik końcowy, Zespół projektowy}\\
 		\hline
 		Wymagania powiązane & \multicolumn{3}{|p{10 cm}|}{Brak}\\
 		\hline
 		\end{tabular}\\
+		\newline
+		\vspace*{0,2 cm}
+		\newline
 		\begin{tabular}{|p{3cm}|p{2cm}|p{2cm}|p{6cm}|}
 		\hline
 		\multicolumn{4}{|p{12 cm}|}{Karta Wymagania}\\
 		\hline
-		Identyfikator: & F06 & Priorytet: & C – could \\
+		Identyfikator: & F07 & Priorytet: & M — must (musi być)\\
+		\hline
+		Nazwa & \multicolumn{3}{|p{10 cm}|}{System zarządzania stronami dziennika}\\
+		\hline
+		Opis & \multicolumn{3}{|p{10 cm}|}{Jako użytkownik chcę mieć możliwość zarządzania stronami dziennika.}\\
+		\hline
+		Kryteria akceptacji & \multicolumn{3}{|p{10 cm}|}{Użytkownik może dodawać, usuwać, edytować swoje strony w dziennikach.}\\
+		\hline
+		Dane wejściowe & \multicolumn{3}{|p{10 cm}|}{Nazwa, ikona, dziennik, początek zakresu dni wyświetlany przez stronę w formie liczby, koniec zakresu}\\
+		\hline
+		Warunki początkowe & \multicolumn{3}{|p{10 cm}|}{Użytkownik jest zalogowany, użytkownik ma utworzony dziennik}\\
+		\hline
+		Warunki końcowe & \multicolumn{3}{|p{10 cm}|}{Dodano, usunięto, edytowano dziennik}\\
+		\hline
+		Sytuacje wyjątkowe & \multicolumn{3}{|p{10 cm}|}{Nie podano danych, podano niepoprawny zakres}\\
+		\hline
+		Szczegóły implementacji & \multicolumn{3}{|p{10 cm}|}{Sprint ....}\\
+		\hline
+		Udziałowiec & \multicolumn{3}{|p{10 cm}|}{Użytkownik końcowy, Zespół projektowy}\\
+		\hline
+		Wymagania powiązane & \multicolumn{3}{|p{10 cm}|}{Brak}\\
+		\hline
+		\end{tabular}\\
+		\newline
+		\vspace*{0,2 cm}
+		\newline
+		\begin{tabular}{|p{3cm}|p{2cm}|p{2cm}|p{6cm}|}
+		\hline
+		\multicolumn{4}{|p{12 cm}|}{Karta Wymagania}\\
+		\hline
+		Identyfikator: & F08 & Priorytet: & M — must (musi być)\\
+		\hline
+		Nazwa & \multicolumn{3}{|p{10 cm}|}{System zarządzania zadaniami w dziennikach}\\
+		\hline
+		Opis & \multicolumn{3}{|p{10 cm}|}{Jako użytkownik chcę mieć możliwość zarządzania zadaniami w dziennikach.}\\
+		\hline
+		Kryteria akceptacji & \multicolumn{3}{|p{10 cm}|}{Użytkownik może dodawać, usuwać, edytować swoje zadania w dziennikach.}\\
+		\hline
+		Dane wejściowe & \multicolumn{3}{|p{10 cm}|}{Nazwa, opis, powiązany projekt, termin wykonania, tagi}\\
+		\hline
+		Warunki początkowe & \multicolumn{3}{|p{10 cm}|}{Użytkownik jest zalogowany, użytkownik ma utworzony dziennik z przynajmniej jedną stroną}\\
+		\hline
+		Warunki końcowe & \multicolumn{3}{|p{10 cm}|}{Dodano, usunięto, edytowano dziennik}\\
+		\hline
+		Sytuacje wyjątkowe & \multicolumn{3}{|p{10 cm}|}{Nie podano danych}\\
+		\hline
+		Szczegóły implementacji & \multicolumn{3}{|p{10 cm}|}{Sprint ....}\\
+		\hline
+		Udziałowiec & \multicolumn{3}{|p{10 cm}|}{Użytkownik końcowy, Zespół projektowy}\\
+		\hline
+		Wymagania powiązane & \multicolumn{3}{|p{10 cm}|}{Brak}\\
+		\hline
+		\end{tabular}\\
+		\newline
+		\vspace*{0,2 cm}
+		\newline
+		\begin{tabular}{|p{3cm}|p{2cm}|p{2cm}|p{6cm}|}
+		\hline
+		\multicolumn{4}{|p{12 cm}|}{Karta Wymagania}\\
+		\hline
+		Identyfikator: & F09 & Priorytet: & M — must (musi być)\\
+		\hline
+		Nazwa & \multicolumn{3}{|p{10 cm}|}{Zarządzanie czasomierzem}\\
+		\hline
+		Opis & \multicolumn{3}{|p{10 cm}|}{Jako użytkownik chcę mieć możliwość zarządzania czasomierzami.}\\
+		\hline
+		Kryteria akceptacji & \multicolumn{3}{|p{10 cm}|}{Użytkownik może dodawać, usuwać, edytować swoje czasomierze.}\\
+		\hline
+		Dane wejściowe & \multicolumn{3}{|p{10 cm}|}{Nazwa, skrót, czas sesji pracy, czas krótkiej przerwy, czas długiej przerwy, czas nadpracy, interwał przerw krótkich i długich}\\
+		\hline
+		Warunki początkowe & \multicolumn{3}{|p{10 cm}|}{Użytkownik jest zalogowany}\\
+		\hline
+		Warunki końcowe & \multicolumn{3}{|p{10 cm}|}{Dodano, usunięto, edytowano czasomierz}\\
+		\hline
+		Sytuacje wyjątkowe & \multicolumn{3}{|p{10 cm}|}{Nie podano danych}\\
+		\hline
+		Szczegóły implementacji & \multicolumn{3}{|p{10 cm}|}{Sprint ....}\\
+		\hline
+		Udziałowiec & \multicolumn{3}{|p{10 cm}|}{Użytkownik końcowy, Zespół projektowy}\\
+		\hline
+		Wymagania powiązane & \multicolumn{3}{|p{10 cm}|}{Brak}\\
+		\hline
+		\end{tabular}\\
+		\newline
+		\vspace*{0,2 cm}
+		\newline
+		\begin{tabular}{|p{3cm}|p{2cm}|p{2cm}|p{6cm}|}
+		\hline
+		\multicolumn{4}{|p{12 cm}|}{Karta Wymagania}\\
+		\hline
+		Identyfikator: & F10 & Priorytet: & M — must (musi być)\\
+		\hline
+		Nazwa & \multicolumn{3}{|p{10 cm}|}{system sesji pracy}\\
+		\hline
+		Opis & \multicolumn{3}{|p{10 cm}|}{Jako użytkownik chcę mieć możliwość uruchomiania czasomierza, by rozpocząć sesję pracy bądź przerwę.}\\
+		\hline
+		Kryteria akceptacji & \multicolumn{3}{|p{10 cm}|}{Użytkownik może uruchamiać, jak i zatrzymywać czasomierz sesji pracy oraz przerw.}\\
+		\hline
+		Dane wejściowe & \multicolumn{3}{|p{10 cm}|}{Wybrany projekt, wybrane zadanie, domyślny czasomierz}\\
+		\hline
+		Warunki początkowe & \multicolumn{3}{|p{10 cm}|}{Użytkownik jest zalogowany, został wybrany projekt bądź zadanie.}\\
+		\hline
+		Warunki końcowe & \multicolumn{3}{|p{10 cm}|}{Uruchomienie, jak i zatrzymanie sesji pracy bądź przerwy}\\
+		\hline
+		Sytuacje wyjątkowe & \multicolumn{3}{|p{10 cm}|}{Nie wybrano projektu, nie wybrano zadania}\\
+		\hline
+		Szczegóły implementacji & \multicolumn{3}{|p{10 cm}|}{Sprint ....}\\
+		\hline
+		Udziałowiec & \multicolumn{3}{|p{10 cm}|}{Użytkownik końcowy, Zespół projektowy}\\
+		\hline
+		Wymagania powiązane & \multicolumn{3}{|p{10 cm}|}{Brak}\\
+		\hline
+		\end{tabular}\\
+		\newline
+		\vspace*{0,2 cm}
+		\newline
+		\begin{tabular}{|p{3cm}|p{2cm}|p{2cm}|p{6cm}|}
+		\hline
+		\multicolumn{4}{|p{12 cm}|}{Karta Wymagania}\\
+		\hline
+		Identyfikator: & F11 & Priorytet: & W – won't \\
 		\hline
 		Nazwa & \multicolumn{3}{|p{10 cm}|}{System osiągnięć użytkownika}\\
 		\hline
@@ -689,26 +837,19 @@ Grupa docelowa to osoby, które chcą poprawić swoją higienę pracy, chcą sta
 		\hline
 		Kryteria akceptacji & \multicolumn{3}{|p{10 cm}|}{Użytkownik otrzymuje osiągnięcia za przekroczenie pewnych kamieni milowych}\\
 		\hline
-		Dane wejściowe & \multicolumn{3}{|p{10 cm}|}{Brak}\\
-		\hline
-		Warunki początkowe & \multicolumn{3}{|p{10 cm}|}{Brak}\\
-		\hline
-		Warunki końcowe & \multicolumn{3}{|p{10 cm}|}{Brak}\\
-		\hline
-		Sytuacje wyjątkowe & \multicolumn{3}{|p{10 cm}|}{Brak}\\
-		\hline
-		Szczegóły implementacji & \multicolumn{3}{|p{10 cm}|}{Brak}\\
-		\hline
 		Udziałowiec & \multicolumn{3}{|p{10 cm}|}{Użytkownik końcowy, Zespół projektowy}\\
 		\hline
 		Wymagania powiązane & \multicolumn{3}{|p{10 cm}|}{Brak}\\
 		\hline
 		\end{tabular}\\
+		\newline
+		\vspace*{0,2 cm}
+		\newline
 		\begin{tabular}{|p{3cm}|p{2cm}|p{2cm}|p{6cm}|}
 		\hline
 		\multicolumn{4}{|p{12 cm}|}{Karta Wymagania}\\
 		\hline
-		Identyfikator: & F07 & Priorytet: & C – could\\
+		Identyfikator: & F12 & Priorytet: & W – won't\\
 		\hline
 		Nazwa & \multicolumn{3}{|p{10 cm}|}{System rankingowy użytkowników}\\
 		\hline
@@ -716,26 +857,19 @@ Grupa docelowa to osoby, które chcą poprawić swoją higienę pracy, chcą sta
 		\hline
 		Kryteria akceptacji & \multicolumn{3}{|p{10 cm}|}{Użytkownik jest w stanie sprawdzić swoją pozycję w rankingu dotyczącą danego projektu}\\
 		\hline
-		Dane wejściowe & \multicolumn{3}{|p{10 cm}|}{Brak}\\
-		\hline
-		Warunki początkowe & \multicolumn{3}{|p{10 cm}|}{Brak}\\
-		\hline
-		Warunki końcowe & \multicolumn{3}{|p{10 cm}|}{Brak}\\
-		\hline
-		Sytuacje wyjątkowe & \multicolumn{3}{|p{10 cm}|}{Brak}\\
-		\hline
-		Szczegóły implementacji & \multicolumn{3}{|p{10 cm}|}{Brak}\\
-		\hline
 		Udziałowiec & \multicolumn{3}{|p{10 cm}|}{Użytkownik końcowy, Zespół projektowy}\\
 		\hline
 		Wymagania powiązane & \multicolumn{3}{|p{10 cm}|}{Brak}\\
 		\hline
 		\end{tabular}\\
+		\newline
+		\vspace*{0,2 cm}
+		\newline
 		\begin{tabular}{|p{3cm}|p{2cm}|p{2cm}|p{6cm}|}
 		\hline
 		\multicolumn{4}{|p{12 cm}|}{Karta Wymagania}\\
 		\hline
-		Identyfikator: & F08 & Priorytet: & C – could \\
+		Identyfikator: & F13 & Priorytet: & W – won't \\
 		\hline
 		Nazwa & \multicolumn{3}{|p{10 cm}|}{System znajomych użytkowników}\\
 		\hline
@@ -743,26 +877,19 @@ Grupa docelowa to osoby, które chcą poprawić swoją higienę pracy, chcą sta
 		\hline
 		Kryteria akceptacji & \multicolumn{3}{|p{10 cm}|}{Użytkownik może dodawaj znajomych, wyświetlanych w formie listy, u których może sprawdzać ich postępy}\\
 		\hline
-		Dane wejściowe & \multicolumn{3}{|p{10 cm}|}{Brak}\\
-		\hline
-		Warunki początkowe & \multicolumn{3}{|p{10 cm}|}{Brak}\\
-		\hline
-		Warunki końcowe & \multicolumn{3}{|p{10 cm}|}{Brak}\\
-		\hline
-		Sytuacje wyjątkowe & \multicolumn{3}{|p{10 cm}|}{Brak}\\
-		\hline
-		Szczegóły implementacji & \multicolumn{3}{|p{10 cm}|}{Brak}\\
-		\hline
 		Udziałowiec & \multicolumn{3}{|p{10 cm}|}{Użytkownik końcowy, Zespół projektowy}\\
 		\hline
 		Wymagania powiązane & \multicolumn{3}{|p{10 cm}|}{Brak}\\
 		\hline
 		\end{tabular}\\
+		\newline
+		\vspace*{0,2 cm}
+		\newline
 		\begin{tabular}{|p{3cm}|p{2cm}|p{2cm}|p{6cm}|}
 		\hline
 		\multicolumn{4}{|p{12 cm}|}{Karta Wymagania}\\
 		\hline
-		Identyfikator: & F09 & Priorytet: & C – could\\
+		Identyfikator: & F14 & Priorytet: & W – won't\\
 		\hline
 		Nazwa & \multicolumn{3}{|p{10 cm}|}{Energy Assistant}\\
 		\hline
@@ -770,26 +897,19 @@ Grupa docelowa to osoby, które chcą poprawić swoją higienę pracy, chcą sta
 		\hline
 		Kryteria akceptacji & \multicolumn{3}{|p{10 cm}|}{Użytkownik zależnie jaki prowadzi tryb życia bądź w zależności od jego warunków fizycznych, jak i psychicznych miałby dostosowywaną ilość energii na dany dzień}\\
 		\hline
-		Dane wejściowe & \multicolumn{3}{|p{10 cm}|}{Brak}\\
-		\hline
-		Warunki początkowe & \multicolumn{3}{|p{10 cm}|}{Brak}\\
-		\hline
-		Warunki końcowe & \multicolumn{3}{|p{10 cm}|}{Brak}\\
-		\hline
-		Sytuacje wyjątkowe & \multicolumn{3}{|p{10 cm}|}{Brak}\\
-		\hline
-		Szczegóły implementacji & \multicolumn{3}{|p{10 cm}|}{Brak}\\
-		\hline
 		Udziałowiec & \multicolumn{3}{|p{10 cm}|}{Użytkownik końcowy, Zespół projektowy}\\
 		\hline
 		Wymagania powiązane & \multicolumn{3}{|p{10 cm}|}{Brak}\\
 		\hline
 		\end{tabular}\\
+		\newline
+		\vspace*{0,2 cm}
+		\newline
 		\begin{tabular}{|p{3cm}|p{2cm}|p{2cm}|p{6cm}|}
 		\hline
 		\multicolumn{4}{|p{12 cm}|}{Karta Wymagania}\\
 		\hline
-		Identyfikator: & F10 & Priorytet: & C – could\\
+		Identyfikator: & F15 & Priorytet: & W – won't\\
 		\hline
 		Nazwa & \multicolumn{3}{|p{10 cm}|}{Elastic Habits}\\
 		\hline
@@ -797,77 +917,11 @@ Grupa docelowa to osoby, które chcą poprawić swoją higienę pracy, chcą sta
 		\hline
 		Kryteria akceptacji & \multicolumn{3}{|p{10 cm}|}{Użytkownik może wybrać z dany poziom trudności zadania, by wyrobić sobie nawyk wykonywania go.}\\
 		\hline
-		Dane wejściowe & \multicolumn{3}{|p{10 cm}|}{Brak}\\
-		\hline
-		Warunki początkowe & \multicolumn{3}{|p{10 cm}|}{Brak}\\
-		\hline
-		Warunki końcowe & \multicolumn{3}{|p{10 cm}|}{Brak}\\
-		\hline
-		Sytuacje wyjątkowe & \multicolumn{3}{|p{10 cm}|}{Brak}\\
-		\hline
-		Szczegóły implementacji & \multicolumn{3}{|p{10 cm}|}{Brak}\\
-		\hline
 		Udziałowiec & \multicolumn{3}{|p{10 cm}|}{Użytkownik końcowy, Zespół projektowy}\\
 		\hline
 		Wymagania powiązane & \multicolumn{3}{|p{10 cm}|}{Brak}\\
 		\hline
 		\end{tabular}\\
-		\item Interfejs z otoczeniem\\
-		\begin{tabular}{|p{3cm}|p{2cm}|p{2cm}|p{6cm}|}
-		\hline
-		\multicolumn{4}{|p{12 cm}|}{Karta Wymagania}\\
-		\hline
-		Identyfikator: & I01 & Priorytet: & M – must (musi być)\\
-		\hline
-		Nazwa & \multicolumn{3}{|p{10 cm}|}{Integracja mikro serwisów}\\
-		\hline
-		Opis & \multicolumn{3}{|p{10 cm}|}{Nasz projekt strukturalnie będzie zbudowany z wielu mikro serwisów i wymagana jest integracja między nimi (komunikatywność).}\\
-		\hline
-		Kryteria akceptacji & \multicolumn{3}{|p{10 cm}|}{Funkcje w każdym serwisie umożliwiające komunikowanie się z innymi serwisami}\\
-		\hline
-		Dane wejściowe & \multicolumn{3}{|p{10 cm}|}{Brak}\\
-		\hline
-		Warunki początkowe & \multicolumn{3}{|p{10 cm}|}{Brak}\\
-		\hline
-		Warunki końcowe & \multicolumn{3}{|p{10 cm}|}{Brak}\\
-		\hline
-		Sytuacje wyjątkowe & \multicolumn{3}{|p{10 cm}|}{Brak}\\
-		\hline
-		Szczegóły implementacji & \multicolumn{3}{|p{10 cm}|}{Brak}\\
-		\hline
-		Udziałowiec & \multicolumn{3}{|p{10 cm}|}{Zespół projektowy}\\
-		\hline
-		Wymagania powiązane & \multicolumn{3}{|p{10 cm}|}{Brak}\\
-		\hline
-		\end{tabular}\\
-		\begin{tabular}{|p{3cm}|p{2cm}|p{2cm}|p{6cm}|}
-		\hline
-		\multicolumn{4}{|p{12 cm}|}{Karta Wymagania}\\
-		\hline
-		Identyfikator: & I02 & Priorytet: & M – must (musi być)\\
-		\hline
-		Nazwa & \multicolumn{3}{|p{10 cm}|}{Baza danych}\\
-		\hline
-		Opis & \multicolumn{3}{|p{10 cm}|}{Jedna zintegrowana baza danych dla wszystkich serwisów}\\
-		\hline
-		Kryteria akceptacji & \multicolumn{3}{|p{10 cm}|}{Baza danych w MongoDB która będzie obsługiwać wszystkie mikro serwisy projektu, będzie posiadała dane użytkowników i wszystkiego, co jest związane z aplikacją.}\\
-		\hline
-		Dane wejściowe & \multicolumn{3}{|p{10 cm}|}{Brak}\\
-		\hline
-		Warunki początkowe & \multicolumn{3}{|p{10 cm}|}{Brak}\\
-		\hline
-		Warunki końcowe & \multicolumn{3}{|p{10 cm}|}{Brak}\\
-		\hline
-		Sytuacje wyjątkowe & \multicolumn{3}{|p{10 cm}|}{Brak}\\
-		\hline
-		Szczegóły implementacji & \multicolumn{3}{|p{10 cm}|}{Brak}\\
-		\hline
-		Udziałowiec & \multicolumn{3}{|p{10 cm}|}{Zespół projektowy}\\
-		\hline
-		Wymagania powiązane & \multicolumn{3}{|p{10 cm}|}{Brak}\\
-		\hline
-		\end{tabular}\\
-	\end{itemize}
 	\subsection {Wymagania poza funkcjonalne}
 	\begin{tabular}{|p{3cm}|p{2cm}|p{2cm}|p{6cm}|}
 		\hline
@@ -877,13 +931,16 @@ Grupa docelowa to osoby, które chcą poprawić swoją higienę pracy, chcą sta
 		\hline
 		Nazwa & \multicolumn{3}{|p{10 cm}|}{C\#}\\
 		\hline
-		Opis & \multicolumn{3}{|p{10 cm}|}{Serwisy backend'owe powinny być napisane w C\#}\\
+		Opis & \multicolumn{3}{|p{10 cm}|}{Backend powinien być napisany w C\#}\\
 		\hline
 		Udziałowiec & \multicolumn{3}{|p{10 cm}|}{Zespół projektowy, Wydawca}\\
 		\hline
 		Wymagania powiązane & \multicolumn{3}{|p{10 cm}|}{Brak}\\
 		\hline
 		\end{tabular}\\
+		\newline
+		\vspace*{0,2 cm}
+		\newline
 		\begin{tabular}{|p{3cm}|p{2cm}|p{2cm}|p{6cm}|}
 		\hline
 		\multicolumn{4}{|p{12 cm}|}{Karta Wymagania}\\
@@ -892,13 +949,16 @@ Grupa docelowa to osoby, które chcą poprawić swoją higienę pracy, chcą sta
 		\hline
 		Nazwa & \multicolumn{3}{|p{10 cm}|}{React}\\
 		\hline
-		Opis & \multicolumn{3}{|p{10 cm}|}{Serwis frontend'owy powinien być napisany, korzystając z biblioteki React.}\\
+		Opis & \multicolumn{3}{|p{10 cm}|}{Frontend powinien być napisany, korzystając z biblioteki React.}\\
 		\hline
 		Udziałowiec & \multicolumn{3}{|p{10 cm}|}{Zespół projektowy, Wydawca}\\
 		\hline
 		Wymagania powiązane & \multicolumn{3}{|p{10 cm}|}{Brak}\\
 		\hline
 		\end{tabular}\\
+		\newline
+		\vspace*{0,2 cm}
+		\newline
 		\begin{tabular}{|p{3cm}|p{2cm}|p{2cm}|p{6cm}|}
 		\hline
 		\multicolumn{4}{|p{12 cm}|}{Karta Wymagania}\\
@@ -914,6 +974,9 @@ Grupa docelowa to osoby, które chcą poprawić swoją higienę pracy, chcą sta
 		Wymagania powiązane & \multicolumn{3}{|p{10 cm}|}{Brak}\\
 		\hline
 		\end{tabular}\\
+		\newline
+		\vspace*{0,2 cm}
+		\newline
 		\begin{tabular}{|p{3cm}|p{2cm}|p{2cm}|p{6cm}|}
 		\hline
 		\multicolumn{4}{|p{12 cm}|}{Karta Wymagania}\\
@@ -936,11 +999,11 @@ Grupa docelowa to osoby, które chcą poprawić swoją higienę pracy, chcą sta
 		\hline
 		Identyfikator: & ŚD01 & Priorytet: & M – must (musi być)\\
 		\hline
-		Nazwa & \multicolumn{3}{|p{10 cm}|}{Kompatybilność przeglądarek}\\
+		Nazwa & \multicolumn{3}{|p{10 cm}|}{Kompatybilność z komputerami}\\
 		\hline
-		Opis & \multicolumn{3}{|p{10 cm}|}{Produkt końcowy musi być kompatybilny z 3 najnowszymi wersjami popularnych przeglądarek}\\
+		Opis & \multicolumn{3}{|p{10 cm}|}{Produkt końcowy musi być przystosowany do korzystania w przeglądarce na komputerach.}\\
 		\hline
-		Kryteria akceptacji & \multicolumn{3}{|p{10 cm}|}{System kompatybilny z 3 najnowszymi wersjami przeglądarek Google Chrome i Mozilla Firefox}\\
+		Kryteria akceptacji & \multicolumn{3}{|p{10 cm}|}{System responsywny testowany na przeglądarkach Google Chrome i Mozilla Firefox}\\
 		\hline
 		Udziałowiec & \multicolumn{3}{|p{10 cm}|}{Zespół projektowy, Użytkownik końcowy, Wydawca}\\
 		\hline
@@ -949,27 +1012,20 @@ Grupa docelowa to osoby, które chcą poprawić swoją higienę pracy, chcą sta
 		\end{tabular}\\
 	\section {Wymagania jakościowe i inne}
 	\begin{itemize}
-		\item System szyfrowania danych użytkowników: szyfrowanie transmisji, haseł i ciasteczek
-		\item Wsparcie dla ostatnich trzech wersji Google Chrome i Mozilla Firefox
+		\item System szyfrowania danych użytkowników: szyfrowanie haseł użytkowników
+		\item Responsywny system przystosowany dla przeglądarek Google Chrome i Mozilla Firefox
 		\item System dostępny 24 godziny na dobę z wyłączeniem prac technicznych
 		\item System ma być łatwy w obsłudze – średnio 5 kliknięć na wykonanie dowolnej 
 	\end{itemize}
 \section{Przypadki użycia oraz diagramy (w trakcie przerabiania i tworzenia nowych)}
 \subsection{Przypadki użycia}
-\includegraphics[width=\textwidth, height=9cm]{usecase1.png}\\
+\includegraphics[width=\textwidth, height=14cm]{systemusecase.png}\\
 \vspace{0.5cm}
-Use case 1\\
-\vspace{0.5cm}
-\includegraphics[width=\textwidth, height=9cm]{usecase2.png}\\
-\vspace{0.5cm}
-Use case 2\\
-\vspace{0.5cm}
-\includegraphics[width=\textwidth, height=9cm]{usecase3.png}\\
-Use case 3\\
+Use case dla całego systemu\\
 \vspace{0.5cm}
 \subsection{Diagramy}
 \includegraphics[width=\textwidth, height=9cm]{sekwencji.png}\\
-Diagram sekwencji\\
+Diagram sekwencji dla dodawania projektu oraz włączania sesji\\
 \vspace{0.5cm}
 \chapter {Planowanie}
 \section{Metodyka pracy}
@@ -1427,10 +1483,32 @@ Nagranie dema działania aplikacji.\\
 Wstawienie nowych wersji Rich Picture do dokumentacji.\\
 Rozwiązanie problemu z przełączaniem się po Bullet Journal'u oraz dodanie możliwości wybierania zadań dla czasomierza.\\
 \subsection {Wykonane zadania}
+Paweł + Stanisław: Weryfikacji maili, bez możliwości zmiany maila. Dodano na stronę Google Analytics.\\
+Robert: Wykonanie dokumentacji 3.1, 3.2, 3.3 - uaktualnienie wymagań, diagramów oraz przypadków użycia. Wstawienie nowych wersji Rich Picture do dokumentacji.\\
+Stanisław: Wykonanie dokumentacji 4.1, 4.2, 4.3 - planowanie oraz dodanie architektury do prezentacji.\\
+\subsection {Napotkane problemy}
+Niewykonanie Pełna integracja czasomierzy, folderów oraz rang — możliwość edycji, ustawiania oraz usuwania.\\
+Niewykonanie Nagranie dema działania aplikacji.\\
+Niewykonanie Mini wariant dla panelu kontrolnego.\\
+Niewykonanie Rozwiązanie problemu z przełączaniem się po Bullet Journal'u oraz dodanie możliwości wybierania zadań dla czasomierza.\\
+
+\section {Integracja, demo, włączanie sesji z poziomu Bullet Journal’a}
+\subsection {Założenia sprintu}
+Pełna integracja czasomierzy, folderów oraz rang — możliwość edycji, ustawiania oraz usuwania.\\
+Nagranie dema działania aplikacji.\\
+Mini wariant dla panelu kontrolnego.\\
+Dorobić więcej diagramów sekwencji.\\
+Rozwiązanie problemu z przełączaniem się po Bullet Journal'u oraz dodanie możliwości wybierania zadań dla czasomierza.\\
+Dokumentacja 5.1.2, 5.1.3, 5.1.4 - Projektowanie i architektura systemu.\\
+Wzór dla maila wysyłanego przy rejestracji.\\
+Zmiana ProcjetLogs, by zapewnić spójność.\\
+\subsection {Wykonane zadania}
 Paweł: \\
 Robert: \\
 Stanisław: \\
 \subsection {Napotkane problemy}
+
+
 
 
 \chapter {Testy systemu}
