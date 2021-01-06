@@ -153,12 +153,18 @@ Ludzie operują w kontekście czasu i właśnie go próbują rozplanowywać. Jed
 \\Jednak taki sposób myślenia jest typowy dla ludzi przepracowujących się, ponieważ czują, że czas im ucieka, i muszą za wszelką cenę nie dopuścić do zmarnowaniu choćby sekundy.
 \\To pokazuje, jak chorobliwe jest skupienie myśli na czasie i zignorowanie lub błędna interpretacja sygnałów własnego organizmu.
 \section {Rich picture}
-\includegraphics[width=15 cm, left]{richpicture1.jpg}
-\vspace{0.5cm}
-Użytkownik przed skorzystaniem z systemu.\\
-\includegraphics[width=15 cm, left]{richpicture2.jpg}
-\vspace{0.5cm}
-Użytkownik korzystający z systemu.\\
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth, height=9cm]{richpicture1.jpg}
+	\caption{Użytkownik przed skorzystaniem z systemu.}
+	\label{fig:rich1}
+\end{figure}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth, height=9cm]{richpicture2.jpg}
+	\caption{Użytkownik korzystający z systemu.}
+	\label{fig:rich2}
+\end{figure}
 \section {Konkurencyjne rozwiązania}
 \subsection{Brain Focus}
 \subsubsection{O Aplikacji}
@@ -319,7 +325,12 @@ Aplikacja webowa kompatybilna z większością przeglądarek i komputerów z dos
  Elastic Habits miałby za zadanie pomóc użytkownikowi wyrobić sobie nawyk,
  poprzez poziomowanie sobie zaplanowanego zadania.
  W zależności od ogólnego samopoczucia użytkownika może on wybrać łatwiejszą bądź trudniejszą wersję zadania, dalej utrzymując nawyk wykonywania go. \\
-\includegraphics[width=15 cm, left]{system.png}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth, height=9cm]{system.png}\\
+	\caption{Diagram systemu}
+	\label{fig:system}
+\end{figure}
 \section {Cele i odbiorcy systemu}
 \subsection {Cele systemu}
 Chcemy stworzyć nowe narzędzie do organizacji pracy z oryginalnym podejściem zaczerpniętym z systemów RPG,
@@ -1018,18 +1029,24 @@ Grupa docelowa to osoby, które chcą poprawić swoją higienę pracy, chcą sta
 		\item System ma być łatwy w obsłudze – średnio 5 kliknięć na wykonanie dowolnej 
 	\end{itemize}
 \section{Przypadki użycia oraz diagramy (w trakcie przerabiania i tworzenia nowych)}
-\subsection{Przypadki użycia}
-\includegraphics[width=\textwidth, height=14cm]{systemusecase.png}\\
-\vspace{0.5cm}
-Use case dla całego systemu\\
-\vspace{0.5cm}
-\subsection{Diagramy}
-\includegraphics[width=\textwidth, height=9cm]{sekwencji.png}\\
-Diagram sekwencji dla dodawania projektu oraz włączania sesji\\
-\vspace{0.5cm}
-\includegraphics[width=\textwidth, height=9cm]{sekwencji1.png}\\
-Diagram sekwencji dla załadowania strony Bullet Journal’a oraz usuwania zadania\\
-\vspace{0.5cm}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth, height=14cm]{systemusecase.png}\\
+	\caption{Use case dla całego systemu}
+	\label{fig:usecase}
+\end{figure}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth, height=9cm]{sekwencji.png}\\
+	\caption{Diagram sekwencji dla dodawania projektu oraz włączania sesji}
+	\label{fig:seq1}
+\end{figure}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth, height=9cm]{sekwencji1.png}\\
+	\caption{Diagram sekwencji dla załadowania strony Bullet Journal’a oraz usuwania zadania}
+	\label{fig:seq2}
+\end{figure}
 \chapter {Planowanie}
 \section{Metodyka pracy}
 Po dłuższym namyśle zdecydowaliśmy, że dobrym dla nas podejściem byłoby podążanie sprintami z metodologii Scrum
@@ -1071,9 +1088,12 @@ niezależnym od dostawcy chmurowego (decyzja ta też została podjęta ze wzglę
 \subsection{Frontend} 
 \subsection{Backend}
 \subsection{Baza Danych}
-\includegraphics[width=\textwidth, height=10cm]{gamitude database model.png}\\
-Schemat bazy danych\\
-\vspace{0.5cm}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth, height=10cm]{gamitude database model.png}\\
+	\caption{Schemat bazy danych}
+	\label{fig:db}
+\end{figure}
 \subsection{Chmura}
 
 \chapter {Implementacja rozwiązania}
