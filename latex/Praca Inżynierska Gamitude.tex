@@ -1113,13 +1113,11 @@ Dzięki temu w każdym miejscu projektu możemy łatwo uzyskać dostęp do potrz
 Także pozwala nam on na łatwą podmianę danego komponentu aplikacji poprzez zarejestrowanie innej implementacji danego interfejsu.
 
 \subsection{Baza Danych}
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=\textwidth, height=10cm]{gamitude_database_model}\\
-	\caption{Schemat bazy danych}
-	\label{fig:db}
-\end{figure}
+Wybraliśmy baze danych NoSQL do naszego projektu. Ze względu na koszty finansowe oraz łatwiejszą skalowalność kosztem braku transakcji.
 \subsection{Chmura}
+Wdrożyliśmy nasza aplikacje do chmury za pośrednictwem aplikacji Kubernetes pozwoliło to nam pozostać w miarę możliwości
+niezależnym od dostawcy chmurowego. W dniu dzisiejszym korzystamy z chmury google.
+Wdrożyliśmy technikę CI/CD która pozwala na zbudowanie oraz aktualizacje rozwiązania przy każdej aktualizacji głównej gałęzi naszych repozytoriów.
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.5]{gamitude_cloud_overview}\\
@@ -1129,6 +1127,12 @@ Także pozwala nam on na łatwą podmianę danego komponentu aplikacji poprzez z
 \chapter {Implementacja rozwiązania}
 Szczegółowy opis końcowego rozwiązania, do którego będziemy się odnosić w następnym rozdziale.
 
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth, height=10cm]{gamitude_database_model}\\
+	\caption{Schemat bazy danych}
+	\label{fig:db}
+\end{figure}
 \chapter {Historia sprintów}
 \section {Rozpoznanie dziedzinowe}
 \subsection {Założenia sprintu}

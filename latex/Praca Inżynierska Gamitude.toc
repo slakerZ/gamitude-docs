@@ -59,180 +59,180 @@
 \contentsline {subsection}{\numberline {5.1.2}Backend}{37}
 \contentsline {subsection}{\numberline {5.1.3}Baza Danych}{39}
 \contentsline {subsection}{\numberline {5.1.4}Chmura}{39}
-\contentsline {chapter}{\numberline {6}Implementacja rozwi\IeC {\k a}zania}{41}
-\contentsline {chapter}{\numberline {7}Historia sprint\IeC {\'o}w}{42}
-\contentsline {section}{\numberline {7.1}Rozpoznanie dziedzinowe}{42}
-\contentsline {subsection}{\numberline {7.1.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{42}
-\contentsline {subsection}{\numberline {7.1.2}Wykonane zadania}{42}
-\contentsline {subsection}{\numberline {7.1.3}Napotkane problemy}{42}
-\contentsline {section}{\numberline {7.2}Wst\IeC {\k e}pna dokumentacja}{42}
-\contentsline {subsection}{\numberline {7.2.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{42}
-\contentsline {subsection}{\numberline {7.2.2}Wykonane zadania}{43}
-\contentsline {subsection}{\numberline {7.2.3}Napotkane problemy}{43}
-\contentsline {section}{\numberline {7.3}Use Case + WPP}{43}
-\contentsline {subsection}{\numberline {7.3.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{43}
-\contentsline {subsection}{\numberline {7.3.2}Wykonane zadania}{43}
-\contentsline {subsection}{\numberline {7.3.3}Napotkane problemy}{43}
-\contentsline {section}{\numberline {7.4}Dalsza praca przy SWS}{43}
-\contentsline {subsection}{\numberline {7.4.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{43}
-\contentsline {subsection}{\numberline {7.4.2}Wykonane zadania}{43}
-\contentsline {subsection}{\numberline {7.4.3}Napotkane problemy}{44}
-\contentsline {section}{\numberline {7.5}Przygotowanie narz\IeC {\k e}dzi do tworzenia systemu}{44}
-\contentsline {subsection}{\numberline {7.5.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{44}
-\contentsline {subsection}{\numberline {7.5.2}Wykonane zadania}{44}
-\contentsline {subsection}{\numberline {7.5.3}Napotkane problemy}{44}
-\contentsline {section}{\numberline {7.6}Diagramy funkcjonalno\IeC {\'s}ci, wymagania bazy danych oraz responsywne roz\IeC {\l }o\IeC {\.z}enie strony}{44}
-\contentsline {subsection}{\numberline {7.6.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{44}
-\contentsline {subsection}{\numberline {7.6.2}Wykonane zadania}{44}
-\contentsline {subsection}{\numberline {7.6.3}Napotkane problemy}{44}
-\contentsline {section}{\numberline {7.7}Diagramy klas i nawigacja strony}{45}
-\contentsline {subsection}{\numberline {7.7.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{45}
-\contentsline {subsection}{\numberline {7.7.2}Wykonane zadania}{45}
-\contentsline {subsection}{\numberline {7.7.3}Napotkane problemy}{45}
-\contentsline {section}{\numberline {7.8}Diagram sekwencji oraz statystyki i energie na stronie}{45}
-\contentsline {subsection}{\numberline {7.8.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{45}
-\contentsline {subsection}{\numberline {7.8.2}Wykonane zadania}{45}
-\contentsline {subsection}{\numberline {7.8.3}Napotkane problemy}{45}
-\contentsline {section}{\numberline {7.9}Algorytmy oraz rangi na stronie}{45}
-\contentsline {subsection}{\numberline {7.9.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{45}
-\contentsline {subsection}{\numberline {7.9.2}Wykonane zadania}{46}
-\contentsline {subsection}{\numberline {7.9.3}Napotkane problemy}{46}
-\contentsline {section}{\numberline {7.10}Firebase, Heroku, projekty}{46}
-\contentsline {subsection}{\numberline {7.10.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{46}
-\contentsline {subsection}{\numberline {7.10.2}Wykonane zadania}{46}
-\contentsline {subsection}{\numberline {7.10.3}Napotkane problemy}{46}
-\contentsline {section}{\numberline {7.11}Firebase autoryzacja, API refactor}{46}
-\contentsline {subsection}{\numberline {7.11.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{46}
-\contentsline {subsection}{\numberline {7.11.2}Wykonane zadania}{47}
-\contentsline {subsection}{\numberline {7.11.3}Napotkane problemy}{47}
-\contentsline {section}{\numberline {7.12}Integracja}{47}
-\contentsline {subsection}{\numberline {7.12.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{47}
-\contentsline {subsection}{\numberline {7.12.2}Wykonane zadania}{47}
-\contentsline {subsection}{\numberline {7.12.3}Napotkane problemy}{47}
-\contentsline {section}{\numberline {7.13}Prezentacja i demo}{47}
-\contentsline {subsection}{\numberline {7.13.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{47}
-\contentsline {subsection}{\numberline {7.13.2}Wykonane zadania}{47}
-\contentsline {subsection}{\numberline {7.13.3}Napotkane problemy}{48}
-\contentsline {section}{\numberline {7.14}Zmiana technologii na backendzie, retrospekcja}{48}
-\contentsline {subsection}{\numberline {7.14.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{48}
-\contentsline {subsection}{\numberline {7.14.2}Wykonane zadania}{48}
-\contentsline {subsection}{\numberline {7.14.3}Napotkane problemy}{48}
-\contentsline {section}{\numberline {7.15}Festiwal pomys\IeC {\l }\IeC {\'o}w i mockup'y}{48}
-\contentsline {subsection}{\numberline {7.15.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{48}
-\contentsline {subsection}{\numberline {7.15.2}Wykonane zadania}{48}
-\contentsline {subsection}{\numberline {7.15.3}Napotkane problemy}{49}
-\contentsline {section}{\numberline {7.16}Festiwal pomys\IeC {\l }\IeC {\'o}w ci\IeC {\k a}g dalszy}{49}
-\contentsline {subsection}{\numberline {7.16.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{49}
-\contentsline {subsection}{\numberline {7.16.2}Wykonane zadania}{49}
-\contentsline {subsection}{\numberline {7.16.3}Napotkane problemy}{49}
-\contentsline {section}{\numberline {7.17}Autoryzacja i budowanie bibliografii}{49}
-\contentsline {subsection}{\numberline {7.17.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{49}
-\contentsline {subsection}{\numberline {7.17.2}Wykonane zadania}{49}
-\contentsline {subsection}{\numberline {7.17.3}Napotkane problemy}{49}
-\contentsline {section}{\numberline {7.18}Smartwatch'e i MBTI}{50}
-\contentsline {subsection}{\numberline {7.18.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{50}
-\contentsline {subsection}{\numberline {7.18.2}Wykonane zadania}{50}
-\contentsline {subsection}{\numberline {7.18.3}Napotkane problemy}{50}
-\contentsline {section}{\numberline {7.19}Odnowienie dokumentacji i bezpiecze\IeC {\'n}stwo}{50}
-\contentsline {subsection}{\numberline {7.19.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{50}
-\contentsline {subsection}{\numberline {7.19.2}Wykonane zadania}{50}
-\contentsline {subsection}{\numberline {7.19.3}Napotkane problemy}{50}
-\contentsline {section}{\numberline {7.20}Autoryzacja, dokumentacja}{50}
-\contentsline {subsection}{\numberline {7.20.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{50}
-\contentsline {subsection}{\numberline {7.20.2}Wykonane zadania}{51}
-\contentsline {subsection}{\numberline {7.20.3}Napotkane problemy}{51}
-\contentsline {section}{\numberline {7.21}Ko\IeC {\'n}cowe prace nad przepisanymi serwisami}{51}
-\contentsline {subsection}{\numberline {7.21.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{51}
-\contentsline {subsection}{\numberline {7.21.2}Wykonane zadania}{51}
-\contentsline {subsection}{\numberline {7.21.3}Napotkane problemy}{51}
-\contentsline {section}{\numberline {7.22}Integracja i LaTeX}{51}
-\contentsline {subsection}{\numberline {7.22.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{51}
-\contentsline {subsection}{\numberline {7.22.2}Wykonane zadania}{51}
-\contentsline {subsection}{\numberline {7.22.3}Napotkane problemy}{52}
-\contentsline {section}{\numberline {7.23}Przepisywanie dokumentacji}{52}
-\contentsline {subsection}{\numberline {7.23.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{52}
-\contentsline {subsection}{\numberline {7.23.2}Wykonane zadania}{52}
-\contentsline {subsection}{\numberline {7.23.3}Napotkane problemy}{52}
-\contentsline {section}{\numberline {7.24}Podpowiedzi i naprawa b\IeC {\l }\IeC {\k e}d\IeC {\'o}w}{52}
-\contentsline {subsection}{\numberline {7.24.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{52}
-\contentsline {subsection}{\numberline {7.24.2}Wykonane zadania}{52}
-\contentsline {subsection}{\numberline {7.24.3}Napotkane problemy}{52}
-\contentsline {section}{\numberline {7.25}DZW i integracja rang}{53}
-\contentsline {subsection}{\numberline {7.25.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{53}
-\contentsline {subsection}{\numberline {7.25.2}Wykonane zadania}{53}
-\contentsline {subsection}{\numberline {7.25.3}Napotkane problemy}{53}
-\contentsline {section}{\numberline {7.26}SWS i nowe minutniki}{53}
-\contentsline {subsection}{\numberline {7.26.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{53}
-\contentsline {subsection}{\numberline {7.26.2}Wykonane zadania}{53}
-\contentsline {subsection}{\numberline {7.26.3}Napotkane problemy}{53}
-\contentsline {section}{\numberline {7.27}Strona g\IeC {\l }\IeC {\'o}wna i przerwy}{53}
-\contentsline {subsection}{\numberline {7.27.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{53}
-\contentsline {subsection}{\numberline {7.27.2}Wykonane zadania}{54}
-\contentsline {subsection}{\numberline {7.27.3}Napotkane problemy}{54}
-\contentsline {section}{\numberline {7.28}Retrospekcja, ulepszanie parallax'a}{54}
-\contentsline {subsection}{\numberline {7.28.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{54}
-\contentsline {subsection}{\numberline {7.28.2}Wykonane zadania}{54}
-\contentsline {subsection}{\numberline {7.28.3}Napotkane problemy}{54}
-\contentsline {section}{\numberline {7.29}Zbieranie informacji}{54}
-\contentsline {subsection}{\numberline {7.29.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{54}
-\contentsline {subsection}{\numberline {7.29.2}Wykonane zadania}{54}
-\contentsline {subsection}{\numberline {7.29.3}Napotkane problemy}{55}
-\contentsline {section}{\numberline {7.30}Eksperymenty z Azure, podpowiedzi i ko\IeC {\'n}cowe prace nad Gamitude 1.0}{55}
-\contentsline {subsection}{\numberline {7.30.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{55}
-\contentsline {subsection}{\numberline {7.30.2}Wykonane zadania}{55}
-\contentsline {subsection}{\numberline {7.30.3}Napotkane problemy}{55}
-\contentsline {section}{\numberline {7.31}Koniec pracy nad Gamitude 1.0, dodanie folder\IeC {\'o}w dla projekt\IeC {\'o}w, zmiany w bazie danych}{55}
-\contentsline {subsection}{\numberline {7.31.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{55}
-\contentsline {subsection}{\numberline {7.31.2}Wykonane zadania}{55}
-\contentsline {subsection}{\numberline {7.31.3}Napotkane problemy}{56}
-\contentsline {section}{\numberline {7.32}Obs\IeC {\l }uga folder\IeC {\'o}w}{56}
-\contentsline {subsection}{\numberline {7.32.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{56}
-\contentsline {subsection}{\numberline {7.32.2}Wykonane zadania}{56}
-\contentsline {subsection}{\numberline {7.32.3}Napotkane problemy}{56}
-\contentsline {section}{\numberline {7.33}Pe\IeC {\l }ne po\IeC {\l }\IeC {\k a}czenie frontend'u i backend'u, docker i poprawki strony g\IeC {\l }\IeC {\'o}wnej w wersji 2.0}{56}
-\contentsline {subsection}{\numberline {7.33.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{56}
-\contentsline {subsection}{\numberline {7.33.2}Wykonane zadania}{56}
-\contentsline {subsection}{\numberline {7.33.3}Napotkane problemy}{57}
-\contentsline {section}{\numberline {7.34}Minutniki w 2.0, usp\IeC {\'o}jnienie wizji}{57}
-\contentsline {subsection}{\numberline {7.34.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{57}
-\contentsline {subsection}{\numberline {7.34.2}Wykonane zadania}{57}
-\contentsline {subsection}{\numberline {7.34.3}Napotkane problemy}{57}
-\contentsline {section}{\numberline {7.35}Pierwsze wersje Bullet Journal'a i Gamitude Themes}{57}
-\contentsline {subsection}{\numberline {7.35.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{57}
-\contentsline {subsection}{\numberline {7.35.2}Wykonane zadania}{57}
-\contentsline {subsection}{\numberline {7.35.3}Napotkane problemy}{58}
-\contentsline {section}{\numberline {7.36}Gamitude Themes dla rang, Bullet Journal API}{58}
-\contentsline {subsection}{\numberline {7.36.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{58}
-\contentsline {subsection}{\numberline {7.36.2}Wykonane zadania}{58}
-\contentsline {subsection}{\numberline {7.36.3}Napotkane problemy}{58}
-\contentsline {section}{\numberline {7.37}Stoper, kontrola ci\IeC {\k a}g\IeC {\l }o\IeC {\'s}ci sesji, kupowanie rang}{58}
-\contentsline {subsection}{\numberline {7.37.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{58}
-\contentsline {subsection}{\numberline {7.37.2}Wykonane zadania}{59}
-\contentsline {subsection}{\numberline {7.37.3}Napotkane problemy}{59}
-\contentsline {section}{\numberline {7.38}Nowa strona g\IeC {\l }\IeC {\'o}wna, ustawienia u\IeC {\.z}ytkownika, weryfikacja maili}{59}
-\contentsline {subsection}{\numberline {7.38.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{59}
-\contentsline {subsection}{\numberline {7.38.2}Wykonane zadania}{59}
-\contentsline {subsection}{\numberline {7.38.3}Napotkane problemy}{60}
-\contentsline {section}{\numberline {7.39}Edycja i usuwanie folder\IeC {\'o}w oraz czasomierzy, dokumentacja \IeC {\textemdash } planowanie, implementacja, wymagania oraz diagramy}{60}
-\contentsline {subsection}{\numberline {7.39.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{60}
-\contentsline {subsection}{\numberline {7.39.2}Wykonane zadania}{60}
-\contentsline {subsection}{\numberline {7.39.3}Napotkane problemy}{61}
-\contentsline {section}{\numberline {7.40}Integracja, demo, w\IeC {\l }\IeC {\k a}czanie sesji z poziomu Bullet Journal\IeC {\textquoteright }a}{61}
-\contentsline {subsection}{\numberline {7.40.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{61}
-\contentsline {subsection}{\numberline {7.40.2}Wykonane zadania}{61}
-\contentsline {subsection}{\numberline {7.40.3}Napotkane problemy}{61}
-\contentsline {section}{\numberline {7.41}}{62}
-\contentsline {subsection}{\numberline {7.41.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{62}
-\contentsline {subsection}{\numberline {7.41.2}Wykonane zadania}{62}
-\contentsline {subsection}{\numberline {7.41.3}Napotkane problemy}{62}
-\contentsline {chapter}{\numberline {8}Testy systemu}{63}
-\contentsline {chapter}{\numberline {9}Testy w grupach docelowych}{64}
-\contentsline {chapter}{\numberline {10}Prezentacja systemu w dzia\IeC {\l }aniu}{65}
-\contentsline {chapter}{\numberline {11}Nak\IeC {\l }ad pracy}{66}
-\contentsline {chapter}{\numberline {12}Wk\IeC {\l }ad w\IeC {\l }asny}{67}
-\contentsline {section}{\numberline {12.1}Pawe\IeC {\l } Benkowski}{67}
-\contentsline {section}{\numberline {12.2}Robert Deyk}{67}
-\contentsline {section}{\numberline {12.3}Stanis\IeC {\l }aw Lutkiewicz}{67}
-\contentsline {chapter}{\numberline {13}Podsumowanie}{68}
-\contentsline {chapter}{Bibliografia}{69}
-\contentsline {chapter}{\numberline {14}Za\IeC {\l }\IeC {\k a}czniki}{70}
+\contentsline {chapter}{\numberline {6}Implementacja rozwi\IeC {\k a}zania}{40}
+\contentsline {chapter}{\numberline {7}Historia sprint\IeC {\'o}w}{41}
+\contentsline {section}{\numberline {7.1}Rozpoznanie dziedzinowe}{41}
+\contentsline {subsection}{\numberline {7.1.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{41}
+\contentsline {subsection}{\numberline {7.1.2}Wykonane zadania}{41}
+\contentsline {subsection}{\numberline {7.1.3}Napotkane problemy}{41}
+\contentsline {section}{\numberline {7.2}Wst\IeC {\k e}pna dokumentacja}{41}
+\contentsline {subsection}{\numberline {7.2.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{41}
+\contentsline {subsection}{\numberline {7.2.2}Wykonane zadania}{42}
+\contentsline {subsection}{\numberline {7.2.3}Napotkane problemy}{42}
+\contentsline {section}{\numberline {7.3}Use Case + WPP}{42}
+\contentsline {subsection}{\numberline {7.3.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{42}
+\contentsline {subsection}{\numberline {7.3.2}Wykonane zadania}{42}
+\contentsline {subsection}{\numberline {7.3.3}Napotkane problemy}{42}
+\contentsline {section}{\numberline {7.4}Dalsza praca przy SWS}{42}
+\contentsline {subsection}{\numberline {7.4.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{42}
+\contentsline {subsection}{\numberline {7.4.2}Wykonane zadania}{42}
+\contentsline {subsection}{\numberline {7.4.3}Napotkane problemy}{43}
+\contentsline {section}{\numberline {7.5}Przygotowanie narz\IeC {\k e}dzi do tworzenia systemu}{43}
+\contentsline {subsection}{\numberline {7.5.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{43}
+\contentsline {subsection}{\numberline {7.5.2}Wykonane zadania}{43}
+\contentsline {subsection}{\numberline {7.5.3}Napotkane problemy}{43}
+\contentsline {section}{\numberline {7.6}Diagramy funkcjonalno\IeC {\'s}ci, wymagania bazy danych oraz responsywne roz\IeC {\l }o\IeC {\.z}enie strony}{43}
+\contentsline {subsection}{\numberline {7.6.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{43}
+\contentsline {subsection}{\numberline {7.6.2}Wykonane zadania}{43}
+\contentsline {subsection}{\numberline {7.6.3}Napotkane problemy}{43}
+\contentsline {section}{\numberline {7.7}Diagramy klas i nawigacja strony}{44}
+\contentsline {subsection}{\numberline {7.7.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{44}
+\contentsline {subsection}{\numberline {7.7.2}Wykonane zadania}{44}
+\contentsline {subsection}{\numberline {7.7.3}Napotkane problemy}{44}
+\contentsline {section}{\numberline {7.8}Diagram sekwencji oraz statystyki i energie na stronie}{44}
+\contentsline {subsection}{\numberline {7.8.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{44}
+\contentsline {subsection}{\numberline {7.8.2}Wykonane zadania}{44}
+\contentsline {subsection}{\numberline {7.8.3}Napotkane problemy}{44}
+\contentsline {section}{\numberline {7.9}Algorytmy oraz rangi na stronie}{44}
+\contentsline {subsection}{\numberline {7.9.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{44}
+\contentsline {subsection}{\numberline {7.9.2}Wykonane zadania}{45}
+\contentsline {subsection}{\numberline {7.9.3}Napotkane problemy}{45}
+\contentsline {section}{\numberline {7.10}Firebase, Heroku, projekty}{45}
+\contentsline {subsection}{\numberline {7.10.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{45}
+\contentsline {subsection}{\numberline {7.10.2}Wykonane zadania}{45}
+\contentsline {subsection}{\numberline {7.10.3}Napotkane problemy}{45}
+\contentsline {section}{\numberline {7.11}Firebase autoryzacja, API refactor}{45}
+\contentsline {subsection}{\numberline {7.11.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{45}
+\contentsline {subsection}{\numberline {7.11.2}Wykonane zadania}{46}
+\contentsline {subsection}{\numberline {7.11.3}Napotkane problemy}{46}
+\contentsline {section}{\numberline {7.12}Integracja}{46}
+\contentsline {subsection}{\numberline {7.12.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{46}
+\contentsline {subsection}{\numberline {7.12.2}Wykonane zadania}{46}
+\contentsline {subsection}{\numberline {7.12.3}Napotkane problemy}{46}
+\contentsline {section}{\numberline {7.13}Prezentacja i demo}{46}
+\contentsline {subsection}{\numberline {7.13.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{46}
+\contentsline {subsection}{\numberline {7.13.2}Wykonane zadania}{46}
+\contentsline {subsection}{\numberline {7.13.3}Napotkane problemy}{47}
+\contentsline {section}{\numberline {7.14}Zmiana technologii na backendzie, retrospekcja}{47}
+\contentsline {subsection}{\numberline {7.14.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{47}
+\contentsline {subsection}{\numberline {7.14.2}Wykonane zadania}{47}
+\contentsline {subsection}{\numberline {7.14.3}Napotkane problemy}{47}
+\contentsline {section}{\numberline {7.15}Festiwal pomys\IeC {\l }\IeC {\'o}w i mockup'y}{47}
+\contentsline {subsection}{\numberline {7.15.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{47}
+\contentsline {subsection}{\numberline {7.15.2}Wykonane zadania}{47}
+\contentsline {subsection}{\numberline {7.15.3}Napotkane problemy}{48}
+\contentsline {section}{\numberline {7.16}Festiwal pomys\IeC {\l }\IeC {\'o}w ci\IeC {\k a}g dalszy}{48}
+\contentsline {subsection}{\numberline {7.16.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{48}
+\contentsline {subsection}{\numberline {7.16.2}Wykonane zadania}{48}
+\contentsline {subsection}{\numberline {7.16.3}Napotkane problemy}{48}
+\contentsline {section}{\numberline {7.17}Autoryzacja i budowanie bibliografii}{48}
+\contentsline {subsection}{\numberline {7.17.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{48}
+\contentsline {subsection}{\numberline {7.17.2}Wykonane zadania}{48}
+\contentsline {subsection}{\numberline {7.17.3}Napotkane problemy}{48}
+\contentsline {section}{\numberline {7.18}Smartwatch'e i MBTI}{49}
+\contentsline {subsection}{\numberline {7.18.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{49}
+\contentsline {subsection}{\numberline {7.18.2}Wykonane zadania}{49}
+\contentsline {subsection}{\numberline {7.18.3}Napotkane problemy}{49}
+\contentsline {section}{\numberline {7.19}Odnowienie dokumentacji i bezpiecze\IeC {\'n}stwo}{49}
+\contentsline {subsection}{\numberline {7.19.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{49}
+\contentsline {subsection}{\numberline {7.19.2}Wykonane zadania}{49}
+\contentsline {subsection}{\numberline {7.19.3}Napotkane problemy}{49}
+\contentsline {section}{\numberline {7.20}Autoryzacja, dokumentacja}{49}
+\contentsline {subsection}{\numberline {7.20.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{49}
+\contentsline {subsection}{\numberline {7.20.2}Wykonane zadania}{50}
+\contentsline {subsection}{\numberline {7.20.3}Napotkane problemy}{50}
+\contentsline {section}{\numberline {7.21}Ko\IeC {\'n}cowe prace nad przepisanymi serwisami}{50}
+\contentsline {subsection}{\numberline {7.21.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{50}
+\contentsline {subsection}{\numberline {7.21.2}Wykonane zadania}{50}
+\contentsline {subsection}{\numberline {7.21.3}Napotkane problemy}{50}
+\contentsline {section}{\numberline {7.22}Integracja i LaTeX}{50}
+\contentsline {subsection}{\numberline {7.22.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{50}
+\contentsline {subsection}{\numberline {7.22.2}Wykonane zadania}{50}
+\contentsline {subsection}{\numberline {7.22.3}Napotkane problemy}{51}
+\contentsline {section}{\numberline {7.23}Przepisywanie dokumentacji}{51}
+\contentsline {subsection}{\numberline {7.23.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{51}
+\contentsline {subsection}{\numberline {7.23.2}Wykonane zadania}{51}
+\contentsline {subsection}{\numberline {7.23.3}Napotkane problemy}{51}
+\contentsline {section}{\numberline {7.24}Podpowiedzi i naprawa b\IeC {\l }\IeC {\k e}d\IeC {\'o}w}{51}
+\contentsline {subsection}{\numberline {7.24.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{51}
+\contentsline {subsection}{\numberline {7.24.2}Wykonane zadania}{51}
+\contentsline {subsection}{\numberline {7.24.3}Napotkane problemy}{51}
+\contentsline {section}{\numberline {7.25}DZW i integracja rang}{52}
+\contentsline {subsection}{\numberline {7.25.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{52}
+\contentsline {subsection}{\numberline {7.25.2}Wykonane zadania}{52}
+\contentsline {subsection}{\numberline {7.25.3}Napotkane problemy}{52}
+\contentsline {section}{\numberline {7.26}SWS i nowe minutniki}{52}
+\contentsline {subsection}{\numberline {7.26.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{52}
+\contentsline {subsection}{\numberline {7.26.2}Wykonane zadania}{52}
+\contentsline {subsection}{\numberline {7.26.3}Napotkane problemy}{52}
+\contentsline {section}{\numberline {7.27}Strona g\IeC {\l }\IeC {\'o}wna i przerwy}{52}
+\contentsline {subsection}{\numberline {7.27.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{52}
+\contentsline {subsection}{\numberline {7.27.2}Wykonane zadania}{53}
+\contentsline {subsection}{\numberline {7.27.3}Napotkane problemy}{53}
+\contentsline {section}{\numberline {7.28}Retrospekcja, ulepszanie parallax'a}{53}
+\contentsline {subsection}{\numberline {7.28.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{53}
+\contentsline {subsection}{\numberline {7.28.2}Wykonane zadania}{53}
+\contentsline {subsection}{\numberline {7.28.3}Napotkane problemy}{53}
+\contentsline {section}{\numberline {7.29}Zbieranie informacji}{53}
+\contentsline {subsection}{\numberline {7.29.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{53}
+\contentsline {subsection}{\numberline {7.29.2}Wykonane zadania}{53}
+\contentsline {subsection}{\numberline {7.29.3}Napotkane problemy}{54}
+\contentsline {section}{\numberline {7.30}Eksperymenty z Azure, podpowiedzi i ko\IeC {\'n}cowe prace nad Gamitude 1.0}{54}
+\contentsline {subsection}{\numberline {7.30.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{54}
+\contentsline {subsection}{\numberline {7.30.2}Wykonane zadania}{54}
+\contentsline {subsection}{\numberline {7.30.3}Napotkane problemy}{54}
+\contentsline {section}{\numberline {7.31}Koniec pracy nad Gamitude 1.0, dodanie folder\IeC {\'o}w dla projekt\IeC {\'o}w, zmiany w bazie danych}{54}
+\contentsline {subsection}{\numberline {7.31.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{54}
+\contentsline {subsection}{\numberline {7.31.2}Wykonane zadania}{54}
+\contentsline {subsection}{\numberline {7.31.3}Napotkane problemy}{55}
+\contentsline {section}{\numberline {7.32}Obs\IeC {\l }uga folder\IeC {\'o}w}{55}
+\contentsline {subsection}{\numberline {7.32.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{55}
+\contentsline {subsection}{\numberline {7.32.2}Wykonane zadania}{55}
+\contentsline {subsection}{\numberline {7.32.3}Napotkane problemy}{55}
+\contentsline {section}{\numberline {7.33}Pe\IeC {\l }ne po\IeC {\l }\IeC {\k a}czenie frontend'u i backend'u, docker i poprawki strony g\IeC {\l }\IeC {\'o}wnej w wersji 2.0}{55}
+\contentsline {subsection}{\numberline {7.33.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{55}
+\contentsline {subsection}{\numberline {7.33.2}Wykonane zadania}{55}
+\contentsline {subsection}{\numberline {7.33.3}Napotkane problemy}{56}
+\contentsline {section}{\numberline {7.34}Minutniki w 2.0, usp\IeC {\'o}jnienie wizji}{56}
+\contentsline {subsection}{\numberline {7.34.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{56}
+\contentsline {subsection}{\numberline {7.34.2}Wykonane zadania}{56}
+\contentsline {subsection}{\numberline {7.34.3}Napotkane problemy}{56}
+\contentsline {section}{\numberline {7.35}Pierwsze wersje Bullet Journal'a i Gamitude Themes}{56}
+\contentsline {subsection}{\numberline {7.35.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{56}
+\contentsline {subsection}{\numberline {7.35.2}Wykonane zadania}{56}
+\contentsline {subsection}{\numberline {7.35.3}Napotkane problemy}{57}
+\contentsline {section}{\numberline {7.36}Gamitude Themes dla rang, Bullet Journal API}{57}
+\contentsline {subsection}{\numberline {7.36.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{57}
+\contentsline {subsection}{\numberline {7.36.2}Wykonane zadania}{57}
+\contentsline {subsection}{\numberline {7.36.3}Napotkane problemy}{57}
+\contentsline {section}{\numberline {7.37}Stoper, kontrola ci\IeC {\k a}g\IeC {\l }o\IeC {\'s}ci sesji, kupowanie rang}{57}
+\contentsline {subsection}{\numberline {7.37.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{57}
+\contentsline {subsection}{\numberline {7.37.2}Wykonane zadania}{58}
+\contentsline {subsection}{\numberline {7.37.3}Napotkane problemy}{58}
+\contentsline {section}{\numberline {7.38}Nowa strona g\IeC {\l }\IeC {\'o}wna, ustawienia u\IeC {\.z}ytkownika, weryfikacja maili}{58}
+\contentsline {subsection}{\numberline {7.38.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{58}
+\contentsline {subsection}{\numberline {7.38.2}Wykonane zadania}{58}
+\contentsline {subsection}{\numberline {7.38.3}Napotkane problemy}{59}
+\contentsline {section}{\numberline {7.39}Edycja i usuwanie folder\IeC {\'o}w oraz czasomierzy, dokumentacja \IeC {\textemdash } planowanie, implementacja, wymagania oraz diagramy}{59}
+\contentsline {subsection}{\numberline {7.39.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{59}
+\contentsline {subsection}{\numberline {7.39.2}Wykonane zadania}{59}
+\contentsline {subsection}{\numberline {7.39.3}Napotkane problemy}{60}
+\contentsline {section}{\numberline {7.40}Integracja, demo, w\IeC {\l }\IeC {\k a}czanie sesji z poziomu Bullet Journal\IeC {\textquoteright }a}{60}
+\contentsline {subsection}{\numberline {7.40.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{60}
+\contentsline {subsection}{\numberline {7.40.2}Wykonane zadania}{60}
+\contentsline {subsection}{\numberline {7.40.3}Napotkane problemy}{60}
+\contentsline {section}{\numberline {7.41}}{61}
+\contentsline {subsection}{\numberline {7.41.1}Za\IeC {\l }o\IeC {\.z}enia sprintu}{61}
+\contentsline {subsection}{\numberline {7.41.2}Wykonane zadania}{61}
+\contentsline {subsection}{\numberline {7.41.3}Napotkane problemy}{61}
+\contentsline {chapter}{\numberline {8}Testy systemu}{62}
+\contentsline {chapter}{\numberline {9}Testy w grupach docelowych}{63}
+\contentsline {chapter}{\numberline {10}Prezentacja systemu w dzia\IeC {\l }aniu}{64}
+\contentsline {chapter}{\numberline {11}Nak\IeC {\l }ad pracy}{65}
+\contentsline {chapter}{\numberline {12}Wk\IeC {\l }ad w\IeC {\l }asny}{66}
+\contentsline {section}{\numberline {12.1}Pawe\IeC {\l } Benkowski}{66}
+\contentsline {section}{\numberline {12.2}Robert Deyk}{66}
+\contentsline {section}{\numberline {12.3}Stanis\IeC {\l }aw Lutkiewicz}{66}
+\contentsline {chapter}{\numberline {13}Podsumowanie}{67}
+\contentsline {chapter}{Bibliografia}{68}
+\contentsline {chapter}{\numberline {14}Za\IeC {\l }\IeC {\k a}czniki}{69}
