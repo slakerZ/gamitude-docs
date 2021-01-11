@@ -11,11 +11,13 @@
 \usepackage[export]{adjustbox}
 \usepackage[nottoc,notlot,notlof]{tocbibind}
 
+\graphicspath{ {./images/} }
+
 \begin{document}
 \let\cleardoublepage\clearpage
 \begin{figure}[ht]
 \centering
-\includegraphics{pjatk.png}
+\includegraphics{pjatk}
 \end{figure}
 \begin{center}
 \textbf{\huge Karta Projektu}\\
@@ -155,13 +157,13 @@ Ludzie operują w kontekście czasu i właśnie go próbują rozplanowywać. Jed
 \section {Rich picture}
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=\textwidth, height=9cm]{richpicture1.jpg}
+	\includegraphics[width=\textwidth, height=9cm]{richpicture1}
 	\caption{Użytkownik przed skorzystaniem z systemu.}
 	\label{fig:rich1}
 \end{figure}
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=\textwidth, height=9cm]{richpicture2.jpg}
+	\includegraphics[width=\textwidth, height=9cm]{richpicture2}
 	\caption{Użytkownik korzystający z systemu.}
 	\label{fig:rich2}
 \end{figure}
@@ -327,7 +329,7 @@ Aplikacja webowa kompatybilna z większością przeglądarek i komputerów z dos
  W zależności od ogólnego samopoczucia użytkownika może on wybrać łatwiejszą bądź trudniejszą wersję zadania, dalej utrzymując nawyk wykonywania go. \\
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=\textwidth, height=9cm]{system.png}\\
+	\includegraphics[width=\textwidth, height=9cm]{system}\\
 	\caption{Diagram systemu}
 	\label{fig:system}
 \end{figure}
@@ -1031,19 +1033,19 @@ Grupa docelowa to osoby, które chcą poprawić swoją higienę pracy, chcą sta
 \section{Przypadki użycia oraz diagramy (w trakcie przerabiania i tworzenia nowych)}
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=\textwidth, height=14cm]{systemusecase.png}\\
+	\includegraphics[width=\textwidth, height=14cm]{systemusecase}\\
 	\caption{Use case dla całego systemu}
 	\label{fig:usecase}
 \end{figure}
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=\textwidth, height=9cm]{sekwencji.png}\\
+	\includegraphics[width=\textwidth, height=9cm]{sekwencji}\\
 	\caption{Diagram sekwencji dla dodawania projektu oraz włączania sesji}
 	\label{fig:seq1}
 \end{figure}
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=\textwidth, height=9cm]{sekwencji1.png}\\
+	\includegraphics[width=\textwidth, height=9cm]{sekwencji1}\\
 	\caption{Diagram sekwencji dla załadowania strony Bullet Journal’a oraz usuwania zadania}
 	\label{fig:seq2}
 \end{figure}
@@ -1085,17 +1087,45 @@ niezależnym od dostawcy chmurowego (decyzja ta też została podjęta ze wzglę
 \chapter {Projektowanie}
 
 \section {Architektura projektu}
+\begin{figure}[]
+	\centering
+	\includegraphics[scale=0.5]{gamitude_overview}\\
+	\caption{Uproszczona architektura}
+	\label{fig:overwiewarch}
+\end{figure}
+Aplikacja webowa Gamitude została wykonana w architekturze wielowarstwowej typu klient-serwer.
+Interfejs użytkownika został wykonany w technologi SPA (single page application).
+Naturalnym więc było podzielenie całej aplikacji na 2 repozytoria Frontentu i Backendu.
+Komunikacja pomiędzy nimi opiera sie na protokole HTTP/HTTPS.
+
 \subsection{Frontend} 
+Opis Pawła podział na komponenty?
+Co daje SPA wczytanie całej aplikacji na początku brak przeładowania całej strony pobieranie informacji podczas interakcji z użytkownikiem. 
 \subsection{Backend}
+Aplikacja serwerowa została podzielona na warstwy TODO referencja do rys.
+W warstwie dostępu do bazy danych został wykorzystany wzorzec projektowy repozytorium lub repozytorium serwis.
+Pozwala on na zamknięcie logiki potrzebnej do pozyskania danych z bazy danych.
+Dzięki temu nasza logika biznesowa jest oddzielona od infrastruktury.
+Każdy obiekt w bazie danych posiada swoje repozytorium.
+Każdy serwis może korzystać z wielu repozytoriów co pozwala na tworzenie bardziej złożonych struktur.
+Wykorzystany został także wzorzec projektowy wstrzykiwania zależności.
+Dzięki temu w każdym miejscu projektu możemy łatwo uzyskać dostęp do potrzebnych nam elementów np. Konfiguracji.
+Także pozwala nam on na łatwą podmianę danego komponentu aplikacji poprzez zarejestrowanie innej implementacji danego interfejsu.
+
 \subsection{Baza Danych}
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=\textwidth, height=10cm]{gamitude database model.png}\\
+	\includegraphics[width=\textwidth, height=10cm]{gamitude_database_model}\\
 	\caption{Schemat bazy danych}
 	\label{fig:db}
 \end{figure}
 \subsection{Chmura}
-
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.5]{gamitude_cloud_overview}\\
+	\caption{Architektura chmury}
+	\label{fig:db}
+\end{figure}
 \chapter {Implementacja rozwiązania}
 Szczegółowy opis końcowego rozwiązania, do którego będziemy się odnosić w następnym rozdziale.
 
