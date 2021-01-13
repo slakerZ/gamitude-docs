@@ -1087,16 +1087,16 @@ niezależnym od dostawcy chmurowego (decyzja ta też została podjęta ze wzglę
 \chapter {Projektowanie}
 
 \section {Architektura projektu}
-\begin{figure}[]
+Aplikacja webowa Gamitude została wykonana w architekturze wielowarstwowej typu klient-serwer.
+Interfejs użytkownika został wykonany w technologi SPA (single page application).
+Naturalnym więc było podzielenie całej aplikacji na 2 repozytoria Frontend'u i Backend'u.
+Komunikacja pomiędzy nimi opiera się na protokole HTTP/HTTPS.
+\begin{figure}[!h]
 	\centering
 	\includegraphics[scale=0.5]{gamitude_overview}\\
 	\caption{Uproszczona architektura}
 	\label{fig:overwiewarch}
 \end{figure}
-Aplikacja webowa Gamitude została wykonana w architekturze wielowarstwowej typu klient-serwer.
-Interfejs użytkownika został wykonany w technologi SPA (single page application).
-Naturalnym więc było podzielenie całej aplikacji na 2 repozytoria Frontend'u i Backend'u.
-Komunikacja pomiędzy nimi opiera się na protokole HTTP/HTTPS.
 
 \subsection{Frontend}
 Aplikacja web'owa została podzielona na komponenty z zachowaniem większości zasad atomic designu.\\
@@ -1110,7 +1110,7 @@ Strony wyświetlają pozostałe elementy oraz odpowiadają na nawigacje.\\
 W naszym projekcie nie stosujemy szablonów z uwagi na wykorzystanie elementów Grid z Material-UI a stany i interakcje przenieśliśmy do Redux'a.\\
 
 \subsection{Backend}
-Aplikacja serwerowa została podzielona na warstwy (TODO referencja do rys).
+Aplikacja serwerowa została podzielona na warstwy, przedstawione na obrazku \ref{fig:overwiewarch}.
 W warstwie dostępu do bazy danych został wykorzystany wzorzec projektowy repozytorium lub repozytorium serwis.
 Pozwala on na zamknięcie logiki potrzebnej do pozyskania danych z bazy danych.
 Dzięki temu nasza logika biznesowa jest oddzielona od infrastruktury.
