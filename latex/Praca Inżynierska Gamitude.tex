@@ -88,7 +88,7 @@ Energie\cite{Harward} dzielą się na 4 rodzaje: duszy, ciała, emocji i umysłu
  Na takie okazje planujemy stworzyć Bullet Journal\cite{bullet}'a.
  Jest to dziennik ze stronami dedykowanymi na zadania z terminem na dzisiaj,
   na za tydzień, na za miesiąc bądź w nieokreślonej przyszłości.
-\\\\Aby użytkownik czuł, że jego praca przynosi efekty dodamy również elementy grywalizacji\cite{grywalizacja}, czyli 
+\\\\Aby użytkownik czuł, że jego praca przynosi efekty, dodamy również elementy grywalizacji\cite{grywalizacja}, czyli 
  statystyki oraz rangi\cite{rangi}, gdzie statystyki można rozumieć jako sztuczną walutę podzieloną na 4 rodzaje a rangi 
  jako awatara użytkownika kupowanego za te waluty.
 \section{Przedstawienie problemu}
@@ -1617,6 +1617,226 @@ Testy w formie scenariuszy.
 Miejsce na wpisanie raportów z testów na grupach użytkowników
 
 \chapter{Prezentacja systemu w działaniu}
+\section{Strona główna}
+Po pierwszym wejściu na naszą stronę wita nas strona główna z nazwą rozwiązaniem i hasłem reklamowym. 
+Strona ta została wykonana w stylu parallax, ze względu na wygląd zachęcający do korzystania z aplikacji.
+Na tej stronie znajdują się podstawowe informacje, dotyczące naszego rozwiązania tj. czym są energię na rysunku nr \ref{fig:homepage_energies}, jak dzielimy statystyki na rysunku nr \ref{fig:homepage_stats} czy czym są projekty na rysunku nr \ref{fig:homepage_projects}.
+Na stronie głównej, na każdej podstronie znajduje się przycisk „Get started” przenoszący użytkownika do strony rejestracji.
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.3]{prezentacja/Homepage}\\
+	\caption{Strona główna Gamitude}
+	\label{fig:homepage}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.3]{prezentacja/Homepage_Overview}\\
+	\caption{Krótki opis, na czym polega nasze rozwiązanie}
+	\label{fig:homepage_overview}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.3]{prezentacja/Homepage_Energies}\\
+	\caption{Krótki opis czym są energie i jak działają}
+	\label{fig:homepage_energies}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.3]{prezentacja/Homepage_Stats}\\
+	\caption{Opis statystyk z przykładowymi projektami oraz rangami za nie kupowanymi.}
+	\label{fig:homepage_stats}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.3]{prezentacja/Homepage_Projects}\\
+	\caption{Opis filozofii stojącej za projektami — badanie naukowe na temat okresów skupienia, rodzaje projektów i czasomierzy.}
+	\label{fig:homepage_projects}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.3]{prezentacja/Homepage_Bullet}\\
+	\caption{Opis Bullet Journal'a}
+	\label{fig:homepage_bullet}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.3]{prezentacja/Homepage_Creators}\\
+	\caption{Zdjęcia twórców wraz z pełnionymi rolami oraz linkami do GitHub'a itp.}
+	\label{fig:homepage_creators}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.3]{prezentacja/Homepage_Attributions}\\
+	\caption{Wypisanie twórców grafik, filmów pobranych z innych stron.}
+	\label{fig:homepage_attributions}
+\end{figure}
+\section{Rejestracja i logowanie}
+Po przejściu na stronę rejestracji ukazuje nam się formularz rejestracji. Zawiera on podstawowe pola tzn. username, email oraz hasło.
+Formularz jest walidowany pod kątem poprawności maila i siły hasła
+ a pola username oraz email są dodatkowo walidowane z API onBlur, w celu sprawdzenia, czy nie znajdują się już w bazie danych. 
+Po udanym przejściu przez formularz rejestracji wyskakuje nam powiadomienie typu Snackbar. 
+Zawiadamia nas ono o konieczności potwierdzenia logowania, które zostało wysłane na maila podanego podczas rejestracji.
+Na email'a przychodzi nam wiadomość widoczna na rysunku nr \ref{fig:Email}, z możliwością potwierdzenia swojego logowania.
+Po potwierdzeniu swojego konta otwiera nam się strona z komunikatem o udanym potwierdzeniu konta, wraz z możliwością przejścia do strony logowania.
+W razie, gdyby email z potwierdzeniem konta nie przyszedł za pierwszym razem,
+ na stronie logowania przedstawionej na rysunku nr \ref{fig:Login}, mamy możliwość ponownego wysłania takiej wiadomości.
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.3]{prezentacja/Register}\\
+	\caption{Strona rejestracji Gamitude}
+	\label{fig:Register}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.3]{prezentacja/Email}\\
+	\caption{Przedstawienie otrzymanego maila wymagającego potwierdzenie utworzenia konta}
+	\label{fig:Email}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.3]{prezentacja/Confirmed_Email}\\
+	\caption{Strona przedstawiająca potwierdzenie konta}
+	\label{fig:Confirmed_Email}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.3]{prezentacja/Login}\\
+	\caption{Strona przedstawiająca ekran logowania do aplikacji}
+	\label{fig:Login}
+\end{figure}
+\section{Control Panel}
+Po zalogowaniu po prawej stronie poajwi się panel kontrolny.
+Zawiera on:
+\begin{itemize}
+	\item Avatara z obrazkiem rangi oraz badge'ami, pierwsza do zmiany rangi, druga wyświetlająca tier rangi. 
+	\item Obecne wartości liczbowe dla energi oraz statystyk.
+	\item Czasomierz sesji.
+	\item Oraz listę dostępnych czasomierzy wraz z guzikiem otwierającym ich ustawienia.
+\end{itemize}
+\section{Gamitude Projects}
+Domyślną stroną po zalogowaniu jest serwis projektów.
+Składa się on z zoorganizowanych w foldery panelów z projektami.
+Foldery wyświetlane po lewej można edytować bądź dodawać nowe poprzez klinknięcie na zębatki na końcu listy.
+Nowe projekty dodajemy poprzez kliknięcie plusa w prawym dolnym rogu okna projektów.
+Wybieramy projekt, nad którym chcemy pracować, klikając jego nazwę bądź guzik radio koło niej.
+Kliknięcie pozostałej części panelu rozwinie go do edycji.
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.3]{prezentacja/Projects}\\
+	\caption{Strona przedstawiająca Gamitude Projects}
+	\label{fig:Projects}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.3]{prezentacja/Folders_add}\\
+	\caption{Strona przedstawiająca ekran dodawania folderu w Gamitude Projects}
+	\label{fig:Folders_add}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.3]{prezentacja/Folders_edit}\\
+	\caption{Strona z Gamitude Projects ukazująca proces edycji folderu}
+	\label{fig:Folders_edit}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.3]{prezentacja/Project}\\
+	\caption{Strona przedstawiająca jak wygląda projekt w Gamitude Projects}
+	\label{fig:Project}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.3]{prezentacja/Projects_add}\\
+	\caption{Strona z Gamitude Projects przedstawiająca proces dodawania projektu}
+	\label{fig:Projects_add}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.3]{prezentacja/Projects_session}\\
+	\caption{Strona przedstawiająca włączoną sesję na Gamitude Projects}
+	\label{fig:Projects_session}
+\end{figure}
+\section{Bullet Journal}
+Po przejściu do Bullet Journal’a, na samym początku widzimy listę dzienników prowadzonych przez użytkownika porzedstawiąną na rysunku nr \ref{fig:Bullet}.
+Każdy dziennik zawiera strony, które odpowiedzalne są za wyświetlanie zadań z terminem wykonania odpowiadającym zakresowi dat danej strony (rysunek nr \ref{fig:Bullet_pages}).
+Dzienniki, jak i strony możemy dodawa poprzez ikony plusa znajdujący się pod odpowiednio dziennikami i stronami.
+Zadania, które dodajemy po wybraniu dziennika i strony, składają się z nazwy, notatki w razie, gdyby zadanie potrzebowało krótkiego wyjaśnienia,
+ terminu wykonania, połączonego projektu oraz tagów.
+Poprzez zaznaczenie zadania oraz uruchomienie czasomierza, możemy rozpocząć pracę nad zadaniem.
+Jeśli nasze zadanie nie jest przypisane do projektu, nie jesteśmy w stanie uruchomić czasomierza.
+Gdy uważamy, że wykonaliśmy swoje zadanie, należy po zakończeniu sesji kliknąć przycisk „Finish”.
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.3]{prezentacja/Bullet}\\
+	\caption{Strona przedstawiająca domyślny stan Bullet Journal’a}
+	\label{fig:Bullet}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.3]{prezentacja/Bullet_pages}\\
+	\caption{Strona ukazująca strony w wybranym dzienniku w Bullet Journal}
+	\label{fig:Bullet_pages}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.3]{prezentacja/Bullet_Journal_add}\\
+	\caption{Strona z Bullet Journal przedstawiająca proces dodawania nowego dziennika}
+	\label{fig:Bullet_Journal_add}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.3]{prezentacja/Journal_edit}\\
+	\caption{Strona z Bullet Journal pokazująca proces edycji dziennika}
+	\label{fig:Journal_edit}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.3]{prezentacja/Page_add}\\
+	\caption{Strona z Bullet Journal, która pokazuje proces dodawania strony}
+	\label{fig:Page_add}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.3]{prezentacja/Page_edit}\\
+	\caption{Strona przedstawiająca proces edycji strony w Bullet Journal}
+	\label{fig:Page_edit}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.3]{prezentacja/ProjectTask}\\
+	\caption{Strona przedstawiająca zadanie w Bullet Journal}
+	\label{fig:ProjectTask}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.3]{prezentacja/ProjectTask_add}\\
+	\caption{Strona przedstawiająca proces dodawania zadania w Bullet Journal}
+	\label{fig:ProjectTask_add}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.3]{prezentacja/Bullet_Session}\\
+	\caption{Strona z Bullet Journal przedstawiająca zadanie w toku}
+	\label{fig:Bullet_Session}
+\end{figure}
+\section{Gamitude Themes}
+Ekran do zakupu rang. Niestety działają jedynie podstawowe funkcjonalności jak wyświetlenie oraz kupowanie rang.
+Filtorwanie oraz reszta dodadków będą dodane w przyszłej wersji komercyjnej.
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.3]{prezentacja/Gamitude_Themes}\\
+	\caption{Strona przedstawiająca Gamitude Themes, odpowiedzialną za kupowanie rang użytkownika}
+	\label{fig:Gamitude_Themes}
+\end{figure}
+\section{Ustawienia użytkownika}
+Na tym ekranie możemy zmienić maila, hasło bądź usunąć nasze konto, email zostanie zmieniony dopiero po potwierdzeniu maila.
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.3]{prezentacja/Settings}\\
+	\caption{Strona ustawień użytkownika Gamitude}
+	\label{fig:Settings}
+\end{figure}
+
 \chapter{Nakład pracy}
 \section{Rozpoznanie problemu}
 Ilość godzin poświęconych: 85\\
