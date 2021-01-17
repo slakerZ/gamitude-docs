@@ -5,6 +5,7 @@
 \usepackage{blindtext}
 \usepackage[T1]{fontenc}
 \usepackage{booktabs}
+\usepackage{float}
 \usepackage{graphicx}
 \usepackage{wrapfig}
 \usepackage{multirow}
@@ -1090,13 +1091,14 @@ niezależnym od dostawcy chmurowego (decyzja ta też została podjęta ze wzglę
 Aplikacja webowa Gamitude została wykonana w architekturze wielowarstwowej typu klient-serwer.
 Interfejs użytkownika został wykonany w technologi SPA (single page application).
 Naturalnym więc było podzielenie całej aplikacji na 2 repozytoria Frontend'u i Backend'u.
-Komunikacja pomiędzy nimi opiera się na protokole HTTP/HTTPS.
-\begin{figure}[!h]
+Komunikacja pomiędzy nimi opiera się na protokole HTTP/HTTPS.\\
+\begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.5]{gamitude_overview}\\
+	\includegraphics[scale=0.3]{gamitude_overview}\\
 	\caption{Uproszczona architektura}
 	\label{fig:overwiewarch}
 \end{figure}
+
 
 \subsection{Frontend}
 Aplikacja web'owa została podzielona na komponenty z zachowaniem większości zasad atomic designu.\\
@@ -1121,7 +1123,9 @@ Dzięki temu w każdym miejscu projektu możemy łatwo uzyskać dostęp do potrz
 Także pozwala nam on na łatwą podmianę danego komponentu aplikacji poprzez zarejestrowanie innej implementacji danego interfejsu.
 
 \subsection{Baza Danych}
-Wybraliśmy bazę danych NoSQL do naszego projektu. Ze względu na koszty finansowe oraz łatwiejszą skalowalność kosztem braku transakcji.
+Ze względu na zwinne podejście zespołu do wytwarzania oprogramowania, głównym czynnikiem, którym zespół kierował się przy wyborze bazy danych, jest jej łatwa skalowalność.
+System w trakcie prac ewoluował, przez co dodatkowym czynnikiem przy wybieraniu bazy jest jej łatwa edycja, by dostosować ją do potrzeb wymagań. 
+Wybraliśmy bazę danych MongoDB, która jest bazą NoSQL do naszego projektu, przez wzgląd na oba powyższe czynniki. Bonusem przy wyborze MongoDB są niskie koszty finansowe oraz łatwiejsza skalowalność kosztem braku transakcji.
 \subsection{Chmura}
 Wdrożyliśmy nasza aplikacje do chmury za pośrednictwem aplikacji Kubernetes, pozwoliło to nam pozostać w miarę możliwości
 niezależnym od dostawcy chmurowego. Dziś korzystamy z chmury Google'a.
