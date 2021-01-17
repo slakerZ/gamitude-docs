@@ -9,3 +9,4 @@
 {"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QIdentyfikator: F13 Priorytet: W – won't Nazwa System znajomych użytkowników.\\E$"}
 {"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QIdentyfikator: F14 Priorytet: W – won't Nazwa Energy Assistant.\\E$"}
 {"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QIdentyfikator: F15 Priorytet: W – won't Nazwa Elastic Habits.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QAplikacja serwerowa została podzielona na warstwy, przedstawione na obrazku \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
