@@ -1334,11 +1334,23 @@ Informacje kontrolujące czy jest otwarty, czy zamknięty otrzymuje z zewnątrz 
 	\label{fig:dialog}
 \end{figure}
 
+\subsection{Akordeon}
+\label{subsec:accordion}
+Akordeon to element zawierający nagłówek oraz ciało, który po kliknięciu otwiera się bądź zamyka.\\
+Można również nadpisać jego akcje, umieszczając w tekście nagłówka guzik typu radio.
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{implementacja/frontend/accordion}\\
+	\caption{Implementacja akordeonu}
+	\label{fig:accordion}
+\end{figure}
+
 \subsection{Style}
 \label{subsec:style}
 Zamiast tradycyjnych plików css korzystamy z CSS-in-JS - JSS gdzie style są tworzone z objektów JavaScript'owych.\\
 Konkretnie wykorzystujemy implementacje tego podejścia z Material-UI i tworzymy nasze style od razu z dostępem do obiektu theme z biblioteki.
 \begin{figure}[H]
+	\centering
 	\includegraphics[scale=0.5]{implementacja/frontend/jss_styles}\\
 	\caption{Przykład użycia makeStyles — implementacji JSS z Material-UI}
 	\label{fig:jss_styles}
@@ -1366,15 +1378,19 @@ Logowanie zawiera pola:
 Oraz przycisk do ponownego wysłania maila do weryfikacji.
 
 \subsection{Gamitude Projects}
+Zawiera tabsy \ref{subsec:tabs} wyświetlające foldery użytkownika, po kliknięciu pokazuje projekty w danym folderze z formie akordeonu \ref{subsec:accordion}.
+W ciele akordeonu znajduje się formularz \ref{subsec:forms} do edycji projektu oraz guzik do jego usunięcia.\\
+W nagłówku znajduje się guzik typu radio to zaznaczenia projektu dla czasomierza znajdującego się w panelu kontrolnym.
 
 \subsection{Bullet Journal}
-Komponent Bullet Journal Page został rozbity na kilka pomniejszych kompotentów.
+Komponent Bullet Journal Page został rozbity na kilka pomniejszych kompotentów.\\
  Komponenty Journal, Page oraz BulletTask odpowiadają za renderowanie odpowiedznio dzienników, stron oraz zadań z dziennika.
- BulletTask zawiera w sobie komponent TaskTile,
- którego zadaniem jest wyrenderowanie zawartości każdego zadania tj. możliwość edycji zadania, możliwość usunięcia zadania, czy możliwość jego zakończenia.\\
- Komponenty AddJournalDialog i AddPageDialog są to komponenty typu dialog opisane w podrozdziale nr\ref{dialog},
+ BulletTask zawiera w sobie komponent TaskTile, będący przedstawiony w formie akordeonu, przedstawionym w podpunkcie nr \ref{subsec:accordion},
+ którego zadaniem jest wyrenderowanie zawartości każdego zadania tj. możliwość zaznaczenia zadania, możliwość edycji zadania, możliwość usunięcia zadania i możliwość jego zakończenia.\\
+ Journal oraz Page składają się z komponentu Tabs i TabPanel pokazanych w podpunkcie \ref{subsec:tabs}, które otrzymują dane na temat listy dzienników oraz stron z API.\\
+ Komponenty AddJournalDialog i AddPageDialog są to komponenty typu dialog opisane w podrozdziale nr \ref{subsec:dialog},
  które suża do dodawania, edycji oraz usuwania dzienników, jak i stron z dzienników użytkownika.
- AddProjectTaskDialog służy jedynie do dodawania zadań. 
+ AddProjectTaskDialog służy jedynie do dodawania zadań.\\
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.4]{implementacja/frontend/bullet_journal_diagram}\\
@@ -1387,17 +1403,6 @@ Komponent Bullet Journal Page został rozbity na kilka pomniejszych kompotentów
 	\caption{Podział Bullet Journal Page na komponenty Journal, Page oraz Bullet Task}
 	\label{fig:bullet_division}
 \end{figure}
-\subsubsection{Journal oraz Page}
-Komponenty Journal i Page wykorzystują komponenty Tabs oraz TabPanel, które zostały zaprezentowane w podrozdziale nr\ref{subsec:tabs}.
-Wszystkie dane potrzebne do wyrenderowania otrzymują od rodzica Bullet Journal Page,
- który wykonuje zapytania HTTP typu GET do API dzienników oraz stron.
-Otrzymują one również funkcje 
-\subsubsection{BulletTask}
-\subsubsection{TaskTile}
-\subsubsection{AddJournalDialog}
-\subsubsection{AddPageDialog}
-\subsubsection{AddProjectTaskDialog}
-
 
 \subsection{Gamitude Themes}
 Wyświetla dostępne rangi w formie kart po lewej natomiast mamy serie checkbox'ów do filtrowania wyników oraz paginacje.
@@ -1419,7 +1424,7 @@ Składa się z tabsów\ref{subsec:tabs} zawierających formularze\ref{subsec:for
 	\label{fig:folders}
 \end{figure}
 Projekt został podzielony na 3 podprojekty. Projekt gamitude\_backend zawiera główną implementację systemu.
-Pozostałe 2 zostały stwrzone na potrzeby testowania.
+Pozostałe 2 zostały stowrzone na potrzeby testowania.
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.5]{implementacja/backend/struktura_folderow_gamitude_backend}\\
@@ -1471,30 +1476,40 @@ Wszystkie enpointy interfejsu Web API.
 	\caption{Enpointy Api}
 	\label{fig:users_api}
 \end{figure}
+\subsection{Baza danych}
+Wykorzystana baza mongo dzięki swojej elastyczności pozwoliła na łatwą edycję struktury bazy szczególnie w rozwijającej się aplikacji.
+Wystarczyło zmienić model w klasie odpowiedzialnej za dany model i podczas dodawania nowego obiektu do bazy był on tworzony automatycznie.
+Finalne modele bazy danych.
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth, height=10cm]{gamitude_database_model}\\
+	\caption{Schemat bazy danych}
+	\label{fig:db}
+\end{figure}
 \subsection{Utills}
 Przykład klasy extension rysunek nr \ref{fig:gamitude_extension} oraz  middleware rysunek nr \ref{fig:gamitude_middleware}.
 Używane one są do konfiguracji całej aplikacji w bardziej przejrzysty sposób rysunek nr \ref{fig:gamitude_services_startup} oraz nr \ref{fig:gamitude_pipeline_startup}.
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.5]{implementacja/backend/przykład_extension}\\
+	\includegraphics[scale=0.35]{implementacja/backend/przykład_extension}\\
 	\caption{Przykład extension}
 	\label{fig:gamitude_extension}
 \end{figure}
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.5]{implementacja/backend/przykład_middleware}\\
+	\includegraphics[scale=0.35]{implementacja/backend/przykład_middleware}\\
 	\caption{Przykład middleware}
 	\label{fig:gamitude_middleware}
 \end{figure}
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.5]{implementacja/backend/register_services_startup}\\
+	\includegraphics[scale=0.3]{implementacja/backend/register_services_startup}\\
 	\caption{Rejestracja serwisów w startup.cs}
 	\label{fig:gamitude_services_startup}
 \end{figure}
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.5]{implementacja/backend/przykład_pipeline_startup}\\
+	\includegraphics[scale=0.3]{implementacja/backend/przykład_pipeline_startup}\\
 	\caption{Konfiguracja http pipeline w startup.cs}
 	\label{fig:gamitude_pipeline_startup}
 \end{figure}
@@ -1509,25 +1524,25 @@ Klasy odpowiedzialne za:
 Przykładowe metody kontrolerów.
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.5]{implementacja/backend/przykład_get}\\
+	\includegraphics[scale=0.3]{implementacja/backend/przykład_get}\\
 	\caption{Metoda GET w kontrolerze}
 	\label{fig:przykład_get}
 \end{figure}
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.5]{implementacja/backend/przykład_post}\\
+	\includegraphics[scale=0.3]{implementacja/backend/przykład_post}\\
 	\caption{Metoda POST w kontrolerze}
 	\label{fig:przykład_post}
 \end{figure}
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.5]{implementacja/backend/przykład_put}\\
+	\includegraphics[scale=0.3]{implementacja/backend/przykład_put}\\
 	\caption{Metoda PUT w kontrolerze}
 	\label{fig:przykład_put}
 \end{figure}
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.5]{implementacja/backend/przykład_delete}\\
+	\includegraphics[scale=0.3]{implementacja/backend/przykład_delete}\\
 	\caption{Metoda DELETE w kontrolerze}
 	\label{fig:przykład_delete}
 \end{figure}
@@ -1565,7 +1580,7 @@ Pozwala to na odzielenie logi od bazy danych w przypadku późniejszej jej zmian
 Przykład serwisu
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.5]{implementacja/backend/przykład_timer_service}\\
+	\includegraphics[scale=0.4]{implementacja/backend/przykład_timer_service}\\
 	\caption{Serwis timera}
 	\label{fig:przykład_timer_service}
 \end{figure}
@@ -1574,13 +1589,13 @@ Klasa odpowiedzialna za komunikacje z bazą danych przechowuje ona logike odczyt
 Przykład repozytorium oraz jego interfejsu
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.5]{implementacja/backend/przykład_timer_irepo}\\
+	\includegraphics[scale=0.4]{implementacja/backend/przykład_timer_irepo}\\
 	\caption{Interfejs repozytorium timera}
 	\label{fig:przykład_timer_irepo}
 \end{figure}
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.5]{implementacja/backend/przykład_timer_repo}\\
+	\includegraphics[scale=0.4]{implementacja/backend/przykład_timer_repo}\\
 	\caption{Repozytorium timera}
 	\label{fig:przykład_timer_repo}
 \end{figure}
@@ -1595,7 +1610,7 @@ Klasy odpowiedzialne za przechowywanie struktury modeli, które są odpowiednika
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.5]{implementacja/backend/przykład_timer_model_count}\\
-	\caption{Model timera}
+	\caption{Model CountDownInfo osadzonego w klasie Timer}
 	\label{fig:przykład_timer_model_count}
 \end{figure}
 
@@ -1611,16 +1626,7 @@ Klasy odpowiedzialne za przechowywanie struktury modeli, które są odpowiednika
 	\item Serilog AspNetCore – Logger.
 	\item NWebsec AspNetCore Middleware – Security HTTP headers.
 \end{itemize}
-\subsection{Baza danych}
-Wykorzystana baza mongo dzięki swojej elastyczności pozwoliła na łatwą edycję struktury bazy szczególnie w rozwijającej się aplikacji.
-Wystarczyło zmienić model w klasie odpowiedzialnej za dany model i podczas dodawania nowego obiektu do bazy był on tworzony automatycznie.
-Finalne modele bazy danych.
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=\textwidth, height=10cm]{gamitude_database_model}\\
-	\caption{Schemat bazy danych}
-	\label{fig:db}
-\end{figure}
+
 \chapter {Historia sprintów}
 \section {Rozpoznanie dziedzinowe}
 \subsection {Założenia sprintu}
@@ -2093,6 +2099,8 @@ Stanisław: \\
 
 \chapter {Testy w grupach docelowych}
 Miejsce na wpisanie raportów z testów na grupach użytkowników
+
+
 
 \chapter{Prezentacja systemu w działaniu}
 \section{Strona główna}
