@@ -1272,6 +1272,7 @@ Testing-library\cite{testing-library} jest to zbiór narzędzi do testowania opr
 \end{figure}
 
 \subsection{Formularze}
+\label{subsec:forms}
 Wszystkie formularze w naszej aplikacji są tworzone za pomocą Formika z wyglądem input'ów z Material-Ui'a oraz walidacją z Yup'a.\\
 W aplikacji stworzyliśmy specjalnie komponenty formik-form oraz formik-field, aby tworzenie formularzy było możliwe poprzez proste podanie:
 \begin{itemize}
@@ -1310,6 +1311,29 @@ W aplikacji stworzyliśmy specjalnie komponenty formik-form oraz formik-field, a
 	\label{fig:fields}
 \end{figure}
 
+\subsection{Tabs z Tabpanel'ami}
+\label{subsec:tabs}
+W aplikacji wielokrotnie korzystami z połączenia tabów i tabpaneli — zakładek i ich zawartości.\\
+Po kliknięciu danej zakładki przełączamy się na nią i wyświetlamy jej zawartość.
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{implementacja/frontend/tabs}\\
+	\caption{Przykład połączenia tabsów z tabpanelami}
+	\label{fig:tabs}
+\end{figure}
+
+\subsection{Dialog}
+\label{subsec:dialog}
+Dialog to element zawierający tytuł, zawartość oraz akcje wyświetlający się nad innymi
+ elementami strony przesłaniając je półprzeźroczystym czarnym tłem.
+Informacje kontrolujące czy jest otwarty, czy zamknięty otrzymuje z zewnątrz tak samo, jak funkcje wywoływane na akcjach.
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{implementacja/frontend/dialog}\\
+	\caption{Implementacja dialogu}
+	\label{fig:dialog}
+\end{figure}
+
 \subsection{Style}
 \label{subsec:style}
 Zamiast tradycyjnych plików css korzystamy z CSS-in-JS - JSS gdzie style są tworzone z objektów JavaScript'owych.\\
@@ -1326,31 +1350,34 @@ Konkretnie wykorzystujemy implementacje tego podejścia z Material-UI i tworzymy
 	\label{fig:custom_theme}
 \end{figure}
 
-\subsection{Plik główny App.tsx}
-App składa się z drawer'ów po lewej i prawej stronie oraz okna wyświetlacego strony po środku.
- Po lewej znajduje się nawigacja, po prawej panel kontrolny.
-\begin{figure}
-	\centering
-	\ContinuedFloat
-	\includegraphics[width=\textwidth]{implementacja/frontend/app}\\
-	\caption{Kod App.tsx}
-	\label{fig:app}
-\end{figure}
-
-pod każdą subsection diagram komponentów dla danej funkcjonalności
 \subsection{Autoryzacja}
+Wyświetla formularz\ref{subsec:forms} rejestracji lub logowania w zależności od kliknięcia "Already have an account?", lub "Don't have and account?".
+Rejestracja zawiera pola:
+\begin{itemize}
+	\item Username na nazwe użytkownika.
+	\item Email na mail, na który zostanie wysłany email potwierdzający konto.
+	\item Password oraz Confirm password na hasło, oraz jego potwierdzenie.
+\end{itemize}
+Logowanie zawiera pola:
+\begin{itemize}
+	\item Username na nazwe użytkownika.
+	\item Password na hasło danego konta.
+\end{itemize}
+Oraz przycisk do ponownego wysłania maila do weryfikacji.
+
 \subsection{Gamitude Projects}
+
 \subsection{Bullet Journal}
 Komponent Bullet Journal Page został rozbity na kilka pomniejszych kompotentów.
  Komponenty Journal, Page oraz BulletTask odpowiadają za renderowanie odpowiedznio dzienników, stron oraz zadań z dziennika.
  BulletTask zawiera w sobie komponent TaskTile,
- którego zadaniem jest wyrenderowanie zawartości każdego zadania tj. możliwość edycji zadania, możliwość usunięcia zadania, czy możliwość jego zakńczenia.\\
- Komponenty AddJournalDialog i AddPageDialog są to komponenty typu modal,
+ którego zadaniem jest wyrenderowanie zawartości każdego zadania tj. możliwość edycji zadania, możliwość usunięcia zadania, czy możliwość jego zakończenia.\\
+ Komponenty AddJournalDialog i AddPageDialog są to komponenty typu dialog opisane w podrozdziale nr\ref{dialog},
  które suża do dodawania, edycji oraz usuwania dzienników, jak i stron z dzienników użytkownika.
  AddProjectTaskDialog służy jedynie do dodawania zadań. 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.5]{implementacja/frontend/bullet_journal_diagram}\\
+	\includegraphics[scale=0.4]{implementacja/frontend/bullet_journal_diagram}\\
 	\caption{Diagram komponentów zawartych w Bullet Journal}
 	\label{fig:bullet_diagram}
 \end{figure}
@@ -1360,9 +1387,11 @@ Komponent Bullet Journal Page został rozbity na kilka pomniejszych kompotentów
 	\caption{Podział Bullet Journal Page na komponenty Journal, Page oraz Bullet Task}
 	\label{fig:bullet_division}
 \end{figure}
-\subsubsection{Journal}
-
-\subsubsection{Page}
+\subsubsection{Journal oraz Page}
+Komponenty Journal i Page wykorzystują komponenty Tabs oraz TabPanel, które zostały zaprezentowane w podrozdziale nr\ref{subsec:tabs}.
+Wszystkie dane potrzebne do wyrenderowania otrzymują od rodzica Bullet Journal Page,
+ który wykonuje zapytania HTTP typu GET do API dzienników oraz stron.
+Otrzymują one również funkcje 
 \subsubsection{BulletTask}
 \subsubsection{TaskTile}
 \subsubsection{AddJournalDialog}
@@ -1371,7 +1400,15 @@ Komponent Bullet Journal Page został rozbity na kilka pomniejszych kompotentów
 
 
 \subsection{Gamitude Themes}
+Wyświetla dostępne rangi w formie kart po lewej natomiast mamy serie checkbox'ów do filtrowania wyników oraz paginacje.
+
 \subsection{User Settings}
+Składa się z tabsów\ref{subsec:tabs} zawierających formularze\ref{subsec:forms}:
+\begin{itemize}
+	\item Change Password z polami na potwierdzenie starego hasła, wprowadzenie nowego i potwierdzenie go.
+	\item Change Email z polem na nowy email.
+	\item Danger Zone z guzikiem do usunięcia konta — pojawi się modal z potwierdzeniem.
+\end{itemize}
 
 \section{Backend}
 \subsection{Struktura katalogów w projekcie}
@@ -1391,9 +1428,51 @@ Pozostałe 2 zostały stwrzone na potrzeby testowania.
 \end{figure}
 Główna implementacja systemu została podzielona na 3 warstwy tj. warstwa Web zawierająca kontrolery oraz ich kontrakty do komunikacji z warstwą prezentacji.
 Warstwe serwisów zawierającą logike biznesową oraz warstwa Data, która przechowuje modele oraz ich repozytoria (klasy odpowiedzialne za komunikację z bazą danych).
-Projekt zawiera również folder Utils, w którym przechowywane są funkcje pomocnicze.
+Projekt zawiera również folder Utils, w którym przechowywane są funkcje pomocnicze. Autoryzacja w systemie została rozwiązana przy pomocy tokenów JWT.
+Są one podpisane, dzięki temu można zweryfikować czy nie zostały zmodyfikowane. Można w nich przechowywać dane użytkownika np. jego unikalne Id.
+\subsection{Skrócony diagram klas}
+Rzut na całą implementację systemu z pominięciem klas pomocniczych i konfiguracyjnych.
+\begin{figure}[H]
+	\centering
+	\rotatebox[origin=c]{270}{
+	\includegraphics[scale=0.24]{implementacja/backend/gamitude_backend}}\\
+	\caption{Skrócony diagram klas}
+	\label{fig:gamitude_backend}
+\end{figure}
+\subsection{Endpointy API}
+Wszystkie enpointy interfejsu Web API.
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{implementacja/backend/auth_folders_journals_api}\\
+	\caption{Enpointy Api}
+	\label{fig:auth_folders_journals_api}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{implementacja/backend/pages_projectLogs_projects_api}\\
+	\caption{Enpointy Api}
+	\label{fig:pages_projectLogs_projects_api}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{implementacja/backend/projectTasks_rank_statistics_api}\\
+	\caption{Enpointy Api}
+	\label{fig:projectTasks_rank_statistics_api}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{implementacja/backend/timers_api}\\
+	\caption{Enpointy Api}
+	\label{fig:timers_api}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{implementacja/backend/users_api}\\
+	\caption{Enpointy Api}
+	\label{fig:users_api}
+\end{figure}
 \subsection{Utills}
-Klasy extensions rysunek nr \ref{fig:gamitude_extension} oraz  middleware rysunek nr \ref{fig:gamitude_middleware}.
+Przykład klasy extension rysunek nr \ref{fig:gamitude_extension} oraz  middleware rysunek nr \ref{fig:gamitude_middleware}.
 Używane one są do konfiguracji całej aplikacji w bardziej przejrzysty sposób rysunek nr \ref{fig:gamitude_services_startup} oraz nr \ref{fig:gamitude_pipeline_startup}.
 \begin{figure}[H]
 	\centering
@@ -1521,7 +1600,17 @@ Klasy odpowiedzialne za przechowywanie struktury modeli, które są odpowiednika
 \end{figure}
 
 \subsection{Wykorzystane biblioteki}
-
+\begin{itemize}
+	\item AutoMapper – mapowanie obiektów pomiędzy klasami.
+	\item Microsoft AspNetCore Authentication JwtBearer – weryfikowanie JWT pipelin'a autentykowania i autoryzacji użytkownika.
+	\item System IdentityModel Tokens Jwt – manipulacja tokenami JWT.
+	\item SendGrid – wysyłanie maili.
+	\item Swashbuckle AspNetCore – generowanie dokumentacji API.
+	\item AspNetCore Identity Mongo AspNetCore – Zarządzanie użytkownikami.
+	\item MongoDB Driver – Sterownik bazy danych Mongo.
+	\item Serilog AspNetCore – Logger.
+	\item NWebsec AspNetCore Middleware – Security HTTP headers.
+\end{itemize}
 \subsection{Baza danych}
 Wykorzystana baza mongo dzięki swojej elastyczności pozwoliła na łatwą edycję struktury bazy szczególnie w rozwijającej się aplikacji.
 Wystarczyło zmienić model w klasie odpowiedzialnej za dany model i podczas dodawania nowego obiektu do bazy był on tworzony automatycznie.
