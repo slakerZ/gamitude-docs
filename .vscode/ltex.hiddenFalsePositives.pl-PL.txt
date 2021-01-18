@@ -10,3 +10,4 @@
 {"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QIdentyfikator: F14 Priorytet: W – won't Nazwa Energy Assistant.\\E$"}
 {"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QIdentyfikator: F15 Priorytet: W – won't Nazwa Elastic Habits.\\E$"}
 {"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QAplikacja serwerowa została podzielona na warstwy, przedstawione na obrazku \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"BRAK_SPACJI_NAWIAS","sentence":"^\\QReact-dom'a można używać jako pure albo z JSX-em. W wersji pure tworzymy elementy za pomocą React.createElement(nazwaTagu, tekst, dzieci) co jest dość niewygodne.\\E$"}

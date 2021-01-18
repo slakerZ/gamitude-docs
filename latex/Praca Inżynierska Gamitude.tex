@@ -8,6 +8,7 @@
 \usepackage{float}
 \usepackage{graphicx}
 \usepackage{wrapfig}
+\usepackage{caption}
 \usepackage{multirow}
 \usepackage[export]{adjustbox}
 \usepackage[nottoc,notlot,notlof]{tocbibind}
@@ -1102,7 +1103,7 @@ Komunikacja pomiędzy nimi opiera się na protokole HTTP/HTTPS.\\
 
 \subsection{Frontend}
 Aplikacja web'owa została podzielona na komponenty z zachowaniem większości zasad atomic designu.\\
-Atomic design to strategia tworzenia komponentów w sposób zapewniający jak największe użycie wtórne kodu.\\
+Atomic design\cite{atomicdesign} to strategia tworzenia komponentów w sposób zapewniający jak największe użycie wtórne kodu.\\
 Zamiast tradycyjnego podejścia podziału na komponenty i strony, mamy tutaj rozbicie na atomy, molekuły, organizmy, szablony oraz strony.\\
 Atomy to najmniejsze komponenty, otrzymują one swój stan z zewnątrz.\\
 Molekuły grupują atomy i przekazują im stan.\\
@@ -1110,7 +1111,6 @@ Organizmy grupują atomy z molekułami oraz pilnują interakcji między nimi.\\
 Szablony odpowiadają za rozmieszczenie elementów na stronie.\\
 Strony wyświetlają pozostałe elementy oraz odpowiadają na nawigacje.\\
 W naszym projekcie nie stosujemy szablonów z uwagi na wykorzystanie elementów Grid z Material-UI a stany i interakcje przenieśliśmy do Redux'a.\\
-
 \subsection{Backend}
 Aplikacja serwerowa została podzielona na warstwy, przedstawione na obrazku \ref{fig:overwiewarch}.
 W warstwie dostępu do bazy danych został wykorzystany wzorzec projektowy repozytorium lub repozytorium serwis.
@@ -1120,8 +1120,7 @@ Każdy obiekt w bazie danych posiada swoje repozytorium.
 Każdy serwis może korzystać z wielu repozytoriów, co pozwala na tworzenie bardziej złożonych struktur.
 Wykorzystany został także wzorzec projektowy wstrzykiwania zależności.
 Dzięki temu w każdym miejscu projektu możemy łatwo uzyskać dostęp do potrzebnych nam elementów np. Konfiguracji.
-Także pozwala nam on na łatwą podmianę danego komponentu aplikacji poprzez zarejestrowanie innej implementacji danego interfejsu.
-
+Także pozwala nam on na łatwą podmianę danego komponentu aplikacji poprzez zarejestrowanie innej implementacji danego interfejsu.\\
 \subsection{Baza Danych}
 Ze względu na zwinne podejście zespołu do wytwarzania oprogramowania, głównym czynnikiem, którym zespół kierował się przy wyborze bazy danych, jest jej łatwa skalowalność.
 System w trakcie prac ewoluował, przez co dodatkowym czynnikiem przy wybieraniu bazy jest jej łatwa edycja, by dostosować ją do potrzeb wymagań. 
@@ -1138,18 +1137,395 @@ Wdrożyliśmy technikę CI/CD, która pozwala na zbudowanie oraz aktualizacje ro
 \end{figure}
 \chapter {Implementacja rozwiązania}
 \section{Frontend}
+\subsection{Wykorzystane biblioteki}
+
+\subsubsection{Material-UI}
+Material-UI\cite{material-ui} składa się z 3 części:
+\begin{itemize}
+	\item Core — komponenty z dostosowywalną funkcjonalnością oraz wyglądem,
+		duże możliwości dostosowywania za pomocą make styles opisanych w podrozdziale nr \ref{subsec:style}.
+	\item Icons — biblioteka ikonek.
+	\item Lab — eksperymentalne komponenty.
+\end{itemize}
+Zmodyfikowane wersje komponentów z Core'a tworzą praktycznie całą naszą aplikację.
+
+\subsubsection{React}
+React\cite{react} to deklaratywna biblioteka do JS'a ułatwiająca tworzenie interaktywnych UI.\\
+ Wykorzystuje stany, aby ułatwiać renderowanie oraz re-renderowanie odpowiednych komponentów.\\
+ Sam React tylko opisuje co zrobić, faktycznym renderowanie elementów zajmuje się biblioteka react-dom\cite{react-dom}.\\
+ React-dom'a można używać jako pure albo z JSX-em.\\
+ W wersji pure tworzymy elementy za pomocą React.createElement(nazwaTagu, tekst, dzieci) co jest dość niewygodne.\\
+ Aby poprawić intuicyjnośc kodu oraz ułatwić pisanie elementów strony stworzono JSX-a.\\
+ JSX to specjalny język imitujący HTML-a, który jest tłumaczony przez Babel'a do wersji pure.\\
+ \begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{implementacja/frontend/react_no_jsx}\\
+	\caption{Przykład kodu w Reactie bez użycia JSX-a}
+	\label{fig:react_no_jsx}
+\end{figure}
+ \begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{implementacja/frontend/react_jsx}\\
+	\caption{Ten sam kod z użyciem jsx'a}
+	\label{fig:react_jsx}
+\end{figure}
+Babel nie jest obecny w naszych dependencjach, ponieważ używamy biblioteki Typescript\cite{typescript}, który i tak jest wewnętrznie kompilowany przez Babel'a.\\
+ Do uruchamiania aplikacji Reactowej używamy react-scripts\cite{react-scripts}, które przepuszczają aplikacje przez WebPack'a.\\
+ Cały ten skomplikowany setup jest automatycznie konfigurowany przy tworzeniu projektu za pomocą create-react-app.\\
+
+\subsubsection{Redux}
+Redux\cite{redux} jest przewidywalnym, opiniowanym kontenerem globalnego stanu dla aplikacji JavaScript'owych\\
+Konkretna implementacja dla React'a znajduje się w bibliotece react-redux\cite{react-redux},
+ a sam redux definiuje tylko, podobnie jak React, strukture.
+W skład tej struktury wchodzą:
+\begin{itemize}
+	\item Store — niemodyfikowalny objekt javascript'owy zawierający cały stan aplikacji.
+	\item Root reducer — funkcja przyjmująca reducery i zwracająca nowy obiekt store'a.
+	\item Reducer — fukcja przyjmująca stan obecny oraz akcje i zwracająca nowy stan obiektu.
+	\item Akcja — fukcje dispatch'ujące akcje do reducer'ów, jako jedyne mogą zmieniać stan store'a.
+\end{itemize}
+Dodatkowo występuje też pojęcie selectora, czyli zmemoizowanej funkcji zwracającej część store'a w celu uniknięcia zbędnych re-renderów.\\
+Do tworzenia tych funkcji używamy biblioteki reselect\cite{reselect}.\\
+W projekcie wykorzystujemy Redux'a do łatwego współdzielenia stanu między komponentami oraz stronami naszej aplikacji.\\
+Jest to dla nas świetne rozwiązanie ze względu na wykorzystanie czasomierza na różnych stronach w różnych kontekstach.\\
+W projekcie odwzorowaliśmy naszą strukture folderów dla trzymania stanu pod Redux'a.
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{implementacja/frontend/struktura_redux}\\
+	\caption{Struktura folderów dla trzymania stanu naszej aplikacji w Redux'ie}
+	\label{fig:struktura_redux}
+\end{figure}
+Dla monitorowania zmian tego globalnego stanu wykorzystujemy redux-logger'a\cite{redux-logger}.
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{implementacja/frontend/redux_logger}\\
+	\caption{Przykład działania redux-logger'a}
+	\label{fig:redux_logger}
+\end{figure}
+Żeby nasz store'a aktualizował się w odpowiedzi na asynchroniczne akcje z api, używamy redux-thunk'a\cite{redux-thunk}.
+W celu zminimalizowania liczby żadań do API zachowujemy store'a w pamięci podręcznej przeglądarki z pomocą redux-persist\cite{redux-persist}.
+
+\subsubsection{Axios}
+Axios'a\cite{axios} używamy do wykonywania zapytań do naszego API.
+ Jest to po prostu wygodniejsza i czytelniejsza metoda od korzystania z Fetch API czy XMLHttpRequest.
+\subsubsection{Clsx}
+Clsx'a\cite{clsx} używamy do warunkowego dodawania CSS'owych klas do komponentów.
+
+\subsubsection{React-helmet}
+React-helmet\cite{react-helmet} to prosty komponent aktualizujący element title naszej strony.
+ Używamy go do wyświetlania postępu / postałego czasu sesji oraz zmian tytułu po przejściu na inną podstronę.
+ Niestety przez niedawne aktualizaje Google Chrome'a wyświetlanie postępu hamuje przy przejściu na inną kartę.
+
+\subsubsection{React-page-scroller}
+React-page-scroller\cite{react-page-scroller} to prosty komponent react'owy,
+ pozwalający na scrollowanie na stronach zawierających pełno-ekranowe elementy po jednej stronie.
+ Wykorzystujemy go na stronie głownej naszej aplikacji.\\
+
+\subsubsection{React-router-dom}
+React-router-dom\cite{react-router-dom} to paczka imitująca routing znany z klasycznych stron renderowanych po stronie serwera.\\
+W SPA tak naprawdę podmieniamy cały czas zawartość tego samego pustego na początku div'a,
+ przez co tracimy możliwość korzystania z elementów przeglądarki takich jak guzik powrotu.
+React-roter-dom przywraca te możliwości sprawiająć, że interakcja SPA nie różni się od interakcji z tradycyjnymi stronami.
+
+\subsubsection{React-use}
+React-use\cite{react-use} jest to biblioteka react'owych hooków.
+ Są one gotowymi hookami dzielącymi się na: Sensors, UI, Side-effects,
+ Animations, Lifecycles, Miscellaneous i State. 
+ W projekcie głównie została wykorzystana do obsługi funkcji asynchronicznych wowoływanach za pomocą hooków stanu. \\  
+
+\subsubsection{Use-sound}
+Use-sound\cite{use-sound} to biblioteka zawierająca react'owego hooka,
+ dodająca możliwość odtwarzania dzwięków na stronach razem z React-dom.
+ Wykorzystujemy ja do odtwarzania dzwięków, będącymi powiadomieniami zbliżającego się końca sesji.\\ 
+
+\subsubsection{Formik}
+Formik\cite{formik} jest biblioteką do łatwego tworzenia formualarzy w Reactie.\\
+ Normalnie trzebabyło tworzyć hooka — specjalną zmienną dla lokalnego stanu komponentów oraz handler akcji dla każdego pola formularza.\\
+ Bardzo redukuje to przejżystość kodu, utrudnia utrzymanie jak oraz samo pisanie w takim stylu zajmuje dużo czasu.\\
+ Aby uniknąć tych problemów, stosujemy Formika spinającego stan formularza i monitorujego go za pomocą jednego przekazywanego obiektu.
+
+\subsubsection{Yup}
+Yup\cite{yup} jest biblioteką do walidowania formularzy za pomocą zdefiniowanych przez nas obiektów oraz zasad.
+
+\subsubsection{Eslint}
+Eslint\cite{eslint} to linter sprawdzający składnię napisanego kodu w razie wystąpienia błędów.\\  
+
+\subsubsection{Prettier}
+Prettier\cite{prettier} jest formaterem, który otrzymuje zasady, jak ma formatować kod.
+ Można go rozszerzyć pluginami np. o sortowanie importów.
+ Używamy go dla stosowania dobrych praktyk programowania w naszym projekcie oraz do sortowania importów w komponentach.\\
+
+\subsubsection{Typescript}
+Typescript\cite{typescript} rozszerza JavaScripta o dodawanie typów do języka. 
+Przyspiesza on pracę nad kodem przez wychwytywanie problemów z typami oraz proponuje ich naprawę, zanim uruchomi się kod.
+Dzieki dodaniu typów, o wiele łatwiej jest wychwytywać niespójności dotyczących danych przesyłanych w aplikacji.\\
+
+\subsubsection{Testing-library}
+Testing-library\cite{testing-library} jest to zbiór narzędzi do testowania oprogramowania.\\
+
+\subsection{Struktura folderów}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{implementacja/frontend/struktura_folderów}\\
+	\caption{Struktura folderów na Frontendzie}
+	\label{fig:struktura_folderów_front}
+\end{figure}
+
+\subsection{Formularze}
+Wszystkie formularze w naszej aplikacji są tworzone za pomocą Formika z wyglądem input'ów z Material-Ui'a oraz walidacją z Yup'a.\\
+W aplikacji stworzyliśmy specjalnie komponenty formik-form oraz formik-field, aby tworzenie formularzy było możliwe poprzez proste podanie:
+\begin{itemize}
+	\item Validation Schema — schemat walidacji pól formularza w formie obiektu.
+	\item Initial Values — wartości początkowe pól.
+	\item Fields — informacje o polu takie jak jego etykieta, nazwa czy typ.
+\end{itemize}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{implementacja/frontend/formik_form}\\
+	\caption{Formik form}
+	\label{fig:formik_form}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{implementacja/frontend/formik_field}\\
+	\caption{Formik field}
+	\label{fig:formik_field}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{implementacja/frontend/validation_schema}\\
+	\caption{Przykład validation schema}
+	\label{fig:validation_schema}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{implementacja/frontend/initial_values}\\
+	\caption{Przykład initial values}
+	\label{fig:initial_values}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{implementacja/frontend/fields}\\
+	\caption{Przykład fields}
+	\label{fig:fields}
+\end{figure}
+
+\subsection{Style}
+\label{subsec:style}
+Zamiast tradycyjnych plików css korzystamy z CSS-in-JS - JSS gdzie style są tworzone z objektów JavaScript'owych.\\
+Konkretnie wykorzystujemy implementacje tego podejścia z Material-UI i tworzymy nasze style od razu z dostępem do obiektu theme z biblioteki.
+\begin{figure}[H]
+	\includegraphics[scale=0.5]{implementacja/frontend/jss_styles}\\
+	\caption{Przykład użycia makeStyles — implementacji JSS z Material-UI}
+	\label{fig:jss_styles}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{implementacja/frontend/custom_theme}\\
+	\caption{Obiekt theme z Material-UI}
+	\label{fig:custom_theme}
+\end{figure}
+
+\subsection{Plik główny App.tsx}
+App składa się z drawer'ów po lewej i prawej stronie oraz okna wyświetlacego strony po środku.
+ Po lewej znajduje się nawigacja, po prawej panel kontrolny.
+\begin{figure}
+	\centering
+	\ContinuedFloat
+	\includegraphics[width=\textwidth]{implementacja/frontend/app}\\
+	\caption{Kod App.tsx}
+	\label{fig:app}
+\end{figure}
+
+pod każdą subsection diagram komponentów dla danej funkcjonalności
 \subsection{Autoryzacja}
 \subsection{Gamitude Projects}
 \subsection{Bullet Journal}
+Komponent Bullet Journal Page został rozbity na kilka pomniejszych kompotentów.
+ Komponenty Journal, Page oraz BulletTask odpowiadają za renderowanie odpowiedznio dzienników, stron oraz zadań z dziennika.
+ BulletTask zawiera w sobie komponent TaskTile,
+ którego zadaniem jest wyrenderowanie zawartości każdego zadania tj. możliwość edycji zadania, możliwość usunięcia zadania, czy możliwość jego zakńczenia.\\
+ Komponenty AddJournalDialog i AddPageDialog są to komponenty typu modal,
+ które suża do dodawania, edycji oraz usuwania dzienników, jak i stron z dzienników użytkownika.
+ AddProjectTaskDialog służy jedynie do dodawania zadań. 
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{implementacja/frontend/bullet_journal_diagram}\\
+	\caption{Diagram komponentów zawartych w Bullet Journal}
+	\label{fig:bullet_diagram}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.7]{implementacja/frontend/bullet_journal_division}\\
+	\caption{Podział Bullet Journal Page na komponenty Journal, Page oraz Bullet Task}
+	\label{fig:bullet_division}
+\end{figure}
+\subsubsection{Journal}
+
+\subsubsection{Page}
+\subsubsection{BulletTask}
+\subsubsection{TaskTile}
+\subsubsection{AddJournalDialog}
+\subsubsection{AddPageDialog}
+\subsubsection{AddProjectTaskDialog}
+
+
 \subsection{Gamitude Themes}
 \subsection{User Settings}
+
 \section{Backend}
-\subsection{Autoryzacja}
-\subsection{Gamitude Projects}
-\subsection{Bullet Journal}
-\subsection{User}
+\subsection{Struktura katalogów w projekcie}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{implementacja/backend/struktura_folderow}\\
+	\caption{Struktura całego projektu}
+	\label{fig:folders}
+\end{figure}
+Projekt został podzielony na 3 podprojekty. Projekt gamitude\_backend zawiera główną implementację systemu.
+Pozostałe 2 zostały stwrzone na potrzeby testowania.
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{implementacja/backend/struktura_folderow_gamitude_backend}\\
+	\caption{Struktura głównego projektu}
+	\label{fig:gamitude_struct}
+\end{figure}
+Główna implementacja systemu została podzielona na 3 warstwy tj. warstwa Web zawierająca kontrolery oraz ich kontrakty do komunikacji z warstwą prezentacji.
+Warstwe serwisów zawierającą logike biznesową oraz warstwa Data, która przechowuje modele oraz ich repozytoria (klasy odpowiedzialne za komunikację z bazą danych).
+Projekt zawiera również folder Utils, w którym przechowywane są funkcje pomocnicze.
+\subsection{Utills}
+Klasy extensions rysunek nr \ref{fig:gamitude_extension} oraz  middleware rysunek nr \ref{fig:gamitude_middleware}.
+Używane one są do konfiguracji całej aplikacji w bardziej przejrzysty sposób rysunek nr \ref{fig:gamitude_services_startup} oraz nr \ref{fig:gamitude_pipeline_startup}.
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{implementacja/backend/przykład_extension}\\
+	\caption{Przykład extension}
+	\label{fig:gamitude_extension}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{implementacja/backend/przykład_middleware}\\
+	\caption{Przykład middleware}
+	\label{fig:gamitude_middleware}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{implementacja/backend/register_services_startup}\\
+	\caption{Rejestracja serwisów w startup.cs}
+	\label{fig:gamitude_services_startup}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{implementacja/backend/przykład_pipeline_startup}\\
+	\caption{Konfiguracja http pipeline w startup.cs}
+	\label{fig:gamitude_pipeline_startup}
+\end{figure}
+\subsection{Kontrolery}
+Klasy odpowiedzialne za:
+\begin{itemize}
+	\item Komunikacje z warstwą prezentacji protokołem HTTP.
+	\item Przetworzenie kontraktu na model, jeżeli konieczne.
+	\item Zainicjalizowania wykonania logiki biznesowej.
+	\item Zwrócenia odpowiedniego kontraktu, jeżeli to konieczne.
+\end{itemize}
+Przykładowe metody kontrolerów.
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{implementacja/backend/przykład_get}\\
+	\caption{Metoda GET w kontrolerze}
+	\label{fig:przykład_get}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{implementacja/backend/przykład_post}\\
+	\caption{Metoda POST w kontrolerze}
+	\label{fig:przykład_post}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{implementacja/backend/przykład_put}\\
+	\caption{Metoda PUT w kontrolerze}
+	\label{fig:przykład_put}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{implementacja/backend/przykład_delete}\\
+	\caption{Metoda DELETE w kontrolerze}
+	\label{fig:przykład_delete}
+\end{figure}
+Przykładowe kontrakty.
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{implementacja/backend/przykład_timer_dto_get}\\
+	\caption{Kontrakt zwracanego timera}
+	\label{fig:przykład_timer_dto_get}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{implementacja/backend/przykład_timer_dto_create}\\
+	\caption{Kontrakt do tworzenia timera}
+	\label{fig:przykład_timer_dto_create}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{implementacja/backend/przykład_timer_dto_update}\\
+	\caption{Kontrakt do edycji timera}
+	\label{fig:przykład_timer_dto_update}
+\end{figure}
+Konfiguracja mappera do przetwarzania obiektów pomiędzy kontraktami.
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{implementacja/backend/przykład_mappera}\\
+	\caption{Konfiguracja mappera obiektów timera}
+	\label{fig:przykład_mappera}
+\end{figure}
 
 
+\subsection{Serwisy}
+Klasy odpowiedzialne przechowanie logiki biznesowej np. dodatkową obróbkę danych bądź bardziej skomplikowane operacje na wielu repozytoriach.
+Pozwala to na odzielenie logi od bazy danych w przypadku późniejszej jej zmiany, wystarczy podmienić repozytorium, które implementuje dany interfejs.
+Przykład serwisu
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{implementacja/backend/przykład_timer_service}\\
+	\caption{Serwis timera}
+	\label{fig:przykład_timer_service}
+\end{figure}
+\subsection{Repozytoria}
+Klasa odpowiedzialna za komunikacje z bazą danych przechowuje ona logike odczytu zapisu. 
+Przykład repozytorium oraz jego interfejsu
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{implementacja/backend/przykład_timer_irepo}\\
+	\caption{Interfejs repozytorium timera}
+	\label{fig:przykład_timer_irepo}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{implementacja/backend/przykład_timer_repo}\\
+	\caption{Repozytorium timera}
+	\label{fig:przykład_timer_repo}
+\end{figure}
+\subsection{Modele}
+Klasy odpowiedzialne za przechowywanie struktury modeli, które są odpowiednikami znajdującymi się w bazie danych.
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{implementacja/backend/przykład_timer_model}\\
+	\caption{Model timera}
+	\label{fig:przykład_timer_model}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{implementacja/backend/przykład_timer_model_count}\\
+	\caption{Model timera}
+	\label{fig:przykład_timer_model_count}
+\end{figure}
+
+\subsection{Wykorzystane biblioteki}
+
+\subsection{Baza danych}
+Wykorzystana baza mongo dzięki swojej elastyczności pozwoliła na łatwą edycję struktury bazy szczególnie w rozwijającej się aplikacji.
+Wystarczyło zmienić model w klasie odpowiedzialnej za dany model i podczas dodawania nowego obiektu do bazy był on tworzony automatycznie.
+Finalne modele bazy danych.
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=\textwidth, height=10cm]{gamitude_database_model}\\
