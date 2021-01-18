@@ -11,3 +11,7 @@
 {"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QIdentyfikator: F15 Priorytet: W – won't Nazwa Elastic Habits.\\E$"}
 {"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QAplikacja serwerowa została podzielona na warstwy, przedstawione na obrazku \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
 {"rule":"BRAK_SPACJI_NAWIAS","sentence":"^\\QReact-dom'a można używać jako pure albo z JSX-em. W wersji pure tworzymy elementy za pomocą React.createElement(nazwaTagu, tekst, dzieci) co jest dość niewygodne.\\E$"}
+{"rule":"BRAK_ZNAKU_ZAPYTANIA","sentence":"^\\QCzy to osoba z etatem starającą się utrzymać swoją rodzinę, czy to student, który zasypany jest obowiązkami ze studiów.\\E$"}
+{"rule":"SPACJA_ZNAK_ROWNOSCI","sentence":"^\\QRzut na całą implementację systemu z pominięciem klas pomocniczych i konfiguracyjnych. [origin=c]270.\\E$"}
+{"rule":"BRAK_SPACJI","sentence":"^\\QRzut na całą implementację systemu z pominięciem klas pomocniczych i konfiguracyjnych. [origin=c]270.\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\Q.\\E$"}

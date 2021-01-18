@@ -93,7 +93,7 @@ Energie\cite{Harward} dzielą się na 4 rodzaje: duszy, ciała, emocji i umysłu
  statystyki oraz rangi\cite{rangi}, gdzie statystyki można rozumieć jako sztuczną walutę podzieloną na 4 rodzaje a rangi 
  jako awatara użytkownika kupowanego za te waluty.
 \section{Przedstawienie problemu}
-Według pracy harwardzkiej, ludzie organizujący sobie prace, mają tendencje do siadania i wykonywania jej bez przerwy aż do ukończenia,
+Według pracy harwardzkiej\cite{Harward}, ludzie organizujący sobie prace, mają tendencje do siadania i wykonywania jej bez przerwy aż do ukończenia,
  ignorując holistyczną naturę działania ludzkiego organizmu oraz naturalne cykle zachodzące w ludzkim ciele.
  W pracy czas jest porównywany do węgla a energia do wiatru.
  Jest to nawiązanie do przemysłu energetycznego i cech źródeł odnawialnych i nieodnawialnych.
@@ -106,7 +106,7 @@ Zakresem projektu jest stworzenie zestawu narzędzi szanujących higienę pracy
  oraz indywidualne preferencje organizacji pracy przez użytkowników.
 
 \section{Podejście do projektu}
-Zwinne, Scrumban, aplikacja webowa oparta o JS, backend w .NET, wybrane ze względu na wieloplatformowość.
+Zwinne, Scrumban, aplikacja webowa oparta o JS, backend w .NET Core, wybrane ze względu na wieloplatformowość.
 
 \section{Rezultaty}
 Ludzie potrafią utrzymać produktywność w dłuższym okresie, bez ubytków w żadnej z dziedzin życia.
@@ -116,21 +116,21 @@ Omówienie problemu, analiza projektu, projektowanie i implementacja systemu, hi
  testy systemu, testy w grupie docelowej, nakład pracy, wkład własny, podsumowanie
 
 \section {Słownik pojęć}
-	\emph{Bullet Journal – dziennik, w którym można rozplanowywać zadania}\\
+	\emph{Bullet Journal – dziennik, w którym można rozplanowywać bardziej skomplikowane zadania na mniejsze}\\
 	\emph{Elastic Habits – stopniowanie zadania na 3 poziomy}\\
 	\emph{Projekt – Czynność bądź umiejętność, nad którą użytkownik chce pracować, nie ma podziału na podpunkty, skupiający się na czasie}\\
-	\emph{Statystyki-}\\
-	\emph{Energie-}\\
-	\emph{Rangi-}\\
-	\emph{Motywy-}\\
-	\emph{Tier-}\\
-	\emph{Foldery-}\\
-	\emph{Notatniki-}\\
-	\emph{Strony-}\\
-	\emph{Zadania-}\\
-	\emph{Boosted statistics-}\\
-	\emph{Dominant statistic-}\\
-	\emph{Czasomierz-}\\
+	\emph{Statystyki — Liczbowa reprezentacja poświęconego czasu nad projektami}\\
+	\emph{Energie — Liczbowa reprezentacja zasobów, które użytkownik może wykożystać do wykonywania projektów}\\
+	\emph{Rangi — Grafiki kupowane przez użytkownika za pomocą statystyk}\\
+	\emph{Motywy — szata kolorystyczna aplikacji możliwa do zmiany}\\
+	\emph{Tier — poziom rzadkości rangi}\\
+	\emph{Foldery — katalogi przetrzymujące projekty}\\
+	\emph{Dzienniki — zbiór stron zawierające zadania}\\
+	\emph{Strony — strony dziennika zawierające zadania do wykonania}\\
+	\emph{Zadania — pomniejsze rzeczy do wykonania}\\
+	\emph{Wzmacniane statystyki — statystyki wzmacniane przez projekt}\\
+	\emph{Statystyka dominująca — statystyka, która jest najbardziej rozwijana przez projekt}\\
+	\emph{Czasomierz — komponent odpowiedzialny za odliczanie czasu, może przybrać postać minutnika, stopera i skomplikowanego minutnika}\\
 	
 
 \chapter {Omówienie problemu}
@@ -293,7 +293,7 @@ Pierwszym z nich są projekty, czyli organizacja ogólnej tematyki kierunku dzia
 \\Na przykładzie nauki Python'a mogłoby to być:
 \\nazwa: Nauka Python'a
 \\folder: Programowanie
-\\statystyki boostowane: inteligencja
+\\statystyki Wzmacniane: inteligencja
 \\statystyka dominująca: inteligencja
 \\domyślna metoda pracy: Pomodoro
 \\Nad tak stworzonym projektem możemy teraz pracować w sesjach wybranej metodyki aż do osiągnięcia celu.
@@ -346,7 +346,7 @@ Chcemy stworzyć nowe narzędzie do organizacji pracy z oryginalnym podejściem 
  Produktywność użytkowników moglibyśmy sprawdzać poprzez ankiety,
  porównujące czas poświęcony na zadania bez korzystania z systemu oraz z nim np. użytkownik skończył
  zaplanowane zadanie tydzień szybciej lub pracował przez 2 godziny dłużej niż bez korzystania z systemu.\\
-\subsection {Udziałowcy (należy ponownie rozważyć)}
+\subsection {Udziałowcy}
 \begin{tabular}{|p{3cm}|p{11cm}|}
 	\hline
 	\multicolumn{2}{|l|}{\textbf{Karta Udziałowca}}\\
@@ -519,7 +519,12 @@ Chcemy stworzyć nowe narzędzie do organizacji pracy z oryginalnym podejściem 
 	\hline
 	\end{tabular}\\
 \subsection {Grupa docelowa}
-Grupa docelowa to osoby, które chcą poprawić swoją higienę pracy, chcą stać się systematyczni, uniknąć przepracowania. (ładniej opisać)
+Z naszego rozwiązania, może skorzystać każdy.
+Czy to osoba z etatem starającą się utrzymać swoją rodzinę, czy to student, który zasypany jest obowiązkami ze studiów.
+Są jednak osoby, których higiena pracy wykańcza, co sprawia, że w pracy bardzo szybko tracą swoją efektywność oraz wzrasta zmęczenie.
+Po pracy są oni wykończeni, nie mają czasu dla siebie ani dla rodziny.\\
+Są też osoby, którym brakuje systematyczności, motywacji do pracy.\\
+Do tych wszystkich osób kierujemy nasze rozwiązanie, ale chcemy, by każdy mógł znaleść w naszym systemie coś dla siebie.\\
 \chapter {Analiza}
 
 \section {Wymagania}
@@ -1053,7 +1058,7 @@ Grupa docelowa to osoby, które chcą poprawić swoją higienę pracy, chcą sta
 \end{figure}
 \chapter {Planowanie}
 \section{Metodyka pracy}
-Po dłuższym namyśle zdecydowaliśmy, że dobrym dla nas podejściem byłoby podążanie sprintami z metodologii Scrum
+Po dłuższym namyśle zdecydowaliśmy, że dobrym dla nas podejściem byłoby Scrumban, który łączy podążanie sprintami z metodologii Scrum
  oraz posiadanie tablicy zadań z metodologii Kanban\cite{agile}.
  Sprinty wymuszają na nas ciągłą, stałą pracę, by co tydzień wypuszczać nowe wersje naszego systemu.
  Zapewnia to stałą motywację do pracy, by nie osiągnąć punktu długotrwałej stagnacji w projekcie.
@@ -1363,7 +1368,7 @@ Konkretnie wykorzystujemy implementacje tego podejścia z Material-UI i tworzymy
 \end{figure}
 
 \subsection{Autoryzacja}
-Wyświetla formularz\ref{subsec:forms} rejestracji lub logowania w zależności od kliknięcia "Already have an account?", lub "Don't have and account?".
+Wyświetla formularz\ref{subsec:forms} rejestracji lub logowania w zależności od kliknięcia „Already have an account?”, lub „Don't have and account?”.
 Rejestracja zawiera pola:
 \begin{itemize}
 	\item Username na nazwe użytkownika.
@@ -2098,8 +2103,56 @@ Stanisław: \\
 
 
 \chapter {Testy w grupach docelowych}
-Miejsce na wpisanie raportów z testów na grupach użytkowników
-
+W trakcie pisania rozwiązania, po konsultacji z promotorem oraz dr. Markiem Bednarczykiem,
+ zapropono nam przetestowanie naszego systemu na zajęciach u Pani mgr Marty Czerwonki.\\
+Testy te zostały wykonywane przez studentów studiów dziennych, jak i zaocznych, niższego roku.
+W poniższych sekcjach chcemy odnieść się do wyników przeprowadzonych testów.\\
+\section{Strona powitalna}
+Pierwszym zadaniem było zapoznanie się ze stroną główną, gdzie zamieszczone były informacje dotyczące naszego rozwiązania.\\
+Niemalże wszyscy testerzy, którzy przeczytali informację na stronie głównej, wiedzieli, o co chodzi w naszym projekcie.
+Jednak otrzymaliśmy duży odzew o za dużej ilości informacji znajdującej się na stronie głownej, co nastawiało negatywnie do korzystania z aplikacji.\\
+Po poźniejszym zastanowieniu faktycznie strona główna powinna zostać uproszczona, by przyciągać nie tylko wyglądem,
+ ale także przystępną treścią, co będzie naszym celem, gdy będziemy rozwijać nasz projekt wprzyszłości.
+\section{Problemy z wykonywaniem zadań}
+Zadaliśmy pytanie dotyczące problemów napotkanych w trakcie wykonywania zadań. Praktycznie wszyscy wydali opinię, że nie mieli problemów,
+ ale pojedyńcze osoby zaznaczyły, że miały problem z tworzeniem projektów.\\
+Problem ten wynika z tego, że użytkownikowi nie wyskakiwało powiadomienie, że statystyki nie zostały wybrane.\\
+Znamy dziedzinę problemu, ponieważ natkęliśmy się na niego już w trakcie testów manualnych,
+ aczkolwiek przez fakt, że formularz dodawania projektu nie posiada standardowej formy formularza,
+ bardzo ciężko jest walidować podane dane i na ten moment nie znaleźliśmy odpowiedniego rozwiązania.
+\section{Interfejs potrzebny do wykonania zadań}
+Użytkownikcy wykazali problemy ze znalezieniem elementów interfejsu do wykonania zadań.
+Głownym problemem było ikona zębatki do dodawania folderów oraz brak ikonki startu czy stopu czasomierza.\\
+Ikonę czasomierza mamy zamiar dodać takowe ikony wraz z kontynuacją pracy nad projektem. 
+Ikona dodawania folderów jest dla nas problematyczna, ponieważ w obecnej wersji rozwiązania,
+ dodawanie oraz edycja folderów znajdują się w jednym miejscu, przez co nie mogliśmy się zdecydować, którą użyć.\\
+\section{Problemy znalezione podczas testów}
+Dostaliśmy opinię, gdzie na adres mailowy nie przyszedł email z potwierdzeniem konta.\\
+Problem ten wynika, z tego, że na niektóre poczty, otrzymują maile z potwierdzeniem rejestracji bardzo późno. 
+Niestety jest to niezależne od nas.
+\section{Opinie na temat podpowiedzi}
+Wszystkie opinie wykazywały, że podpowiedzi umieszczone na stronie.
+Są one dla nas ważnym aspektem, by nowi użytkownicy otrzymywali pomoc w odnajdywaniu się w aplikacji, jeśli się zgubią w dowolnym momencie.
+\section{Odnajdywanie się w aplikacji}
+Wiele osób miało problem z odnalezieniem możliwości dodawania folderów oraz czasomierzy.\\
+Jak już zdążyliśmy napomnieć, że ikony związane z dodawaniem i edycją folderów,
+ jak i czasomierzy bywały mylące przez łączenie obu tych funkcji.
+Mamy to na uwadze i zamierzamy rozwiązać ten problem w przyszłych wersjach rozwiązania.
+\section{Opinie na temat aplikacji}
+Zdania o aplikacji były podzielone.\\
+Była grupa osób, której podobał się wygląd i interfejs aplikacji, była też grupa, której wygląd i interfejs się nie podobał.
+Jednak była opinia, ku której większość osób się przychyliła: aplikacja jest nieintuicyjna.\\
+Jesteśmy świadomi, że aplikacja tego typu,
+ przy wielu opcjach modyfikacji oraz bez wcześniejszego zapoznania z tematem zarządzania czasem lub energii może być trudne.\\
+Staramy się pomagać nowym użytkownikom poprzez podpowiedzi oraz w kolejnych etapach projektu,
+ krótkie filmiki instruktarzowe jak korzystać z aplikacji, by zwiększyć wiedzę o aplikacji i pewność w umiejętności korzystania z niej. 
+\section{Rozpoznanie na temat zarządzania czasem przez użytkowników}
+Testerzy, po zadaniu im pytania o ich sposoby zarządzania zadaniami, podzielili się na 3 grupy.\\
+Pierwsza grupa nie posiada specjalnego sposobu na zarządzania swoim czasem. 
+Druga grupa korzysta z kalendarza dla sztywnego ustawiania sobie terminów zakończenia zadań.
+Trzecia grupa korzysta z rozwiązania „Todo list”,
+ które polega na codziennym spisywaniu sobie zadań na obecny dzień do wykonania, by mieć świadomość, jakie zadania jeszcze muszą wykonać.\\
+Zaskoczyły nas te odpowiedzi, ponieważ zakładaliśmy, że większość osób mogła nie korzystać z żadnego sposobu na zarządzanie zadaniami.\\
 
 
 \chapter{Prezentacja systemu w działaniu}
