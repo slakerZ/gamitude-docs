@@ -2108,39 +2108,119 @@ Na warstwie backendu działanie funkcji sprawdzane było poprzez wysyłane zapyt
 	\label{fig:timer_postman}
 \end{figure}
 \section{Testy walidacyjne}
-Rejestracja
-1.wejść na stronę główną, | Wyświetlono stronę główną
+Rejestracja\\
+1.wejść na stronę główną, | Wyświetlono stronę główną\\
 2.kliknąć przycisk „get started”, | wyświetlono podstronę sign up
-3.wypełnić formularz rejestracyjny, | uaktywniony przycisk Register LUB komunikat o błętnie wypełnionych danych LUB komunikat o zajętym emailu i nazwie użytkownika
-3.1.podać inny email, nazwę użytkownika, | uaktywniony przycisk Register
-4.kliknąć przycisk „register” | Przejście do strony logowania oraz komunikat „Go to your email to confimr your account”
-Kryteria akceptacji: użytkownik utworzył konto, oraz otrzymał emaila z potwierdzeniem rejestracji.
-Logowanie
-1.wejść na stronę główną, | Wyświetlono stronę główną
-2.kliknąć przycisk „get started”, | wyświetlono podstronę sign up
-3.Przejść do strony logowania poprzez przycisk „already have an account”, | wyświetlono podstronę sign in
-4.Wypełnienie formularza logowania | uaktywnienie przycisku login
-5.kliknąć przycisk login | Przejście do strony gamitude Projects ze stanem konta użytkownika LUB komunikat "Incorrect login or password"
-5.1 podać inne hasło lub email przejdź do kroku 5
-Kryteria akceptacji: Wyświetlenie strony Gamitude Projects ze stanem konta użytkownika
-Dodanie projektu
-1.wcisnąć żółty przycisk + | Wyświetlono formularz dodawania projektu
-2.wypełnić formularz dodawania projektu oraz wciśnięcie przycisku submit | zamknięcie formularza, komunikat "succesfully created project" i odświerzenie listy projektów LUB komunikat "Incorrect data"
-3.1 poprawienie danych i ponowne kliknięcie przycisku submit | zamknięcie formularza, komunikat "succesfully created project" i odświerzenie listy projektów
-Kryteria akceptacji: Pomyślnie utworzono projekt.
-dodanie katalogu
-dodanie dziennika
-dodanie strony
-dodanie zadania
-zakup rangi
-zmiana hasła
-zmiana emaila
-usuń projekt
-usuń zadanie
+3.wypełnić formularz rejestracyjny, | uaktywniony przycisk Register LUB komunikat o błędnie wypełnionych danych LUB komunikat o zajętym emailu i nazwie użytkownika\\
+3.1.podać inny email, nazwę użytkownika, | uaktywniony przycisk Register\\
+4.kliknąć przycisk „register” | Przejście do strony logowania oraz komunikat „Go to your email to confirm your account”\\
+5.potwierdzenie emaila | przejście do podstrony z komunikatem "succesfully verified email. You can login now"\\
+Kryteria akceptacji: użytkownik utworzył konto, oraz potwierdził rejestrację.\\
+Logowanie\\
+1.wejść na stronę główną, | Wyświetlono stronę główną\\
+2.kliknąć przycisk „get started”, | wyświetlono podstronę sign up\\
+3.Przejść do strony logowania poprzez przycisk „already have an account”, | wyświetlono podstronę sign in\\
+4.Wypełnienie formularza logowania | uaktywnienie przycisku login\\
+5.kliknąć przycisk login | Przejście do strony gamitude Projects ze stanem konta użytkownika LUB komunikat "Incorrect login or password"\\
+5.1 podać inne hasło lub email przejdź do kroku 5\\
+Kryteria akceptacji: Wyświetlenie strony Gamitude Projects ze stanem konta użytkownika\\
+Dodanie projektu\\
+1.udać się do gamitude projects | wyświetlono podstronę gamitude projects\\
+2.wcisnąć żółty przycisk + | Wyświetlono formularz dodawania projektu\\
+3.wypełnić formularz dodawania projektu oraz wciśnięcie przycisku submit | zamknięcie formularza, komunikat "succesfully created project" i odświerzenie listy projektów LUB komunikat "Incorrect data"\\
+3.1 poprawienie danych i ponowne kliknięcie przycisku submit | zamknięcie formularza, komunikat "succesfully created project" i odświerzenie listy projektów\\
+Kryteria akceptacji: Dodanie nowego projektu z ustawionymi parametrami.\\
+Dodanie katalogu\\
+1.udać się do gamitude projects | wyświetlono podstronę gamitude projects\\
+2.wcisnąć koło zębate pod katalogami | Wyświetlono formularz dodawania folderu\\
+3.wypełnić formularz dodawania folderu oraz wciśnięcie przycisku submit | zamknięcie formularza, komunikat "succesfully created folder" i odświerzenie listy folderów LUB komunikat "Incorrect data"\\
+3.1 poprawienie danych i ponowne kliknięcie przycisku submit | zamknięcie formularza, komunikat "succesfully created folder" i odświerzenie listy folderów\\
+Kryteria akceptacji: Dodanie nowego katalogu z ustawionymi parametrami.\\
+Dodanie dziennika\\
+1.udać się do Bullet Journal | wyświetlono podstronę Bullet Journal\\
+2.wcisnąć przycisk + pod dziennikami | Wyświetlono formularz dodawania dzienników\\
+3.wypełnić formularz dodawania dzienników oraz wciśnięcie przycisku submit | zamknięcie formularza i odświerzenie listy dzienników LUB komunikat "Failed to create new journal"\\
+3.1 poprawienie danych i ponowne kliknięcie przycisku submit | zamknięcie formularza i odświerzenie listy dzienników\\
+Kryteria akceptacji: Dodanie nowego dziennika z ustawionymi parametrami.\\
+Dodanie strony\\
+1.udać się do Bullet Journal | wyświetlono podstronę Bullet Journal\\
+2.wcisnąć przycisk + pod stronami | Wyświetlono formularz dodawania stron\\
+3.wypełnić formularz dodawania stron oraz wciśnięcie przycisku submit | zamknięcie formularza i odświerzenie listy stron LUB komunikat "Failed to create new page"\\
+3.1 poprawienie danych i ponowne kliknięcie przycisku submit | zamknięcie stron i odświerzenie listy stron\\
+Kryteria akceptacji: Dodanie nowej strony z ustawionymi parametrami.\\
+Dodanie zadania\\
+1.udać się do Bullet Journal | wyświetlono podstronę Bullet Journal\\
+2.wcisnąć żółty przycisk + | Wyświetlono formularz dodawania zadania\\
+3.wypełnić formularz dodawania dzienników oraz wciśnięcie przycisku submit | zamknięcie formularza i odświerzenie listy zadań LUB komunikat "Failed to create new task"\\
+3.1 poprawienie danych i ponowne kliknięcie przycisku submit | zamknięcie formularza i odświerzenie listy zadań\\
+Kryteria akceptacji: Dodanie nowego zadania z ustawionymi parametrami.\\
+Zakup Rangi\\
+1. Wejść na stronę themes, | Wyświetlono themes\\
+2. Kliknąć buy przy randze, którą chcemy kupić, | Wyświetlono komunikat o pomyślnym kupnie rangi
+ LUB Wyświetlono komunikat o niewystarczających środkach
+ LUB Wyświetlono komunikat powiadamiający, że ranga zostałą już wcześniej kupiona\\
+Kryteria akceptacji: Pojawienie się rangi w zbiorze kupionych rang LUB komunikat o dlaczego nie można kupić rangi.\\
+Zmiana Hasła\\
+1. Wejść na stronę ustawień użytkownika, | Wyświetlono stronę ustawień użytkownika\\
+2. Zaznaczyć tab'a change password, | Wyświetlono formularz zmiany hasła\\
+3. Wypełnić formularz zmiany hasła, | Wyświetlono komunikat o zmianie hasła
+ LUB Wyświetlono komunikaty o błedach walidacji pól
+ Lub Wyświetlono błąd przy zmianie hasła\\
+Kryteria akceptacji: Zmiana hasła.\\
+Zmiana Emaila\\
+1. Wejść na stronę ustawień użytkownika, | Wyświetlono stronę ustawień użytkownika\\
+2. Zaznaczyć tab'a change email, | Wyświetlono formularz zmiany email'a\\
+3. Wypełnić formularz zmiany emaila, | Odblokowano przycisk submit
+ LUB Wyświetlono błędy walidacji
+ LUB Wyświetlono komunikat nie niepowodzeniu zmiany maila\\
+4. Wyświetlono komunikat o wysłaniu potwierdzenia na podanego mail'a\\
+5. Kliknięto potwierdzenie w mail'u | Przeniesiono na stronę wyświetlającą komunikat o poprawnej zmianie mail'a\\
+Kryteria akceptacji: Zmieniony został email.\\
+Usuń Projekt\\
+1. Wejść na stronę projektów, | Wyświetlono stronę projektów\\
+2. Kliknąc na wybrany projekt w miejscu innym niż nazwa i radio, | Projekt rozwinął się, ukazując formularz edycji\\
+3. Kliknąć przycisk "Delete Project" | Wyświetlono dialog potwierdzający\\
+4. Kliknąć przyciść submit w celu potwierdzenia | Usunięto projekt oraz zamknięto dialog\\
+Kryteria akceptacji: Usunięto projekt.\\
+Usuń Zadanie\\
+1. Wejść na stronę Bullet Journal, | Wyświetlono stronę Bullet Journal\\
+2. wybranie dziennika | załadowanie stron w dzienniku \\
+3. wybranie strony | załadowanie zadań na stronie\\
+4. Kliknąć na wybrane zadanie w miejscu innym niż nazwa i radio, | zadanie rozwinęło się, ukazując formularz edycji\\
+5. Kliknąć przycisk "Delete Task" | usunięto zadanie oraz odświerzono listę zadań na stronie\\
+Kryteria akceptacji: Usunięto zadanie.\\
 
-\section{Testy integracyjne}
 
-
+\section{Testy integracyjne i jednostkowe}
+Podczas prac polegaliśmy głównie na testowaniu manualnym ze względu na częste zmiany w projekcie.
+Testami integracyjnymi została objęta jedynie główna funkcjonalność systemu, czyli Gamitude Projects.
+Była ona najbardziej dojrzała ze wszystkich funkcjonalności.
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.35]{testy/integracyjne}\\
+	\caption{Raport z testów integracyjnych}
+	\label{fig:integracyjne}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.35]{testy/przykład_integracyjne}\\
+	\caption{Przykładowy test integracyjny}
+	\label{fig:przykład_integracyjne}
+\end{figure}
+Testami jednostkowymi została objęta tylko metoda przeliczania statystyk.
+Po analizie naszego zespołu doszliśmy do wniosku, że będzie ona zmieniana na bardziej wyrafinowaną dlatego też przetestowany został tyklo podstawowy element.
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.35]{testy/jednostkowe}\\
+	\caption{Raport z testów jednostkowych}
+	\label{fig:jednostkowe}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.35]{testy/przykład_jednostkowe}\\
+	\caption{Przykładowy test jednostkowy}
+	\label{fig:przykład_jednostkowe}
+\end{figure}
 \chapter {Testy w grupach docelowych}
 W trakcie pisania rozwiązania, po konsultacji z promotorem oraz dr. Markiem Bednarczykiem,
  zapropono nam przetestowanie naszego systemu na zajęciach u Pani mgr Marty Czerwonki.\\
