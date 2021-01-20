@@ -2083,22 +2083,61 @@ Stanisław: Dokumentacja 5.1.2, 5.1.3, 5.1.4 - Projektowanie i architektura syst
 Nie wykonane Nagranie dema działania aplikacji.\\
 Nie wykonane Tworzenie testów API.\\
 
-\section {}
+\section {Końcowe prace nad dokumentacją, testy API}
 \subsection {Założenia sprintu}
 Nagranie dema działania aplikacji.\\
 Tworzenie testów API.\\
 Tworzenie domyślnych stron dla nowych dzienników.\\
 Uzupełnienie punktów 6, 8, 9, 10, 11, 12 w dokumentacji.\\
 \subsection {Wykonane zadania}
-Paweł: \\
-Robert: \\
-Stanisław: \\
+Paweł + Robert + Stanisław: Uzupełnienie punktów 6, 8, 9, 10, 11, 12 w dokumentacji, wysłano pracę do konsultacji promotorowi.\\
+Robert: Nagranie dema działania aplikacji.\\
+Stanisław: Tworzenie testów API.\\
 \subsection {Napotkane problemy}
-
+Porzucono zadanie tworzenie domyślnych stron dla nowych dzienników.\\
 
 \chapter {Testy systemu}
 \section{Testy Manualne}
+Każdy z członków zespołów, na warstwie frontendu, podczas pracy nad komponentami, sprawdzał działanie każdego komponentu,
+ by zweryfikować czy funkcje w komponencie pracują poprawnie i czy zwracają oczekiwane dane.
+Na warstwie backendu działanie funkcji sprawdzane było poprzez wysyłane zapytań ze Swagger UI.
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.35]{testy/timer_postman}\\
+	\caption{Przykład testu dla funkcji czasomierza na warstwie backendu}
+	\label{fig:timer_postman}
+\end{figure}
 \section{Testy walidacyjne}
+Rejestracja
+1.wejść na stronę główną, | Wyświetlono stronę główną
+2.kliknąć przycisk „get started”, | wyświetlono podstronę sign up
+3.wypełnić formularz rejestracyjny, | uaktywniony przycisk Register LUB komunikat o błętnie wypełnionych danych LUB komunikat o zajętym emailu i nazwie użytkownika
+3.1.podać inny email, nazwę użytkownika, | uaktywniony przycisk Register
+4.kliknąć przycisk „register” | Przejście do strony logowania oraz komunikat „Go to your email to confimr your account”
+Kryteria akceptacji: użytkownik utworzył konto, oraz otrzymał emaila z potwierdzeniem rejestracji.
+Logowanie
+1.wejść na stronę główną, | Wyświetlono stronę główną
+2.kliknąć przycisk „get started”, | wyświetlono podstronę sign up
+3.Przejść do strony logowania poprzez przycisk „already have an account”, | wyświetlono podstronę sign in
+4.Wypełnienie formularza logowania | uaktywnienie przycisku login
+5.kliknąć przycisk login | Przejście do strony gamitude Projects ze stanem konta użytkownika LUB komunikat "Incorrect login or password"
+5.1 podać inne hasło lub email przejdź do kroku 5
+Kryteria akceptacji: Wyświetlenie strony Gamitude Projects ze stanem konta użytkownika
+Dodanie projektu
+1.wcisnąć żółty przycisk + | Wyświetlono formularz dodawania projektu
+2.wypełnić formularz dodawania projektu oraz wciśnięcie przycisku submit | zamknięcie formularza, komunikat "succesfully created project" i odświerzenie listy projektów LUB komunikat "Incorrect data"
+3.1 poprawienie danych i ponowne kliknięcie przycisku submit | zamknięcie formularza, komunikat "succesfully created project" i odświerzenie listy projektów
+Kryteria akceptacji: Pomyślnie utworzono projekt.
+dodanie katalogu
+dodanie dziennika
+dodanie strony
+dodanie zadania
+zakup rangi
+zmiana hasła
+zmiana emaila
+usuń projekt
+usuń zadanie
+
 \section{Testy integracyjne}
 
 
