@@ -40,7 +40,9 @@
  & \\
  & Stanisław Lutkiewicz \\
  & \\
-\multicolumn{2}{p{13cm}}{\textbf{Streszczenie:} napisać coś o tym, jak bardzo chcemy zarządzać energią.}\\
+\multicolumn{2}{p{13cm}}{\textbf{Streszczenie:} system mający na celu zwiększenie produktywności użytkowników bazując na badaniach uniwersytetu Harward.
+ System ten również wykorzystuje zbadane metodyki pracy pozwalające na wydłużenie czasu pozostania skoncentrowanym na zadaniu. Za czas spędzony nad zadaniami,
+  użytkownik zostaje nagradzany statystykami, za które może on kupować ranki reprezentujące postęp.}\\
 \end{tabular}
 \newpage
 \begin{center}
@@ -357,8 +359,8 @@ W przyszłości planowana jest również dedykowana aplikacja mobilna.
  Wykonywanie projektów jest nagradzane statystykami, które zwiększają się w zależności, jakiego typu był projekt.
  Po spełnieniu danego warunku użytkownik będzie nagradzany osiągnięciem za przekroczenie pewnego kamienia milowego
  w swojej pracy nad projektem.
- Zadaniem Bullet Journal’a jest rozplanowanie pomniejszych zadań z projektu w czasie i wizualizacja ich na tablicy,
- by użytkownik mógł śledzić jakie zadania musi wykonać danego dnia, by wyrobić się w terminie.
+ Zadaniem Bullet Journal’a jest rozplanowanie pomniejszych zadań z projektu w czasie i umieszczenie ich w formie dzienników.
+ Dzięki nim, użytkownik będzie mógł śledzić jakie zadania musi wykonać danego dnia, by wyrobić się w terminie.
  Elastic Habits miałby za zadanie pomóc użytkownikowi wyrobić sobie nawyk,
  poprzez poziomowanie sobie zaplanowanego zadania.
  W zależności od ogólnego samopoczucia użytkownika może on wybrać łatwiejszą bądź trudniejszą wersję zadania, dalej utrzymując nawyk wykonywania go. \\
@@ -718,7 +720,7 @@ Do tych wszystkich osób kierujemy nasze rozwiązanie, ale chcemy, by każdy mó
 		\hline
 		Udziałowiec & \multicolumn{3}{|p{10 cm}|}{Użytkownik końcowy, Zespół projektowy}\\
 		\hline
-		Wymagania powiązane & \multicolumn{3}{|p{10 cm}|}{Brak}\\
+		Wymagania powiązane & \multicolumn{3}{|p{10 cm}|}{F07, F08}\\
 		\hline
 		\end{tabular}
 		\newline
@@ -748,7 +750,7 @@ Do tych wszystkich osób kierujemy nasze rozwiązanie, ale chcemy, by każdy mó
 		\hline
 		Udziałowiec & \multicolumn{3}{|p{10 cm}|}{Użytkownik końcowy, Zespół projektowy}\\
 		\hline
-		Wymagania powiązane & \multicolumn{3}{|p{10 cm}|}{Brak}\\
+		Wymagania powiązane & \multicolumn{3}{|p{10 cm}|}{F06, F08}\\
 		\hline
 		\end{tabular}
 		\newline
@@ -778,7 +780,7 @@ Do tych wszystkich osób kierujemy nasze rozwiązanie, ale chcemy, by każdy mó
 		\hline
 		Udziałowiec & \multicolumn{3}{|p{10 cm}|}{Użytkownik końcowy, Zespół projektowy}\\
 		\hline
-		Wymagania powiązane & \multicolumn{3}{|p{10 cm}|}{Brak}\\
+		Wymagania powiązane & \multicolumn{3}{|p{10 cm}|}{F06, F07}\\
 		\hline
 		\end{tabular}
 		\newline
@@ -808,7 +810,7 @@ Do tych wszystkich osób kierujemy nasze rozwiązanie, ale chcemy, by każdy mó
 		\hline
 		Udziałowiec & \multicolumn{3}{|p{10 cm}|}{Użytkownik końcowy, Zespół projektowy}\\
 		\hline
-		Wymagania powiązane & \multicolumn{3}{|p{10 cm}|}{Brak}\\
+		Wymagania powiązane & \multicolumn{3}{|p{10 cm}|}{F10}\\
 		\hline
 		\end{tabular}
 		\newline
@@ -838,7 +840,7 @@ Do tych wszystkich osób kierujemy nasze rozwiązanie, ale chcemy, by każdy mó
 		\hline
 		Udziałowiec & \multicolumn{3}{|p{10 cm}|}{Użytkownik końcowy, Zespół projektowy}\\
 		\hline
-		Wymagania powiązane & \multicolumn{3}{|p{10 cm}|}{Brak}\\
+		Wymagania powiązane & \multicolumn{3}{|p{10 cm}|}{F09}\\
 		\hline
 		\end{tabular}
 		\newline
@@ -1101,18 +1103,16 @@ Szczegółowo omówione w \ref{subsec:bib_front} oraz \ref{subsec:bib_back}.
 \chapter {Projektowanie}
 
 \section {Architektura projektu}
-Aplikacja webowa Gamitude została wykonana w architekturze wielowarstwowej typu klient-serwer.
-Interfejs użytkownika został wykonany w technologi SPA (single page application).
-Naturalnym więc było podzielenie całej aplikacji na 2 repozytoria Frontend'u i Backend'u.
-Komunikacja pomiędzy nimi opiera się na protokole HTTP/HTTPS. Rzut na architekturę znajduje się na obrazku \ref{fig:overwiewarch}.\\
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.4]{gamitude_overview}\\
 	\caption{Uproszczona architektura}
 	\label{fig:overwiewarch}
 \end{figure}
-
-
+Aplikacja webowa Gamitude została wykonana w architekturze wielowarstwowej typu klient-serwer.
+Interfejs użytkownika został wykonany w technologi SPA (single page application).
+Naturalnym więc było podzielenie całej aplikacji na 2 repozytoria Frontend'u i Backend'u.
+Komunikacja pomiędzy nimi opiera się na protokole HTTP/HTTPS. Rzut na architekturę znajduje się na obrazku \ref{fig:overwiewarch}.\\
 \subsection{Frontend}
 Aplikacja web'owa została podzielona na komponenty z zachowaniem większości zasad atomic designu.\\
 Atomic design \cite{atomicdesign} to strategia tworzenia komponentów w sposób zapewniający jak największe użycie wtórne kodu.\\
@@ -1283,7 +1283,7 @@ Testing-library\cite{testing-library} jest to zbiór narzędzi do testowania opr
 Standardowa struktura folderów generowana za pomocą create-react-app z uwzględnieniem atomic design pokazane na obrazku nr \ref{fig:struktura_folderów_front}.
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.5]{implementacja/frontend/struktura_folderów}\\
+	\includegraphics[scale=0.6]{implementacja/frontend/struktura_folderów}\\
 	\caption{Struktura folderów na Frontendzie}
 	\label{fig:struktura_folderów_front}
 \end{figure}
@@ -1300,13 +1300,13 @@ W aplikacji stworzyliśmy specjalnie komponenty formik-form oraz formik-field, a
 Kody komponentów formik-form oraz formik-field pokazane zostały na obrazku nr \ref{fig:formik_form} oraz \ref{fig:formik_field}.
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.7]{implementacja/frontend/formik_form}\\
+	\includegraphics[scale=0.8]{implementacja/frontend/formik_form}\\
 	\caption{Formik form}
 	\label{fig:formik_form}
 \end{figure}
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.7]{implementacja/frontend/formik_field}\\
+	\includegraphics[scale=0.88]{implementacja/frontend/formik_field}\\
 	\caption{Formik field}
 	\label{fig:formik_field}
 \end{figure}
@@ -1349,7 +1349,7 @@ Informacje kontrolujące czy jest otwarty, czy zamknięty otrzymuje z zewnątrz 
 Kod komponentu pokazany na obrazku nr \ref{fig:dialog}.
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.5]{implementacja/frontend/dialog}\\
+	\includegraphics[scale=0.7]{implementacja/frontend/dialog}\\
 	\caption{Implementacja dialogu}
 	\label{fig:dialog}
 \end{figure}
@@ -1634,7 +1634,7 @@ Przykład repozytorium obrazek nr \ref{fig:przykład_timer_repo} oraz jego inter
 \end{figure}
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.4]{implementacja/backend/przykład_timer_repo}\\
+	\includegraphics[scale=0.45]{implementacja/backend/przykład_timer_repo}\\
 	\caption{Repozytorium timera}
 	\label{fig:przykład_timer_repo}
 \end{figure}
@@ -2144,7 +2144,7 @@ Porzucono zadanie tworzenie domyślnych stron dla nowych dzienników.\\
 \section{Testy Manualne}
 Każdy z członków zespołów, na warstwie frontend'u, podczas pracy nad komponentami, sprawdzał działanie każdego komponentu,
  by zweryfikować czy funkcje w komponencie pracują poprawnie i czy zwracają oczekiwane dane.
-Na warstwie backend'u działanie funkcji sprawdzane było poprzez wysyłane zapytań ze Swagger UI.
+Na warstwie backend'u działanie funkcji sprawdzane było poprzez wysyłane zapytań ze Swagger UI przykład zapytania na obrazku nr \ref{fig:timer_postman}.
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.35]{testy/timer_postman}\\
@@ -2487,6 +2487,8 @@ Na warstwie backend'u działanie funkcji sprawdzane było poprzez wysyłane zapy
 Podczas prac polegaliśmy głównie na testowaniu manualnym ze względu na częste zmiany w projekcie.
 Testami integracyjnymi została objęta jedynie główna funkcjonalność systemu, czyli Gamitude Projects.
 Była ona, najbardziej dojrzała ze wszystkich funkcjonalności.
+Raport z testów na obrazku nr \ref{fig:integracyjne}.
+Przykład wybranego testu na obrazku nr \ref{fig:przykład_integracyjne}.
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.35]{testy/integracyjne}\\
@@ -2499,8 +2501,9 @@ Była ona, najbardziej dojrzała ze wszystkich funkcjonalności.
 	\caption{Przykładowy test integracyjny}
 	\label{fig:przykład_integracyjne}
 \end{figure}
-Testami jednostkowymi została objęta tylko metoda przeliczania statystyk.
+Testami jednostkowymi została objęta tylko metoda przeliczania statystyk widoczna na obrazku nr \ref{fig:przykład_jednostkowe}.
 Po analizie naszego zespołu doszliśmy do wniosku, że będzie ona zmieniana na bardziej wyrafinowaną, dlatego też przetestowany został tylko podstawowy element.
+Raport z testów na obrazku nr \ref{fig:przykład_jednostkowe}.
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.35]{testy/jednostkowe}\\
@@ -2974,11 +2977,16 @@ Dokumentacja:
 	\item Stworzenie mockup'ów dla Gamitude Home page, Bullet Journal, Gamitude Themes
 	\item Utworzenie oraz uzupełnienie pierwszej wersji dokumentu pracy inżynierskiej w języku LaTeX
 	\item Cotygodniowe uzupełnianie rozdziału 7. Historia sprintów
-	\item Sporządzenie diagramów z rozdziału 3.3
 	\item Przygotowanie Rich Picture z rozdziału 2.2
-	\item Weryfikacja oraz edycja wymagań z rozdziału 3.1
 	\item Sporządzenie krótkiego opisu konkurencji w rozdziale 2.3
-	\item Sporządzenie krótkiego opisu konkurencji w rozdziale 2.3
+	\item Weryfikacja oraz edycja wymagań z rozdziału 3
+	\item Opisanie celów, oraz odbiorców systemu z rozdziału 2.6
+	\item Współtworzenie podrozdziału 6.1 dotyczącego implementacji frontendu
+	\item Opisanie testów walidacyjnych z rozdziału 8.2
+	\item Przygotowanie podsumowania testów w grupie docelowej w postaci rozdziału nr 9
+	\item Współtworzenie rozdziału 10 prezentującego system
+	\item Współtworzenie rozdziału 11 dotyczacego nakładu pracy
+	\item Krótki opis komercjalizacji w rozdziale 13 
 \end{itemize}
 DevOps:
 \begin{itemize}
@@ -3011,7 +3019,7 @@ Backend:
 Dokumentacja:
 \begin{itemize}
 	\item Rozdział o Projektowaniu.
-	\item Rozdział o Implementacji Backendu.
+	\item Rozdział o Implementacji Backend'u.
 	\item Współtworzenie dokumentu DZW, SWS.
 \end{itemize}
 DevOps:
@@ -3050,6 +3058,10 @@ Przy zakupie subskrypcji w aplikacji, użytkownik dostawałby dostęp do wcześn
 \bibliographystyle{ieeetr}
 
 \chapter {Załączniki}
-
+\begin{itemize}
+	\item Kod źródłowy aplikacji frontend.
+	\item Kod źródłowy aplikacji backend.
+	\item Plik README.md z opisem uruchomienia całej aplikacji.
+	\item Wersja cyfrowa pracy dyplomowej.
+\end{itemize}
 \end{document}
-
