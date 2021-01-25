@@ -44,3 +44,61 @@
 {"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QKażdy dziennik zawiera strony, które odpowiedzialne są za wyświetlanie zadań z terminem wykonania odpowiadającym zakresowi dat danej strony (rysunek nr \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q).\\E$"}
 {"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QZdecydowaliśmy się na prowadzenie modelu freemium \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q z opcją na mikropłatności.\\E$"}
 {"rule":"BRAK_KROPKI","sentence":"^\\QKierunek studiów: Informatyka Rodzaj studiów: Stacjonarne Praca dyplomowa Temat pracy: Gamitude zarządzaj swoją energią, a nie czasem Temat w języku angielskim: Gamitude manage your Energy, not your Time Opiekun pracy: dr Tadeusz Puźniakowski Wykonawcy: Paweł Benkowski Robert Deyk Stanisław Lutkiewicz\\E$"}
+{"rule":"BRAK_KROPKI","sentence":"^\\QKarta dyplomowego projektu inżynierskiego Temat projektu: Gamitude zarządzaj swoją energią, a nie czasem (ang. Gamitude manage your Energy, not your Time) Akronim: GMT\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QDomyślnie zaznaczona jest zakładka do zmiany hasła co widoczne jest na rysunku nr \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QObecny wygląd strony widoczny jest na rysunku nr \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QPoprzez zaznaczenie zadania widoczne na obrazku nr \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q oraz uruchomienie czasomierza, możemy rozpocząć pracę nad zadaniem \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QZarządzanie stronami i dziennikami widoczne na obrazkach nr \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q, \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q, \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QFoldery wyświetlane po lewej można edytować bądź dodawać nowe widoczne na obrazkach nr \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q, \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q poprzez kliknięcie zębatki na końcu listy.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QPo potwierdzeniu swojego konta otwiera nam się strona z komunikatem o udanym potwierdzeniu konta obrazek nr \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q, wraz z możliwością przejścia do strony logowania obrazek nr \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QZadania, które dodajemy po wybraniu dziennika i strony widok widoczny na obrazku nr \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q, składają się z nazwy, notatki w razie, gdyby zadanie potrzebowało krótkiego wyjaśnienia, terminu wykonania, połączonego projektu oraz tagów.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QKto stworzył stronę na rysunku nr \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QNa czym polega Bullet Journal na rysunku nr \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QCzym są projekty na rysunku nr \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QDzienniki, jak i strony możemy dodawać poprzez ikony plusa znajdujący się pod odpowiednio dziennikami i stronami widok dodawania widoczny na obrazku nr \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QZaznaczony projekt można włączyć, klikając na timer włączona sesja widoczna na obrazku nr \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QKliknięcie pozostałej części panelu rozwinie go do edycji obrazek nr \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QNa tej stronie znajdują się podstawowe informacje, dotyczące naszego rozwiązania: Ogólny kontekst strony na rysunku nr \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QCzym są energię na rysunku nr \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QJej wygląd został przedstawiony na rysunku nr \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QOraz lista źródeł grafik, oraz dźwięków \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QRzut na architekturę znajduje się na obrazku \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QReact-dom'a można używać jako pure \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q albo z JSX-em \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QW projekcie odwzorowaliśmy naszą strukturę folderów dla trzymania stanu pod Redux'a widoczne na obrazku nr \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QPrzykład działania w konsoli Brave'a widać na obrazku nr \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QStandardowa struktura folderów generowana za pomocą create-react-app z uwzględnieniem atomic design pokazane na obrazku nr \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QKody komponentów formik-form oraz formik-field pokazane zostały na obrazku nr \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q oraz \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QKod połączenia komponentów widoczny na obrazku nr \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QKod komponentu pokazany na obrazku nr \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QPrzykład użycia znajduje się na obrazku nr \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QPrzykład nadpisania obiektu theme znajduje się na obrazku nr \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QDiagram koncepcyjny przedstawiony został na obrazku nr \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QIch podział został przedstawiony na obrazkach nr \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QProjekt został podzielony na 3 podprojekty obrazek nr \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QProjekt zawiera również folder Utils, w którym przechowywane są funkcje pomocnicze struktura folderów znajduje się na obrazku nr \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QRzut na całą implementację systemu pokazane jako moduły (foldery) z pominięciem klas pomocniczych i konfiguracyjnych ze względu na czytelność obrazek nr \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q. [origin=c]270.\\E$"}
+{"rule":"SPACJA_ZNAK_ROWNOSCI","sentence":"^\\QRzut na całą implementację systemu pokazane jako moduły (foldery) z pominięciem klas pomocniczych i konfiguracyjnych ze względu na czytelność obrazek nr \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q. [origin=c]270.\\E$"}
+{"rule":"BRAK_SPACJI","sentence":"^\\QRzut na całą implementację systemu pokazane jako moduły (foldery) z pominięciem klas pomocniczych i konfiguracyjnych ze względu na czytelność obrazek nr \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q. [origin=c]270.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QWszystkie endpoint'y interfejsu Web API wraz z krótkim komentarzem przy każdym z endpoint'ów widoczne na obrazkach nr \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q, \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q, \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q, \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q, \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QFinalne modele bazy danych obrazek nr \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QPrzykładowe metody kontrolerów obrazki nr \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q, \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q, \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q, \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QPrzykładowe kontrakty obrazki nr \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q, \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q, \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QKonfiguracja mapper'a do przetwarzania obiektów pomiędzy kontraktami obrazek nr \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QPrzykład serwisu obrazek nr \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QPrzykład repozytorium obrazek nr \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q oraz jego interfejsu obrazek nr \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QKlasy odpowiedzialne za przechowywanie struktury modeli obrazki nr \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q, \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QRobert: Stworzenie dokumentu WPP oraz jednego z Use Case'ów przedstawiono na obrazku nr \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QRobert i Stanisław: Utworzenie diagramu sekwencji przedstawionych na obrazkach nr \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q oraz \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QRobert: Utworzenie Rich Picture przedstawione na obrazkach nr \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q oraz \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q, skończone prace nad tworzeniem zadań do Bullet Journal'a.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QRobert: Wykonanie dokumentacji 3.1, 3.2, 3.3 - uaktualnienie wymagań, diagramów np. systemu obrazek nr \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q oraz przypadków użycia na obrazku nr \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QWstawienie nowych wersji Rich Picture \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q do dokumentacji.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QStanisław: Dokumentacja 5.1.2, 5.1.3, 5.1.4 - Projektowanie i architektura systemu \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QJak dzielimy statystyki na rysunku nr \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QPo przejściu na stronę rejestracji ukazuje nam się formularz rejestracji obrazek nr \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QDomyślną stroną po zalogowaniu jest serwis projektów obrazek nr \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\Q\\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"SPACJA_ZNAK_ROWNOSCI","sentence":"^\\QEndpoint'y API. [origin=c]270.\\E$"}
+{"rule":"BRAK_SPACJI","sentence":"^\\QEndpoint'y API. [origin=c]270.\\E$"}
+{"rule":"SPACJA_ZNAK_ROWNOSCI","sentence":"^\\QFinalne modele bazy danych obrazek nr \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q. [origin=c]270.\\E$"}
+{"rule":"BRAK_SPACJI","sentence":"^\\QFinalne modele bazy danych obrazek nr \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q. [origin=c]270.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QFinalne modele bazy danych obrazek nr \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q. [origin=c]270.\\E$"}

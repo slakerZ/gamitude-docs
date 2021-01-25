@@ -262,3 +262,5 @@ Finish
 IOS-a
 customizacja
 inkrementacyjnie
+GMT
+gamitudebackend
