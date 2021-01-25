@@ -14,25 +14,49 @@
 \usepackage[nottoc,notlot,notlof]{tocbibind}
 
 \graphicspath{ {./images/} }
-
 \begin{document}
 \let\cleardoublepage\clearpage
 \begin{figure}[ht]
 \centering
 \includegraphics{pjatk}
 \end{figure}
+\begin{tabular}{ p{7.5cm} p{7.5cm} }
+\textbf{Kierunek studiów:} & Informatyka \\
+\textbf{Rodzaj studiów:} & Stacjonarne \\
+\multicolumn{2}{c}{\textbf{Praca dyplomowa}}\\
+\textbf{Temat pracy:} & Gamitude zarządzaj swoją energią, a nie czasem \\
+\textbf{Temat w języku angielskim:} & Gamitude manage your Energy, not your Time \\
+\textbf{Opiekun pracy:} & dr inż. Tadeusz Puźniakowski \\
+\textbf{Wykonawcy:} & Paweł Benkowski \\
+ & Robert Deyk \\
+ & Stanisław Lutkiewicz \\
+\textbf{Streszczenie:} & napisać coś o tym, jak bardzo chcemy zarządzać energią. \\
+\end{tabular}
+\newpage
+\textbf{Oświadczenie autorów pracy dyplomowej}\\
+Świadomi odpowiedzialności prawnej oświadczamy, że niniejszą pracę dyplomową w zakresie przedstawionym przez nasz zespół projektowy wykonaliśmy samodzielnie i nie zawiera ona treści uzyskanych w sposób niezgodny z obowiązującymi przepisami.\\
+Oświadczamy również, że praca w przedstawionym przez nas zakresie nie była wcześniej przedmiotem procedur związanych z uzyskaniem tytułu ukończenia studiów wyższych.\\
+Oświadczamy ponadto, że niniejsza wersja pracy dyplomowej jest identyczna z załączoną wersją elektroniczną.\\
+\newpage
+\begin{figure}[ht]
+	\centering
+	\includegraphics{pjatk1}
+\end{figure}
+
 \begin{center}
-\textbf{\huge Karta Projektu}\\
+\textbf{\huge Karta dyplomowego projektu inżynierskiego}\\
 \vspace{1cm}
 \begin{tabular}{|p{15cm}|}
 \hline
-\textbf{Temat projektu:}\\Gamitude manage your Energy, not your Time\\ 
+\textbf{Temat projektu:}\\Gamitude zarządzaj swoją energią, a nie czasem\\ 
+\hline
+\textbf{Temat projektu w języku angielskim:}\\Gamitude manage your Energy, not your Time\\ 
 \hline
 \textbf{Akronim:}\\GTM\\
 \hline
-\textbf{Opiekun:}\\Tadeusz Puźniakowski  \\
+\textbf{Opiekun:}\\dr inż. Tadeusz Puźniakowski  \\
 \hline
-\textbf{Konsultanci:}\\Tadeusz Puźniakowski\\Marek Bednarczyk \\
+\textbf{Konsultanci:}\\ prof. dr hab. Marek Bednarczyk \\
 \hline
 \textbf{Cele projektu:}
 \\Dostarczenie użytkownikom narzędzia do zarządzania ich energią,
@@ -48,7 +72,7 @@ Jednocześnie chcemy,
 \hline
 \end{tabular}\\
 \vspace{1cm}
-\begin{tabular}{|l|l|l|l|}
+\begin{tabular}{|p{3.5cm}|p{3.5cm}|p{3.5cm}|p{3.5cm}|}
 \hline
 \textbf{Wykonawca} & \textbf{Numer albumu}& \textbf{Specjalizacja}& \textbf{Tryb studiów} \\
 \hline
@@ -156,7 +180,6 @@ Ludzie operują w kontekście czasu i właśnie go próbują rozplanowywać. Jed
 \\Jednak taki sposób myślenia jest typowy dla ludzi przepracowujących się, ponieważ czują, że czas im ucieka, i muszą za wszelką cenę nie dopuścić do zmarnowaniu choćby sekundy.
 \\To pokazuje, jak chorobliwe jest skupienie myśli na czasie i zignorowanie lub błędna interpretacja sygnałów własnego organizmu.
 \section {Rich picture}
-%Ponownie zeskanować Rich Picture
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=\textwidth, height=9cm]{richpicture1}
@@ -1104,7 +1127,7 @@ Szczegółowo omówione w \ref{subsec:bib_front} oraz \ref{subsec:bib_back}.
 Aplikacja webowa Gamitude została wykonana w architekturze wielowarstwowej typu klient-serwer.
 Interfejs użytkownika został wykonany w technologi SPA (single page application).
 Naturalnym więc było podzielenie całej aplikacji na 2 repozytoria Frontend'u i Backend'u.
-Komunikacja pomiędzy nimi opiera się na protokole HTTP/HTTPS.\\
+Komunikacja pomiędzy nimi opiera się na protokole HTTP/HTTPS. Rzut na architekturę znajduje się na obrazku \ref{fig:overwiewarch}\\
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.5]{gamitude_overview}\\
@@ -1167,7 +1190,7 @@ Zmodyfikowane wersje komponentów z Core'a tworzą praktycznie całą naszą apl
 React\cite{react} to deklaratywna biblioteka dla języka JavaScript ułatwiająca tworzenie interaktywnych UI.\\
  Wykorzystuje stany, aby ułatwiać renderowanie oraz re-renderowanie odpowiednich komponentów.\\
  Sam React tylko opisuje co zrobić, faktycznym renderowanie elementów zajmuje się biblioteka react-dom \cite{react-dom}.\\
- React-dom'a można używać jako pure albo z JSX-em.\\
+ React-dom'a można używać jako pure \ref{fig:react_no_jsx} albo z JSX-em \ref{fig:react_jsx}.\\
  W wersji pure tworzymy elementy za pomocą createElement (nazwa elementu, tekst, dzieci), co jest dość niewygodne.\\
  Aby poprawić intuicyjność kodu oraz ułatwić pisanie elementów strony stworzono JSX-a.\\
  JSX to specjalny język imitujący HTML-a, który jest tłumaczony przez Babel'a do wersji pure.\\
@@ -1202,7 +1225,7 @@ Dodatkowo występuje też pojęcie selektora, czyli zmemoizowanej funkcji zwraca
 Do tworzenia tych funkcji używamy biblioteki reselect \cite{reselect}.\\
 W projekcie wykorzystujemy Redux'a do łatwego współdzielenia stanu między komponentami oraz stronami naszej aplikacji.\\
 Jest to dla nas świetne rozwiązanie ze względu na wykorzystanie czasomierza na różnych stronach w różnych kontekstach.\\
-W projekcie odwzorowaliśmy naszą strukturę folderów dla trzymania stanu pod Redux'a.
+W projekcie odwzorowaliśmy naszą strukturę folderów dla trzymania stanu pod Redux'a widoczne na obrazku nr \ref{fig:struktura_redux}.
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.5]{implementacja/frontend/struktura_redux}\\
@@ -1210,6 +1233,7 @@ W projekcie odwzorowaliśmy naszą strukturę folderów dla trzymania stanu pod 
 	\label{fig:struktura_redux}
 \end{figure}
 Dla monitorowania zmian tego globalnego stanu wykorzystujemy redux-logger'a \cite{redux-logger}.
+Przykład działania w konsoli Brave'a widać na obrazku nr \ref{fig:redux_logger}.
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.55]{implementacja/frontend/redux_logger}\\
@@ -1279,6 +1303,7 @@ Dzięki dodaniu typów, o wiele łatwiej jest wychwytywać niespójności dotycz
 Testing-library\cite{testing-library} jest to zbiór narzędzi do testowania oprogramowania.\\
 
 \subsection{Struktura folderów}
+Standardowa struktura folderów generowana za pomocą create-react-app z uwzględnieniem atomic design pokazane na obrazku nr \ref{fig:struktura_folderów_front}.
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.5]{implementacja/frontend/struktura_folderów}\\
@@ -1295,6 +1320,7 @@ W aplikacji stworzyliśmy specjalnie komponenty formik-form oraz formik-field, a
 	\item Initial Values pokazane na obrazku \ref{fig:initial_values} — wartości początkowe pól.
 	\item Fields pokazane na obrazku \ref{fig:fields} — informacje o polu takie jak jego etykieta, nazwa czy typ.
 \end{itemize}
+Kody komponentów formik-form oraz formik-field pokazane zostały na obrazku nr \ref{fig:formik_form} oraz \ref{fig_formik_field}.
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.5]{implementacja/frontend/formik_form}\\
@@ -1330,6 +1356,7 @@ W aplikacji stworzyliśmy specjalnie komponenty formik-form oraz formik-field, a
 \label{subsec:tabs}
 W aplikacji wielokrotnie korzystamy z połączenia komponentów Tabs i TabPanel — zakładek i ich zawartości.\\
 Po kliknięciu danej zakładki przełączamy się na nią i wyświetlamy jej zawartość.
+Kod połączenia komponentów widoczny na obrazku nr \ref{fig:tabs}.
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.5]{implementacja/frontend/tabs}\\
@@ -1342,6 +1369,7 @@ Po kliknięciu danej zakładki przełączamy się na nią i wyświetlamy jej zaw
 Dialog to element zawierający tytuł, zawartość oraz akcje wyświetlający się nad innymi
  elementami strony przesłaniając je półprzeźroczystym czarnym tłem.
 Informacje kontrolujące czy jest otwarty, czy zamknięty otrzymuje z zewnątrz tak samo, jak funkcje wywoływane na akcjach.
+Kod komponentu pokazany na obrazku nr \ref{fig:dialog}.
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.5]{implementacja/frontend/dialog}\\
@@ -1364,6 +1392,8 @@ Można również nadpisać jego akcje, umieszczając w tekście nagłówka guzik
 \label{subsec:style}
 Zamiast tradycyjnych plików CSS korzystamy z CSS-in-JS - JSS gdzie style są tworzone z obiektów JavaScript'owych.\\
 Konkretnie wykorzystujemy implementacje tego podejścia z Material-UI i tworzymy nasze style od razu z dostępem do obiektu theme z biblioteki.
+Przykład użycia znajduje się na obrazku nr \ref{fig:jss_styles}.
+Przykład nadpisania obiektu theme znajduje się na obrazku nr \ref{fig:custom_theme}.
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.5]{implementacja/frontend/jss_styles}\\
@@ -1399,6 +1429,8 @@ W nagłówku znajduje się guzik typu radio to zaznaczenia projektu dla czasomie
 
 \subsection{Bullet Journal}
 Komponent Bullet Journal Page został rozbity na kilka pomniejszych komponentów.\\
+ Diagram koncepcyjny przedstawiony został na obrazku nr \ref{fig:bullet_diagram}.
+ Ich podział został przedstawiony na obrazkach nr \ref{fig:bullet_division}.
  Komponenty Journal, Page oraz BulletTask odpowiadają za renderowanie odpowiednio dzienników, stron oraz zadań z dziennika.
  BulletTask zawiera w sobie komponent TaskTile, będący przedstawiony w formie akordeonu, przedstawionym w podpunkcie nr \ref{subsec:accordion},
  którego zadaniem jest renderowanie zawartości każdego zadania tj. możliwość zaznaczenia zadania, możliwość edycji zadania, możliwość usunięcia zadania i możliwość jego zakończenia.\\
@@ -1437,9 +1469,9 @@ Składa się z tabs'ów \ref{subsec:tabs} zawierających formularze \ref{subsec:
 	\centering
 	\includegraphics[scale=0.6]{implementacja/backend/struktura_folderow}\\
 	\caption{Struktura całego projektu}
-	\label{fig:folders}
+	\label{fig:folders_back}
 \end{figure}
-Projekt został podzielony na 3 podprojekty. Projekt Gamitude_backend zawiera główną implementację systemu.
+Projekt został podzielony na 3 podprojekty obrazek nr \ref{fig:folders_back}. Projekt Gamitude\_backend zawiera główną implementację systemu.
 Pozostałe 2 zostały stworzone na potrzeby testowania.
 \begin{figure}[H]
 	\centering
@@ -1449,19 +1481,20 @@ Pozostałe 2 zostały stworzone na potrzeby testowania.
 \end{figure}
 Główna implementacja systemu została podzielona na 3 warstwy tj. warstwa Web zawierająca kontrolery oraz ich kontrakty do komunikacji z warstwą prezentacji.
 Warstwę serwisów zawierającą logikę biznesową oraz warstwa Data, która przechowuje modele oraz ich repozytoria (klasy odpowiedzialne za komunikację z bazą danych).
-Projekt zawiera również folder Utils, w którym przechowywane są funkcje pomocnicze. Autoryzacja w systemie została rozwiązana przy pomocy tokenów JWT.
+Projekt zawiera również folder Utils, w którym przechowywane są funkcje pomocnicze struktura folderów znajduje się na obrazku nr \ref{fig:gamitude_struct}. Autoryzacja w systemie została rozwiązana przy pomocy tokenów JWT.
 Są one podpisane, dzięki temu można zweryfikować czy nie zostały zmodyfikowane. Można w nich przechowywać dane użytkownika np. jego unikalne Id.
 \subsection{Skrócony diagram klas}
-Rzut na całą implementację systemu z pominięciem klas pomocniczych i konfiguracyjnych.
+Rzut na całą implementację systemu pokazane jako moduły (foldery) z pominięciem klas pomocniczych i konfiguracyjnych ze względu na czytelność obrazek nr \ref{fig:gamitude_backend}.
 \begin{figure}[H]
 	\centering
 	\rotatebox[origin=c]{270}{
-	\includegraphics[scale=0.24]{implementacja/backend/gamitude_backend}}\\
+	\includegraphics[scale=0.5]{implementacja/backend/gamitude_backend}}\\
 	\caption{Skrócony diagram klas}
 	\label{fig:gamitude_backend}
 \end{figure}
 \subsection{Endpoint'y API}
-Wszystkie endpoint'y interfejsu Web API wraz z krótkim komentarzem przy każdym endpoint'ie.
+Wszystkie endpoint'y interfejsu Web API wraz z krótkim komentarzem przy każdym endpoint'ie widoczne na obrazkach nr 
+\ref{fig:auth_folders_journals_api}, \ref{fig:pages_projectLogs_projects_api}, \ref{fig:projectTasks_rank_statistics_api}, \ref{fig:timers_api}, \ref{fig:users_api}.
 Wygenerowane przy pomocy narzędzia do dokumentowania API o nazwie swagger \cite{swagger}.
 Pozwala ono na łatwe przedstawienie endpoint'ów w formie graficznej przy minimalnej konfiguracji \cite{swagger-dotnet}.
 Możliwe jest też szczegółowe udokumentowanie endpoint'ów w kodzie.
@@ -1505,7 +1538,7 @@ Nie przeszkadza to w tworzeniu własnych, szczególnie w przypadku kiedy ilość
 Takie relacje zostały stworzone w przypadku tokenów, statystyk, dziennych energii, czasomierzy (timer), projektów i ich logów. Relacja też została zastosowana do przetrzymywania identyfikatorów zakupionych rang, gdyż są one takie same dla wszystkich i niepotrzebne jest przechowywanie ich kopii.
 W logu projektu przechowujemy kopie projektu, aby był on dokładnych odzwierciedleniem projektu w momencie kończenia sesji. W naszej finalnej wersji modelu bazy danych zauważyliśmy parę błędów, które zaplanowane są do poprawy w następnej wersji projektu.
 Przeniesienie statystyk do obiektu użytkownika (wynika to z faktu, że kiedyś statystyki były per dzień). Przeniesienie czasomierzy (timer) do obiektu użytkownika. Ponowne przemyślenie struktury folders, projects, aby skomasować je w jeden obiekt.
-Finalne modele bazy danych.
+Finalne modele bazy danych obrazek nr \ref{fig:db}.
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=\textwidth, height=10cm]{gamitude_database_model}\\
@@ -1547,7 +1580,8 @@ Klasy odpowiedzialne za:
 	\item Zainicjalizowania wykonania logiki biznesowej.
 	\item Zwrócenia odpowiedniego kontraktu, jeżeli to konieczne.
 \end{itemize}
-Przykładowe metody kontrolerów.
+Przykładowe metody kontrolerów obrazki nr
+ \ref{fig:przykład_get}, \ref{fig:przykład_post}, \ref{fig:przykład_put}, \ref{fig:przykład_delete}.
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.3]{implementacja/backend/przykład_get}\\
@@ -1572,7 +1606,8 @@ Przykładowe metody kontrolerów.
 	\caption{Metoda DELETE w kontrolerze}
 	\label{fig:przykład_delete}
 \end{figure}
-Przykładowe kontrakty.
+Przykładowe kontrakty obrazki nr
+\ref{fig:przykład_timer_dto_get}, \ref{fig:przykład_timer_dto_create}, \ref{fig:przykład_timer_dto_update}.
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.5]{implementacja/backend/przykład_timer_dto_get}\\
@@ -1591,7 +1626,7 @@ Przykładowe kontrakty.
 	\caption{Kontrakt do edycji timera}
 	\label{fig:przykład_timer_dto_update}
 \end{figure}
-Konfiguracja mapper'a do przetwarzania obiektów pomiędzy kontraktami.
+Konfiguracja mapper'a do przetwarzania obiektów pomiędzy kontraktami obrazek nr \ref{fig:przykład_mappera}.
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.5]{implementacja/backend/przykład_mappera}\\
@@ -1603,7 +1638,7 @@ Konfiguracja mapper'a do przetwarzania obiektów pomiędzy kontraktami.
 \subsection{Serwisy}
 Klasy odpowiedzialne przechowanie logiki biznesowej np. dodatkową obróbkę danych bądź bardziej skomplikowane operacje na wielu repozytoriach.
 Pozwala to na oddzielenie logi od bazy danych w przypadku późniejszej jej zmiany, wystarczy podmienić repozytorium, które implementuje dany interfejs.
-Przykład serwisu
+Przykład serwisu obrazek nr \ref{fig:przykład_timer_service}.
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.4]{implementacja/backend/przykład_timer_service}\\
@@ -1612,7 +1647,7 @@ Przykład serwisu
 \end{figure}
 \subsection{Repozytoria}
 Klasa odpowiedzialna za komunikację z bazą danych przechowuje ona logikę odczytu zapisu. 
-Przykład repozytorium oraz jego interfejsu
+Przykład repozytorium obrazek nr \ref{fig:przykład_timer_repo} oraz jego interfejsu obrazek nr \ref{fig:przykład_timer_irepo}.
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.4]{implementacja/backend/przykład_timer_irepo}\\
@@ -1626,7 +1661,7 @@ Przykład repozytorium oraz jego interfejsu
 	\label{fig:przykład_timer_repo}
 \end{figure}
 \subsection{Modele}
-Klasy odpowiedzialne za przechowywanie struktury modeli, które są odpowiednikami znajdującymi się w bazie danych.
+Klasy odpowiedzialne za przechowywanie struktury modeli obrazki nr \ref{fig:przykład_timer_model},  \ref{fig:przykład_timer_model_count}. Opisują struktury znajdujące się w bazie danych.
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.5]{implementacja/backend/przykład_timer_model}\\
@@ -1676,10 +1711,10 @@ Kontrola wersji w EA dostępne tylko po wykupieniu licencji.
 
 \section {Use Case + WPP}
 \subsection {Założenia sprintu}
-Przygotowanie pierwszych diagramów Use Case. Wytworzenie dokumentu WPP.
+Przygotowanie pierwszych diagramów Use Case, Wytworzenie dokumentu WPP.
 \subsection {Wykonane zadania}
 Paweł: Wytworzenie paru Use Case'ów w programie EA. Przerabianie kursu React.\\
-Robert: Stworzenie dokumentu WPP oraz jednego z Use Case'ów.\\
+Robert: Stworzenie dokumentu WPP oraz jednego z Use Case'ów przedstawiono na obrazku nr \ref{fig:usecase}.\\
 Stanisław: Wytworzenie paru Use Case'ów w programie EA.\\
 \subsection {Napotkane problemy}
 Brak napotkanych problemów.
@@ -1728,7 +1763,7 @@ Robert nie przygotował routingu.
 \subsection {Założenia sprintu}
 Zostanie utworzony diagram sekwencji pozwalający zobrazować przepływ danych w projekcie. Utworzone zostaną widoki statystyk i energii na stronie.
 \subsection {Wykonane zadania}
-Robert i Stanisław: Utworzenie diagramu sekwencji.\\
+Robert i Stanisław: Utworzenie diagramu sekwencji przedstawionych na obrazkach nr \ref{fig:seq1} oraz \ref{fig:seq2}.\\
 Paweł: Implementacja widoków statystyk i energii. \\
 Robert: Utworzono routing w mikro serwisie rang.\\
 Stanisław: Modyfikacja modelu projektów w bazie danych.\\
@@ -2029,7 +2064,7 @@ Problemy z Redux'em, dokończenie tworzenia task'ów w następnym sprincie. Źle
 Dokończenie pracy nad tworzeniem zadań w Bullet Journal, możliwość skończenia zadań oraz łączenie zadań, oraz dzienników z projektem. Dostosowanie czasomierza, możliwość zakupu rang oraz ich filtrowania. Podpięcie API do Gamitude Themes, ulepszenie czasomierza, mniejsza wersja panelu kontrolnego.
 \subsection {Wykonane zadania}
 Paweł: Dodanie stopera, powiadomienia przy przedwczesnym przerwaniu sesji, dodatkowe informacje dotyczące czasomierza w postaci długości krótkiej przerwy, długiej przerwy, automatyczne blokowanie interakcji z aplikacją podczas przerwy, automatyczna zmiana czasomierza na przerwę. Drobne poprawki do projektów, czasomierza oraz wyglądu aplikacji. Zmieniony formularz tworzenia czasomierza.\\
-Robert: Utworzenie Rich Picture, skończone prace nad tworzeniem zadań do Bullet Journal'a.\\
+Robert: Utworzenie Rich Picture przedstawione na obrazkach nr \ref{fig:rich1} oraz \ref{fig:rich2}, skończone prace nad tworzeniem zadań do Bullet Journal'a.\\
 Stanisław: dodanie możliwości kupowania rang wraz z transakcjami, dostosowanie czasomierza, dostosowanie Bullet Journal'a.\\
 \subsection {Napotkane problemy}
 Łączenie zadań oraz dzienników z projektem wraz z ujednolicaniem dodawania i edycji zadań przeniesiona na następny sprint. Złe oszacowanie ilości czasu poświęconego na mniejszą wersję panelu kontrolnego.
@@ -2070,7 +2105,7 @@ Wstawienie nowych wersji Rich Picture do dokumentacji.\\
 Rozwiązanie problemu z przełączaniem się po Bullet Journal'u oraz dodanie możliwości wybierania zadań dla czasomierza.\\
 \subsection {Wykonane zadania}
 Paweł + Stanisław: Weryfikacji maili, bez możliwości zmiany maila. Dodano na stronę Google Analytics.\\
-Robert: Wykonanie dokumentacji 3.1, 3.2, 3.3 - uaktualnienie wymagań, diagramów oraz przypadków użycia. Wstawienie nowych wersji Rich Picture do dokumentacji.\\
+Robert: Wykonanie dokumentacji 3.1, 3.2, 3.3 - uaktualnienie wymagań, diagramów np systemu obrazek nr \ref{fig:system} oraz przypadków użycia na obrazku nr \ref{fig:usecase}. Wstawienie nowych wersji Rich Picture \ref{fig:rich1} \ref{fig:rich2} do dokumentacji.\\
 Stanisław: Wykonanie dokumentacji 4.1, 4.2, 4.3 - planowanie oraz dodanie architektury do prezentacji.\\
 \subsection {Napotkane problemy}
 Niewykonanie Pełna integracja czasomierzy, folderów oraz rang — możliwość edycji, ustawiania oraz usuwania.\\
@@ -2109,7 +2144,7 @@ Dostosowanie aplikację pod nowe ProjectLogs API.\\
 \subsection {Wykonane zadania}
 Paweł: Dostosowanie aplikację pod nowe ProjectLogs API, Dokumentacja 5.1.1 - Projektowanie i architektura systemu.\\
 Robert: Dodanie możliwości wybierania zadań dla czasomierza, Integracja Bullet Journal’a z pozostałą częścią aplikacji, dodawanie blokad do edycji zadań podczas sesji. \\
-Stanisław: Dokumentacja 5.1.2, 5.1.3, 5.1.4 - Projektowanie i architektura systemu.\\
+Stanisław: Dokumentacja 5.1.2, 5.1.3, 5.1.4 - Projektowanie i architektura systemu \ref{fig:overwiearch}.\\
 \subsection {Napotkane problemy}
 Nie wykonane Nagranie dema działania aplikacji.\\
 Nie wykonane Tworzenie testów API.\\
@@ -2556,8 +2591,18 @@ Zaskoczyły nas te odpowiedzi, ponieważ zakładaliśmy, że większość osób 
 \chapter{Prezentacja systemu w działaniu}
 \section{Strona główna}
 Po pierwszym wejściu na naszą stronę wita nas strona główna z nazwą rozwiązaniem i hasłem reklamowym. 
+Jej wygląd został przedstawiony na rysunku nr \ref{fig:homepage}.
 Strona ta została wykonana w stylu parallax, ze względu na wygląd zachęcający do korzystania z aplikacji.
-Na tej stronie znajdują się podstawowe informacje, dotyczące naszego rozwiązania tj. czym są energię na rysunku nr \ref{fig:homepage_energies}, jak dzielimy statystyki na rysunku nr \ref{fig:homepage_stats} czy czym są projekty na rysunku nr \ref{fig:homepage_projects}.
+Na tej stronie znajdują się podstawowe informacje, dotyczące naszego rozwiązania:
+\begin{itemize}
+	\item Ogólny kontekst strony na rysunku nr \ref{fig:homepage_overview}.
+	\item Czym są energię na rysunku nr \ref{fig:homepage_energies}. 
+	\item Jak dzielimy statystyki na rysunku nr \ref{fig:homepage_stats}.
+	\item Czym są projekty na rysunku nr \ref{fig:homepage_projects}.
+	\item Na czym polega Bullet Journal na rysunku nr \ref{fig:homepage_bullet}.
+	\item Kto stworzył stronę na rysunku nr \ref{fig:homepage_creators}.
+	\item Oraz lista źródeł grafik oraz dźwięków \ref{fig:homepage_attributions}.
+\end{itemize}
 Na stronie głównej, na każdej podstronie znajduje się przycisk „Get started” przenoszący użytkownika do strony rejestracji.
 \begin{figure}[H]
 	\centering
@@ -2608,13 +2653,13 @@ Na stronie głównej, na każdej podstronie znajduje się przycisk „Get starte
 	\label{fig:homepage_attributions}
 \end{figure}
 \section{Rejestracja i logowanie}
-Po przejściu na stronę rejestracji ukazuje nam się formularz rejestracji. Zawiera on podstawowe pola tzn. username, e-mail oraz hasło.
+Po przejściu na stronę rejestracji ukazuje nam się formularz rejestracji obrazek nr \ref{fig:Register}. Zawiera on podstawowe pola tzn. username, e-mail oraz hasło.
 Formularz jest weryfikowany pod kątem poprawności maila i siły hasła
  a pola username oraz e-mail są dodatkowo weryfikowane z API onBlur, w celu sprawdzenia, czy nie znajdują się już w bazie danych. 
 Po udanym przejściu przez formularz rejestracji wyskakuje nam powiadomienie typu Snack bar. 
 Zawiadamia nas ono o konieczności potwierdzenia logowania, które zostało wysłane na maila podanego podczas rejestracji.
 Na e-maila przychodzi nam wiadomość widoczna na rysunku nr \ref{fig:Email}, z możliwością potwierdzenia swojego logowania.
-Po potwierdzeniu swojego konta otwiera nam się strona z komunikatem o udanym potwierdzeniu konta, wraz z możliwością przejścia do strony logowania.
+Po potwierdzeniu swojego konta otwiera nam się strona z komunikatem o udanym potwierdzeniu konta obrazek nr \ref{fig:Confirmed_Email}, wraz z możliwością przejścia do strony logowania obrazek nr \ref{fig:Login}.
 W razie, gdyby e-mail z potwierdzeniem konta nie przyszedł za pierwszym razem,
  na stronie logowania przedstawionej na rysunku nr \ref{fig:Login}, mamy możliwość ponownego wysłania takiej wiadomości.
 \begin{figure}[H]
@@ -2651,12 +2696,13 @@ Zawiera on:
 	\item Oraz listę dostępnych czasomierzy wraz z guzikiem otwierającym ich ustawienia.
 \end{itemize}
 \section{Gamitude Projects}
-Domyślną stroną po zalogowaniu jest serwis projektów.
+Domyślną stroną po zalogowaniu jest serwis projektów obrazek nr \ref{fig:Projects}.
 Składa się on z zorganizowanych w foldery paneli z projektami.
-Foldery wyświetlane po lewej można edytować bądź dodawać nowe poprzez kliknięcie zębatki na końcu listy.
-Nowe projekty dodajemy poprzez kliknięcie plusa w prawym dolnym rogu okna projektów.
+Foldery wyświetlane po lewej można edytować bądź dodawać nowe widoczne na obrazkach nr \ref{fig:Folders_add}, \ref{fig:Folders_edit} poprzez kliknięcie zębatki na końcu listy.
+Nowe projekty dodajemy poprzez kliknięcie plusa w prawym dolnym rogu okna projektów obrazek nr. \ref{fig:Projects_add}.
 Wybieramy projekt, nad którym chcemy pracować, klikając jego nazwę bądź guzik radio koło niej.
-Kliknięcie pozostałej części panelu rozwinie go do edycji.
+Kliknięcie pozostałej części panelu rozwinie go do edycji obrazek nr \ref{fig:Project}.
+Zaznaczony projekt można włączyć, klikając na timer włączona sesja widoczna na obrazku nr \ref{fig:Projects_session}.
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.3]{prezentacja/Projects}\\
@@ -2696,10 +2742,11 @@ Kliknięcie pozostałej części panelu rozwinie go do edycji.
 \section{Bullet Journal}
 Po przejściu do Bullet Journal’a, na samym początku widzimy listę dzienników prowadzonych przez użytkownika przedstawioną na rysunku nr \ref{fig:Bullet}.
 Każdy dziennik zawiera strony, które odpowiedzialne są za wyświetlanie zadań z terminem wykonania odpowiadającym zakresowi dat danej strony (rysunek nr \ref{fig:Bullet_pages}).
-Dzienniki, jak i strony możemy dodawać poprzez ikony plusa znajdujący się pod odpowiednio dziennikami i stronami.
-Zadania, które dodajemy po wybraniu dziennika i strony, składają się z nazwy, notatki w razie, gdyby zadanie potrzebowało krótkiego wyjaśnienia,
+Dzienniki, jak i strony możemy dodawać poprzez ikony plusa znajdujący się pod odpowiednio dziennikami i stronami widok dodawania widoczny na obrazku nr \ref{fig:Bullet_Journal_add}.
+Zadania, które dodajemy po wybraniu dziennika i strony widok widoczny na obrazku nr \ref{fig:ProjectTask_add}, składają się z nazwy, notatki w razie, gdyby zadanie potrzebowało krótkiego wyjaśnienia,
  terminu wykonania, połączonego projektu oraz tagów.
-Poprzez zaznaczenie zadania oraz uruchomienie czasomierza, możemy rozpocząć pracę nad zadaniem.
+ Zarządzanie stronami i dziennikami widoczne na obrazkach nr  \ref{fig:Journal_edit},  \ref{fig:Page_add},  \ref{fig:Page_edit}.
+Poprzez zaznaczenie zadania widoczne na obrazku nr \ref{fig:ProjectTask}  oraz uruchomienie czasomierza, możemy rozpocząć pracę nad zadaniem \ref{fig:Bullet_Session}.
 Jeśli nasze zadanie nie jest przypisane do projektu, nie jesteśmy w stanie uruchomić czasomierza.
 Gdy uważamy, że wykonaliśmy swoje zadanie, należy po zakończeniu sesji kliknąć przycisk „Finish”.
 \begin{figure}[H]
@@ -2759,6 +2806,7 @@ Gdy uważamy, że wykonaliśmy swoje zadanie, należy po zakończeniu sesji klik
 \section{Gamitude Themes}
 Ekran do zakupu rang. Niestety działają jedynie podstawowe funkcjonalności jak wyświetlenie oraz kupowanie rang.
 Filtrowanie oraz reszta dodatków będą dodane w przyszłej wersji komercyjnej.
+Obecny wygląd strony widoczny jest na rysunku nr \ref{fig:Gamitude_Themes}.
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.3]{prezentacja/Gamitude_Themes}\\
@@ -2767,6 +2815,7 @@ Filtrowanie oraz reszta dodatków będą dodane w przyszłej wersji komercyjnej.
 \end{figure}
 \section{Ustawienia użytkownika}
 Na tym ekranie możemy zmienić maila, hasło bądź usunąć nasze konto, e-mail zostanie zmieniony dopiero po potwierdzeniu maila.
+Domyślnie zaznaczona jest zakładka do zmiany hasła co widoczne jest na rysunku nr \ref{fig:Settings}.
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.3]{prezentacja/Settings}\\

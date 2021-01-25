@@ -43,3 +43,4 @@
 {"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QPo przejściu do Bullet Journal’a, na samym początku widzimy listę dzienników prowadzonych przez użytkownika przedstawioną na rysunku nr \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
 {"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QKażdy dziennik zawiera strony, które odpowiedzialne są za wyświetlanie zadań z terminem wykonania odpowiadającym zakresowi dat danej strony (rysunek nr \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q).\\E$"}
 {"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QZdecydowaliśmy się na prowadzenie modelu freemium \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q z opcją na mikropłatności.\\E$"}
+{"rule":"BRAK_KROPKI","sentence":"^\\QKierunek studiów: Informatyka Rodzaj studiów: Stacjonarne Praca dyplomowa Temat pracy: Gamitude zarządzaj swoją energią, a nie czasem Temat w języku angielskim: Gamitude manage your Energy, not your Time Opiekun pracy: dr Tadeusz Puźniakowski Wykonawcy: Paweł Benkowski Robert Deyk Stanisław Lutkiewicz\\E$"}
