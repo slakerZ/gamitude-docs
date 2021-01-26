@@ -40,9 +40,9 @@
  & \\
  & Stanisław Lutkiewicz \\
  & \\
-\multicolumn{2}{p{13cm}}{\textbf{Streszczenie:} System mający na celu zwiększenie produktywności użytkowników bazując na badaniach uniwersytetu Harward.
+\multicolumn{2}{p{13cm}}{\textbf{Streszczenie:} System mający na celu zwiększenie produktywności użytkowników bazując na badaniach uniwersytetu Harvard.
  System ten również wykorzystuje zbadane metodyki pracy pozwalające na wydłużenie czasu pozostania skoncentrowanym na zadaniu. Za czas spędzony nad zadaniami,
-  użytkownik zostaje nagradzany statystykami, za które może on kupować ranki reprezentujące postęp.}\\
+  użytkownik zostaje nagradzany statystykami, za które może on kupować rangi reprezentujące postęp.}\\
 \end{tabular}
 \newpage
 \begin{center}
@@ -98,7 +98,7 @@ Stanisław Lutkiewicz&s17535&SI&Stacjonarne \\
 \hline
 \end{tabular}\\
 \vspace{1cm}
-\begin{tabular}{|l|l|l|p{3.75cm}|}
+\begin{tabular}{|l|l|l|p{4cm}|}
 \hline
 \textbf{Data ukończenia projektu:} & 25.01.2021 & \textbf{Recenzent:} & \\
 \hline
@@ -200,6 +200,9 @@ Ludzie operują w kontekście czasu i właśnie go próbują rozplanowywać. Jed
 	\caption{Użytkownik przed skorzystaniem z systemu.}
 	\label{fig:rich1}
 \end{figure}
+Diagram \ref{fig:rich1} pokazuje błędne koło, gdzie osoba odkłada pracę na potem,
+ co skutkuje stresem oraz poczuciem wykończenia po wykonaniu wielu zadań bez odpowiedniego trybu pracy.
+Diagram \ref{fig:rich2} natomiast pokazuje, jak osoba ucieka z tego koła poprzez pracę z naszym systemem.
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=\textwidth, height=9cm]{richpicture2}
@@ -360,7 +363,7 @@ W przyszłości planowana jest również dedykowana aplikacja mobilna.
  Po spełnieniu danego warunku użytkownik będzie nagradzany osiągnięciem za przekroczenie pewnego kamienia milowego
  w swojej pracy nad projektem.
  Zadaniem Bullet Journal’a jest rozplanowanie pomniejszych zadań z projektu w czasie i umieszczenie ich w formie dzienników.
- Dzięki nim, użytkownik będzie mógł śledzić jakie zadania musi wykonać danego dnia, by wyrobić się w terminie.
+ Dzięki nim użytkownik będzie mógł śledzić jakie zadania musi wykonać danego dnia, by wyrobić się w terminie.
  Elastic Habits miałby za zadanie pomóc użytkownikowi wyrobić sobie nawyk,
  poprzez poziomowanie sobie zaplanowanego zadania.
  W zależności od ogólnego samopoczucia użytkownika może on wybrać łatwiejszą bądź trudniejszą wersję zadania, dalej utrzymując nawyk wykonywania go. \\
@@ -1045,18 +1048,30 @@ Do tych wszystkich osób kierujemy nasze rozwiązanie, ale chcemy, by każdy mó
 	\caption{Use case dla całego systemu}
 	\label{fig:usecase}
 \end{figure}
+Diagram \ref{fig:usecase} pokazuje wszystkie czynności, które może wykonać użytkownik zalogowany, jak i zwykły użytkownik.
+Użytkownik ma dostęp do strony głównej oraz funkcji logowania i rejestracji.
+Zalogowany użytkownik ma dostęp do wszystkich funkcji aplikacji oraz do funkcji dostępnych dla użytkownika.
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.6]{sekwencji}\\
 	\caption{Diagram sekwencji dla dodawania projektu oraz włączania sesji}
 	\label{fig:seq1}
 \end{figure}
+Diagram sekwencji \ref{fig:seq1} prezentuje proces dodawania projektu oraz włączania sesji. Proces rozpoczyna użytkownik,
+ wysyłając sygnał do warstwy frontend'u. Uruchamia on funkcję asynchroniczną, oczekując na odpowiedź od backend'u. 
+Backend pracuje nad danymi i wysyła je do bazy, zwracając status na frontend. W przypadku włączenia sesji,
+ na początku frontend sam zajmuje się pomiarem czasu sesji, aż sesja się zakończy.
+Wtedy wchodzi on w interakcję z backend'em.
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.6]{sekwencji1}\\
-	\caption{Diagram sekwencji dla załadowania strony Bullet Journal’a oraz usuwania zadania}
+	\caption{Diagram sekwencji dla załadowania strony Bullet Journal oraz usuwania zadania}
 	\label{fig:seq2}
 \end{figure}
+Diagram sekwencji \ref{fig:seq2} prezentuje proces ładowania strony Bullet Journal oraz usuwania zadania.
+Podobnie jak w poprzednim diagramie, użytkownik wchodzi w interakcje z frontend'em,
+ który wywołuje funkcję asynchroniczną z zapytaniem do warstwy backend'u.
+Ten natomiast wchodzi w interakcję z bazą danych, zwracając status funkcji na frontend.
 \chapter {Planowanie}
 \section{Metodyka pracy}
 Tradycyjne podejście do tworzenia oprogramowania nie było możliwe do zastosowania z uwagi na nasze płynne, dość ogólne plany.
@@ -1432,7 +1447,7 @@ Komponent Bullet Journal Page został rozbity na kilka pomniejszych komponentów
 Wyświetla dostępne rangi w formie kart po lewej natomiast mamy serie checkbox'ów do filtrowania wyników oraz paginacje.
 
 \subsection{User Settings}
-Składa się z tabs'ów \ref{subsec:tabs} zawierających formularze \ref{subsec:forms}:
+Składa się z komponentów Tabs omawianych w podrozdziale \ref{subsec:tabs} zawierających formularze z podrozdziału nr \ref{subsec:forms}:
 \begin{itemize}
 	\item Change Password z polami na potwierdzenie starego hasła, wprowadzenie nowego i potwierdzenie go.
 	\item Change E-mail z polem na nowy e-mail.
@@ -1524,7 +1539,7 @@ Finalne modele bazy danych obrazek nr \ref{fig:db}.
 	\label{fig:db}
 \end{figure}
 \subsection{Utils}
-Przykład klasy extension rysunek nr \ref{fig:gamitude_extension} oraz middleware rysunek nr \ref{fig:gamitude_middleware}.
+Przykład klasy extension rysunek nr \ref{fig:gamitude_extension}.
 Używane one są do konfiguracji całej aplikacji w bardziej przejrzysty sposób rysunek nr \ref{fig:gamitude_services_startup} oraz nr \ref{fig:gamitude_pipeline_startup}.
 \begin{figure}[H]
 	\centering
@@ -1534,7 +1549,7 @@ Używane one są do konfiguracji całej aplikacji w bardziej przejrzysty sposób
 \end{figure}
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.]{implementacja/backend/przykład_middleware}\\
+	\includegraphics[scale=0]{implementacja/backend/przykład_middleware}\\
 	\caption{Przykład middleware}
 	\label{fig:gamitude_middleware}
 \end{figure}
@@ -2142,6 +2157,7 @@ Porzucono zadanie tworzenie domyślnych stron dla nowych dzienników.\\
 
 \chapter {Testy systemu}
 \section{Testy Manualne}
+
 Każdy z członków zespołów, na warstwie frontend'u, podczas pracy nad komponentami, sprawdzał działanie każdego komponentu,
  by zweryfikować czy funkcje w komponencie pracują poprawnie i czy zwracają oczekiwane dane.
 Na warstwie backend'u działanie funkcji sprawdzane było poprzez wysyłane zapytań ze Swagger UI przykład zapytania na obrazku nr \ref{fig:timer_postman}.
@@ -2151,6 +2167,7 @@ Na warstwie backend'u działanie funkcji sprawdzane było poprzez wysyłane zapy
 	\caption{Przykład testu dla funkcji czasomierza na warstwie backend'u}
 	\label{fig:timer_postman}
 \end{figure}
+
 \section{Testy walidacyjne}
 \begin{table}[H]
 	\centering
@@ -2981,11 +2998,11 @@ Dokumentacja:
 	\item Sporządzenie krótkiego opisu konkurencji w rozdziale 2.3
 	\item Weryfikacja oraz edycja wymagań z rozdziału 3
 	\item Opisanie celów, oraz odbiorców systemu z rozdziału 2.6
-	\item Współtworzenie podrozdziału 6.1 dotyczącego implementacji frontendu
+	\item Współtworzenie podrozdziału 6.1 dotyczącego implementacji frontend'u
 	\item Opisanie testów walidacyjnych z rozdziału 8.2
 	\item Przygotowanie podsumowania testów w grupie docelowej w postaci rozdziału nr 9
 	\item Współtworzenie rozdziału 10 prezentującego system
-	\item Współtworzenie rozdziału 11 dotyczacego nakładu pracy
+	\item Współtworzenie rozdziału 11 dotyczącego nakładu pracy
 	\item Krótki opis komercjalizacji w rozdziale 13 
 \end{itemize}
 DevOps:

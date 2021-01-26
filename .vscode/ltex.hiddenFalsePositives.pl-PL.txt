@@ -102,3 +102,19 @@
 {"rule":"SPACJA_ZNAK_ROWNOSCI","sentence":"^\\QFinalne modele bazy danych obrazek nr \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q. [origin=c]270.\\E$"}
 {"rule":"BRAK_SPACJI","sentence":"^\\QFinalne modele bazy danych obrazek nr \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q. [origin=c]270.\\E$"}
 {"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QFinalne modele bazy danych obrazek nr \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q. [origin=c]270.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QSkłada się z komponentów Tabs omawianych w podrozdziale \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q zawierających formularze z podrozdziału nr \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q: Change Password z polami na potwierdzenie starego hasła, wprowadzenie nowego i potwierdzenie go.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QNa warstwie backend'u działanie funkcji sprawdzane było poprzez wysyłane zapytań ze Swagger UI przykład zapytania na obrazku nr \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QRaport z testów na obrazku nr \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QPrzykład wybranego testu na obrazku nr \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QTestami jednostkowymi została objęta tylko metoda przeliczania statystyk widoczna na obrazku nr \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QPlik README.md z opisem uruchomienia całej aplikacji.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QHistoria sprintów Przygotowanie Rich Picture z rozdziału 2.2 Sporządzenie krótkiego opisu konkurencji w rozdziale 2.3 Weryfikacja oraz edycja wymagań z rozdziału 3 Opisanie celów, oraz odbiorców systemu z rozdziału 2.6 Współtworzenie podrozdziału 6.1 dotyczącego implementacji frontend'u Opisanie testów walidacyjnych z rozdziału 8.2 Przygotowanie podsumowania testów w grupie docelowej w postaci rozdziału nr 9 Współtworzenie rozdziału 10 prezentującego system Współtworzenie rozdziału 11 dotyczącego nakładu pracy Krótki opis komercjalizacji w rozdziale 13 DevOps: Brak.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QDiagram sekwencji \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q prezentuje proces dodawania projektu oraz włączania sesji.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QDiagram sekwencji \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q prezentuje proces ładowania strony Bullet Journal oraz usuwania zadania.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QDiagram \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q pokazuje wszystkie czynności, które może wykonać użytkownik zalogowany, jak i niezalogowany.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QDiagram \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q pokazuje wszystkie czynności, które może wykonać użytkownik zalogowany, jak i zwykły użytkownik.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QPrzykład klasy extension rysunek nr \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QDiagram \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q przedstawia zachowanie człowieka, zanim zacznie pracę z naszym systemem.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QDiagram \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q pokazuje błędne koło, gdzie osoba odkłada pracę na potem, co skutkuje stresem oraz poczuciem wykończenia po wykonaniu wielu zadań bez odpowiedniego trybu pracy.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QDiagram \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q natomiast pokazuje, jak osoba pracuje z naszym systemem.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QDiagram \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q natomiast pokazuje, jak osoba ucieka z tego koła poprzez pracę z naszym systemem.\\E$"}
